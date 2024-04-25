@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_ff240213cc7d4060a6e61e81f10db9df" xml:lang="ru">
+<title>Содержание директории obj/x64/Debug/net5.0-windows</title>
+<indexterm><primary>Содержание директории obj/x64/Debug/net5.0-windows</primary></indexterm>
+<simplesect>
+    <title>Файлы    </title>
+        <itemizedlist>
+            <listitem><para>файл <link linkend="__8_n_e_t_core_app_00_version_0av5_80_8_assembly_attributes_8cs">.NETCoreApp,Version=v5.0.AssemblyAttributes.cs</link></para>
+</listitem>
+            <listitem><para>файл <link linkend="__enigma2_8_assembly_info_8cs">Enigma2.AssemblyInfo.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

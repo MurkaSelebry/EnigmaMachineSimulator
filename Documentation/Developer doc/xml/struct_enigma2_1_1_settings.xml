@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="ru">
+  <compounddef id="struct_enigma2_1_1_settings" kind="struct" language="C#" prot="public">
+    <compoundname>Enigma2::Settings</compoundname>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="struct_enigma2_1_1_settings_1a8b8a95b2467d15c67191da02dab68e2c" prot="public" static="no" mutable="no">
+        <type>int[]</type>
+        <definition>int [] Enigma2.Settings.key</definition>
+        <argsstring></argsstring>
+        <name>key</name>
+        <qualifiedname>Enigma2.Settings.key</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.cs" line="233" column="20" bodyfile="Core/SettingsForm.cs" bodystart="233" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_enigma2_1_1_settings_1aa78f34d378b9eb5018a32be94af039f7" prot="public" static="no" mutable="no">
+        <type>int[]</type>
+        <definition>int [] Enigma2.Settings.ring</definition>
+        <argsstring></argsstring>
+        <name>ring</name>
+        <qualifiedname>Enigma2.Settings.ring</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.cs" line="234" column="20" bodyfile="Core/SettingsForm.cs" bodystart="234" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_enigma2_1_1_settings_1a08a762a0eee5050bfd481b13ada65925" prot="public" static="no" mutable="no">
+        <type>int[]</type>
+        <definition>int [] Enigma2.Settings.rotors</definition>
+        <argsstring></argsstring>
+        <name>rotors</name>
+        <qualifiedname>Enigma2.Settings.rotors</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.cs" line="235" column="20" bodyfile="Core/SettingsForm.cs" bodystart="235" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_enigma2_1_1_settings_1a350b8e0f4ff88d5a9e497c647f9848ba" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Enigma2.Settings.customReflector</definition>
+        <argsstring></argsstring>
+        <name>customReflector</name>
+        <qualifiedname>Enigma2.Settings.customReflector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.cs" line="236" column="21" bodyfile="Core/SettingsForm.cs" bodystart="236" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_enigma2_1_1_settings_1af7e0fbc1e56f28d7e7d501a0034d4c15" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Enigma2.Settings.reflector</definition>
+        <argsstring></argsstring>
+        <name>reflector</name>
+        <qualifiedname>Enigma2.Settings.reflector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.cs" line="237" column="23" bodyfile="Core/SettingsForm.cs" bodystart="237" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_enigma2_1_1_settings_1a93f957db78e54194f51eef0c503d18b5" prot="public" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Enigma2.Settings.sound</definition>
+        <argsstring></argsstring>
+        <name>sound</name>
+        <qualifiedname>Enigma2.Settings.sound</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.cs" line="238" column="22" bodyfile="Core/SettingsForm.cs" bodystart="238" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_enigma2_1_1_settings_1a4d9705e96f593a5286caa2210ca38f4c" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Enigma2.Settings.useM4</definition>
+        <argsstring></argsstring>
+        <name>useM4</name>
+        <qualifiedname>Enigma2.Settings.useM4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.cs" line="239" column="21" bodyfile="Core/SettingsForm.cs" bodystart="239" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_enigma2_1_1_settings_1ab9687826f05dea58696a7df6894d5097" prot="public" static="no" mutable="no">
+        <type>Dictionary&lt; char, char &gt;</type>
+        <definition>Dictionary&lt;char, char&gt; Enigma2.Settings.replace</definition>
+        <argsstring></argsstring>
+        <name>replace</name>
+        <qualifiedname>Enigma2.Settings.replace</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.cs" line="240" column="27" bodyfile="Core/SettingsForm.cs" bodystart="240" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="struct_enigma2_1_1_settings_1ac7e1647b7cb15cbcd8173dfac7b8063e" prot="public" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Enigma2.Settings.reflIndex</definition>
+        <argsstring></argsstring>
+        <name>reflIndex</name>
+        <qualifiedname>Enigma2.Settings.reflIndex</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.cs" line="241" column="20" bodyfile="Core/SettingsForm.cs" bodystart="241" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Core/SettingsForm.cs" line="231" column="11" bodyfile="Core/SettingsForm.cs" bodystart="232" bodyend="242"/>
+    <listofallmembers>
+      <member refid="struct_enigma2_1_1_settings_1a350b8e0f4ff88d5a9e497c647f9848ba" prot="public" virt="non-virtual"><scope>Enigma2::Settings</scope><name>customReflector</name></member>
+      <member refid="struct_enigma2_1_1_settings_1a8b8a95b2467d15c67191da02dab68e2c" prot="public" virt="non-virtual"><scope>Enigma2::Settings</scope><name>key</name></member>
+      <member refid="struct_enigma2_1_1_settings_1af7e0fbc1e56f28d7e7d501a0034d4c15" prot="public" virt="non-virtual"><scope>Enigma2::Settings</scope><name>reflector</name></member>
+      <member refid="struct_enigma2_1_1_settings_1ac7e1647b7cb15cbcd8173dfac7b8063e" prot="public" virt="non-virtual"><scope>Enigma2::Settings</scope><name>reflIndex</name></member>
+      <member refid="struct_enigma2_1_1_settings_1ab9687826f05dea58696a7df6894d5097" prot="public" virt="non-virtual"><scope>Enigma2::Settings</scope><name>replace</name></member>
+      <member refid="struct_enigma2_1_1_settings_1aa78f34d378b9eb5018a32be94af039f7" prot="public" virt="non-virtual"><scope>Enigma2::Settings</scope><name>ring</name></member>
+      <member refid="struct_enigma2_1_1_settings_1a08a762a0eee5050bfd481b13ada65925" prot="public" virt="non-virtual"><scope>Enigma2::Settings</scope><name>rotors</name></member>
+      <member refid="struct_enigma2_1_1_settings_1a93f957db78e54194f51eef0c503d18b5" prot="public" virt="non-virtual"><scope>Enigma2::Settings</scope><name>sound</name></member>
+      <member refid="struct_enigma2_1_1_settings_1a4d9705e96f593a5286caa2210ca38f4c" prot="public" virt="non-virtual"><scope>Enigma2::Settings</scope><name>useM4</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

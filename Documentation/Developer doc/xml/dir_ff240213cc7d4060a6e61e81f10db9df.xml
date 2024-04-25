@@ -1,0 +1,13 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="ru">
+  <compounddef id="dir_ff240213cc7d4060a6e61e81f10db9df" kind="dir">
+    <compoundname>obj/x64/Debug/net5.0-windows</compoundname>
+    <innerfile refid="_8_n_e_t_core_app_00_version_0av5_80_8_assembly_attributes_8cs">.NETCoreApp,Version=v5.0.AssemblyAttributes.cs</innerfile>
+    <innerfile refid="_enigma2_8_assembly_info_8cs">Enigma2.AssemblyInfo.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="obj/x64/Debug/net5.0-windows/"/>
+  </compounddef>
+</doxygen>

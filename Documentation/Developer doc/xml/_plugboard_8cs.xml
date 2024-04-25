@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="ru">
+  <compounddef id="_plugboard_8cs" kind="file" language="C#">
+    <compoundname>Plugboard.cs</compoundname>
+    <innerclass refid="class_enigma2_1_1_plugboard" prot="public">Enigma2::Plugboard</innerclass>
+    <innernamespace refid="namespace_enigma2">Enigma2</innernamespace>
+    <innernamespace refid="namespace_microsoft_1_1_xna_1_1_framework">Microsoft::Xna::Framework</innernamespace>
+    <innernamespace refid="namespace_microsoft_1_1_xna_1_1_framework_1_1_audio">Microsoft::Xna::Framework::Audio</innernamespace>
+    <innernamespace refid="namespace_microsoft_1_1_xna_1_1_framework_1_1_content">Microsoft::Xna::Framework::Content</innernamespace>
+    <innernamespace refid="namespace_microsoft_1_1_xna_1_1_framework_1_1_graphics">Microsoft::Xna::Framework::Graphics</innernamespace>
+    <innernamespace refid="namespace_microsoft_1_1_xna_1_1_framework_1_1_input">Microsoft::Xna::Framework::Input</innernamespace>
+    <innernamespace refid="namespace_microsoft_1_1_xna_1_1_framework_1_1_media">Microsoft::Xna::Framework::Media</innernamespace>
+    <sectiondef kind="typedef">
+      <memberdef kind="typedef" id="_plugboard_8cs_1a8b703cd2b78e6accf5dad1c6e324ca37" prot="public" static="no">
+        <type>System.Windows.Forms</type>
+        <definition>using Forms =  System.Windows.Forms</definition>
+        <argsstring></argsstring>
+        <name>Forms</name>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/Plugboard.cs" line="10" column="1" bodyfile="Core/Plugboard.cs" bodystart="10" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <programlisting>
+<codeline lineno="1"><highlight class="keyword">using<sp/></highlight><highlight class="normal">System;</highlight></codeline>
+<codeline lineno="2"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Collections.Generic;</highlight></codeline>
+<codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Linq;</highlight></codeline>
+<codeline lineno="4"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Microsoft.Xna.Framework;</highlight></codeline>
+<codeline lineno="5"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Microsoft.Xna.Framework.Audio;</highlight></codeline>
+<codeline lineno="6"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Microsoft.Xna.Framework.Content;</highlight></codeline>
+<codeline lineno="7"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Microsoft.Xna.Framework.Graphics;</highlight></codeline>
+<codeline lineno="8"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Microsoft.Xna.Framework.Input;</highlight></codeline>
+<codeline lineno="9"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">Microsoft.Xna.Framework.Media;</highlight></codeline>
+<codeline lineno="10" refid="_plugboard_8cs_1a8b703cd2b78e6accf5dad1c6e324ca37" refkind="member"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal"><ref refid="_plugboard_8cs_1a8b703cd2b78e6accf5dad1c6e324ca37" kindref="member">Forms</ref><sp/>=<sp/>System.Windows.Forms;</highlight></codeline>
+<codeline lineno="11"><highlight class="normal"></highlight></codeline>
+<codeline lineno="12"><highlight class="normal"></highlight></codeline>
+<codeline lineno="13"><highlight class="normal"></highlight><highlight class="keyword">namespace<sp/></highlight><highlight class="normal"><ref refid="namespace_enigma2" kindref="compound">Enigma2</ref></highlight></codeline>
+<codeline lineno="14"><highlight class="normal">{</highlight></codeline>
+<codeline lineno="15"><highlight class="normal"></highlight></codeline>
+<codeline lineno="16" refid="class_enigma2_1_1_plugboard" refkind="compound"><highlight class="normal"><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">class<sp/></highlight><highlight class="normal"><ref refid="class_enigma2_1_1_plugboard" kindref="compound">Plugboard</ref><sp/>:<sp/>Microsoft.Xna.Framework.Game</highlight></codeline>
+<codeline lineno="17"><highlight class="normal"><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="18"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>GraphicsDeviceManager<sp/>graphics;</highlight></codeline>
+<codeline lineno="19"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>SpriteBatch<sp/>spriteBatch;</highlight></codeline>
+<codeline lineno="20" refid="class_enigma2_1_1_plugboard_1a6816b76806a0d11fb22d64e0f9fbba99" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/>Dictionary&lt;char,<sp/>char&gt;<sp/><ref refid="class_enigma2_1_1_plugboard_1a6816b76806a0d11fb22d64e0f9fbba99" kindref="member">replace</ref><sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>Dictionary&lt;char,<sp/>char&gt;();</highlight></codeline>
+<codeline lineno="21" refid="class_enigma2_1_1_plugboard_1aa768fa24f1b313c4220c6a6f248b44f5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">static</highlight><highlight class="normal"><sp/>MouseState<sp/><ref refid="class_enigma2_1_1_plugboard_1aa768fa24f1b313c4220c6a6f248b44f5" kindref="member">mouseOne</ref>,<sp/><ref refid="class_enigma2_1_1_plugboard_1a690746428feaeb67bbfa7c4f05ce9fe6" kindref="member">mouseTwo</ref>;</highlight></codeline>
+<codeline lineno="22"><highlight class="normal"></highlight></codeline>
+<codeline lineno="23" refid="class_enigma2_1_1_plugboard_1a784c3ef297119896fba1581d650ac2e3" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">public</highlight><highlight class="normal"><sp/><ref refid="class_enigma2_1_1_plugboard_1a784c3ef297119896fba1581d650ac2e3" kindref="member">Plugboard</ref>()</highlight></codeline>
+<codeline lineno="24"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="25"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>Forms.Form<sp/>frmXNA<sp/>=<sp/>(<ref refid="_plugboard_8cs_1a8b703cd2b78e6accf5dad1c6e324ca37" kindref="member">Forms</ref>.Form)<ref refid="_plugboard_8cs_1a8b703cd2b78e6accf5dad1c6e324ca37" kindref="member">Forms</ref>.Form.FromHandle(</highlight><highlight class="keyword">this</highlight><highlight class="normal">.Window.Handle);</highlight></codeline>
+<codeline lineno="26"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frmXNA.FormClosing<sp/>+=<sp/>(o,<sp/>e)<sp/>=&gt;</highlight></codeline>
+<codeline lineno="27"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="28"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>frmXNA.Opacity<sp/>=<sp/>0;</highlight></codeline>
+<codeline lineno="29"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>e.Cancel<sp/>=<sp/></highlight><highlight class="keyword">true</highlight><highlight class="normal">;</highlight></codeline>
+<codeline lineno="30"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>};</highlight></codeline>
+<codeline lineno="31"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="32"><highlight class="normal"></highlight></codeline>
+<codeline lineno="33" refid="class_enigma2_1_1_plugboard_1ab57b2ffe042d61c762b33f273065c6c7" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_enigma2_1_1_plugboard_1ab57b2ffe042d61c762b33f273065c6c7" kindref="member">LoadContent</ref>()</highlight></codeline>
+<codeline lineno="34"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="35"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>spriteBatch<sp/>=<sp/></highlight><highlight class="keyword">new</highlight><highlight class="normal"><sp/>SpriteBatch(GraphicsDevice);</highlight></codeline>
+<codeline lineno="36"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="37"><highlight class="normal"></highlight></codeline>
+<codeline lineno="38" refid="class_enigma2_1_1_plugboard_1a2d59981a73b2a2437d21826b144c0e68" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_enigma2_1_1_plugboard_1a2d59981a73b2a2437d21826b144c0e68" kindref="member">Update</ref>(GameTime<sp/>gameTime)</highlight></codeline>
+<codeline lineno="39"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="40"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="41" refid="class_enigma2_1_1_plugboard_1a9e5959b32b3453c879e396f9fe15c2d5" refkind="member"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/></highlight><highlight class="keyword">protected</highlight><highlight class="normal"><sp/></highlight><highlight class="keyword">override</highlight><highlight class="normal"><sp/></highlight><highlight class="keywordtype">void</highlight><highlight class="normal"><sp/><ref refid="class_enigma2_1_1_plugboard_1a9e5959b32b3453c879e396f9fe15c2d5" kindref="member">Draw</ref>(GameTime<sp/>gameTime)</highlight></codeline>
+<codeline lineno="42"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>{</highlight></codeline>
+<codeline lineno="43"><highlight class="normal"><sp/><sp/><sp/><sp/><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
+<codeline lineno="45"><highlight class="normal">}</highlight></codeline>
+    </programlisting>
+    <location file="Core/Plugboard.cs"/>
+  </compounddef>
+</doxygen>

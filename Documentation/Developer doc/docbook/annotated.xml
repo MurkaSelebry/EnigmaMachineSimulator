@@ -1,0 +1,6 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_annotated" xml:lang="ru">
+<title>Классы</title>
+Классы с их кратким описанием.<link linkend="_class_enigma2_1_1_base_enigma">Enigma2.BaseEnigma</link><link linkend="_class_enigma2_1_1_e_label">Enigma2.ELabel</link><link linkend="_class_enigma2_1_1_game_main">Enigma2.GameMain</link>
+<para>This is the main type for your game </para>
+<link linkend="_class_enigma2_1_1_plugboard">Enigma2.Plugboard</link><link linkend="_struct_enigma2_1_1_settings">Enigma2.Settings</link><link linkend="_class_enigma2_1_1_settings_form">Enigma2.SettingsForm</link></section>

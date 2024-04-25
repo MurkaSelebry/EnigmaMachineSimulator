@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__game_main_8cs" xml:lang="ru">
+<title>Файл GameMain.cs</title>
+<indexterm><primary>GameMain.cs</primary></indexterm>
+<simplesect>
+    <title>Классы    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_enigma2_1_1_game_main">Enigma2.GameMain</link></para>
+
+<para>This is the main type for your game. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Пространства имен    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_enigma2">Enigma2</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Определения типов    </title>
+        <itemizedlist>
+            <listitem><para>using <link linkend="__game_main_8cs_1ac374857d3a6da9627f0a654093c04538">Forms</link> = System.Windows.Forms</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Типы</title>
+<anchor xml:id="__game_main_8cs_1ac374857d3a6da9627f0a654093c04538"/><section>
+    <title>Forms</title>
+<indexterm><primary>Forms</primary><secondary>GameMain.cs</secondary></indexterm>
+<indexterm><primary>GameMain.cs</primary><secondary>Forms</secondary></indexterm>
+<para><computeroutput>using <link linkend="__plugboard_8cs_1a8b703cd2b78e6accf5dad1c6e324ca37">Forms</link> = System.Windows.Forms</computeroutput></para><para>
+См. определение в файле <link linkend="__game_main_8cs_source">GameMain.cs</link> строка <link linkend="__game_main_8cs_source_1l00010">10</link></para>
+</section>
+</section>
+</section>

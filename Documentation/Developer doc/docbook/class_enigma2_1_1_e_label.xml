@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_enigma2_1_1_e_label" xml:lang="ru">
+<title>Класс Enigma2.ELabel</title>
+<indexterm><primary>Enigma2.ELabel</primary></indexterm>
+<para>Граф наследования:Enigma2.ELabel:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_enigma2_1_1_e_label.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Защищенные члены    </title>
+        <itemizedlist>
+            <listitem><para>override void <link linkend="_class_enigma2_1_1_e_label_1adbeff2c16504ae3fa5d63dbc7579f97c">OnPaint</link> (System.Windows.Forms.PaintEventArgs e)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Свойства    </title>
+        <itemizedlist>
+            <listitem><para>int <link linkend="_class_enigma2_1_1_e_label_1aad8eebe6ca990f4dc0d1d99507011fba">RotateAngle</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+            <listitem><para>string <link linkend="_class_enigma2_1_1_e_label_1a1bdcc7b023a7a15bf8b711d9b8b6eb0b">NewText</link><computeroutput> [get, set]</computeroutput>
+</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Подробное описание</title>
+<para>
+См. определение в файле <link linkend="__e_label_8cs_source">ELabel.cs</link> строка <link linkend="__e_label_8cs_source_1l00009">9</link></para>
+</section>
+<section>
+<title>Методы</title>
+<anchor xml:id="_class_enigma2_1_1_e_label_1adbeff2c16504ae3fa5d63dbc7579f97c"/><section>
+    <title>OnPaint()</title>
+<indexterm><primary>OnPaint</primary><secondary>Enigma2.ELabel</secondary></indexterm>
+<indexterm><primary>Enigma2.ELabel</primary><secondary>OnPaint</secondary></indexterm>
+<para><computeroutput>override void Enigma2.ELabel.OnPaint (System::Windows::Forms::PaintEventArgs e)<computeroutput>[protected]</computeroutput></computeroutput></para><para>
+См. определение в файле <link linkend="__e_label_8cs_source">ELabel.cs</link> строка <link linkend="__e_label_8cs_source_1l00013">13</link></para>
+</section>
+</section>
+<section>
+<title>Полный список свойств</title>
+<anchor xml:id="_class_enigma2_1_1_e_label_1a1bdcc7b023a7a15bf8b711d9b8b6eb0b"/><section>
+    <title>NewText</title>
+<indexterm><primary>NewText</primary><secondary>Enigma2.ELabel</secondary></indexterm>
+<indexterm><primary>Enigma2.ELabel</primary><secondary>NewText</secondary></indexterm>
+<para><computeroutput>string Enigma2.ELabel.NewText<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+См. определение в файле <link linkend="__e_label_8cs_source">ELabel.cs</link> строка <link linkend="__e_label_8cs_source_1l00012">12</link></para>
+</section>
+<anchor xml:id="_class_enigma2_1_1_e_label_1aad8eebe6ca990f4dc0d1d99507011fba"/><section>
+    <title>RotateAngle</title>
+<indexterm><primary>RotateAngle</primary><secondary>Enigma2.ELabel</secondary></indexterm>
+<indexterm><primary>Enigma2.ELabel</primary><secondary>RotateAngle</secondary></indexterm>
+<para><computeroutput>int Enigma2.ELabel.RotateAngle<computeroutput>[get]</computeroutput>, <computeroutput>[set]</computeroutput></computeroutput></para><para>
+См. определение в файле <link linkend="__e_label_8cs_source">ELabel.cs</link> строка <link linkend="__e_label_8cs_source_1l00011">11</link></para>
+</section>
+<para>
+Объявления и описания членов класса находятся в файле:</para>
+Core/<link linkend="__e_label_8cs">ELabel.cs</link></section>
+</section>

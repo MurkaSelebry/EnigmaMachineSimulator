@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_enigma2_1_1_plugboard" xml:lang="ru">
+<title>Класс Enigma2.Plugboard</title>
+<indexterm><primary>Enigma2.Plugboard</primary></indexterm>
+<para>Граф наследования:Enigma2.Plugboard:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_enigma2_1_1_plugboard.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Открытые члены    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_enigma2_1_1_plugboard_1a784c3ef297119896fba1581d650ac2e3">Plugboard</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Открытые атрибуты    </title>
+        <itemizedlist>
+            <listitem><para>Dictionary&lt; char, char &gt; <link linkend="_class_enigma2_1_1_plugboard_1a6816b76806a0d11fb22d64e0f9fbba99">replace</link> = new Dictionary&lt;char, char&gt;()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Статические открытые данные    </title>
+        <itemizedlist>
+            <listitem><para>static MouseState <link linkend="_class_enigma2_1_1_plugboard_1aa768fa24f1b313c4220c6a6f248b44f5">mouseOne</link></para>
+</listitem>
+            <listitem><para>static MouseState <link linkend="_class_enigma2_1_1_plugboard_1a690746428feaeb67bbfa7c4f05ce9fe6">mouseTwo</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Защищенные члены    </title>
+        <itemizedlist>
+            <listitem><para>override void <link linkend="_class_enigma2_1_1_plugboard_1ab57b2ffe042d61c762b33f273065c6c7">LoadContent</link> ()</para>
+</listitem>
+            <listitem><para>override void <link linkend="_class_enigma2_1_1_plugboard_1a2d59981a73b2a2437d21826b144c0e68">Update</link> (GameTime gameTime)</para>
+</listitem>
+            <listitem><para>override void <link linkend="_class_enigma2_1_1_plugboard_1a9e5959b32b3453c879e396f9fe15c2d5">Draw</link> (GameTime gameTime)</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Подробное описание</title>
+<para>
+См. определение в файле <link linkend="__plugboard_8cs_source">Plugboard.cs</link> строка <link linkend="__plugboard_8cs_source_1l00016">16</link></para>
+</section>
+<section>
+<title>Конструктор(ы)</title>
+<anchor xml:id="_class_enigma2_1_1_plugboard_1a784c3ef297119896fba1581d650ac2e3"/><section>
+    <title>Plugboard()</title>
+<indexterm><primary>Plugboard</primary><secondary>Enigma2.Plugboard</secondary></indexterm>
+<indexterm><primary>Enigma2.Plugboard</primary><secondary>Plugboard</secondary></indexterm>
+<para><computeroutput>Enigma2.Plugboard.Plugboard ( )</computeroutput></para><para>
+См. определение в файле <link linkend="__plugboard_8cs_source">Plugboard.cs</link> строка <link linkend="__plugboard_8cs_source_1l00023">23</link></para>
+</section>
+</section>
+<section>
+<title>Методы</title>
+<anchor xml:id="_class_enigma2_1_1_plugboard_1a9e5959b32b3453c879e396f9fe15c2d5"/><section>
+    <title>Draw()</title>
+<indexterm><primary>Draw</primary><secondary>Enigma2.Plugboard</secondary></indexterm>
+<indexterm><primary>Enigma2.Plugboard</primary><secondary>Draw</secondary></indexterm>
+<para><computeroutput>override void Enigma2.Plugboard.Draw (GameTime gameTime)<computeroutput>[protected]</computeroutput></computeroutput></para><para>
+См. определение в файле <link linkend="__plugboard_8cs_source">Plugboard.cs</link> строка <link linkend="__plugboard_8cs_source_1l00041">41</link></para>
+</section>
+<anchor xml:id="_class_enigma2_1_1_plugboard_1ab57b2ffe042d61c762b33f273065c6c7"/><section>
+    <title>LoadContent()</title>
+<indexterm><primary>LoadContent</primary><secondary>Enigma2.Plugboard</secondary></indexterm>
+<indexterm><primary>Enigma2.Plugboard</primary><secondary>LoadContent</secondary></indexterm>
+<para><computeroutput>override void Enigma2.Plugboard.LoadContent ( )<computeroutput>[protected]</computeroutput></computeroutput></para><para>
+См. определение в файле <link linkend="__plugboard_8cs_source">Plugboard.cs</link> строка <link linkend="__plugboard_8cs_source_1l00033">33</link></para>
+</section>
+<anchor xml:id="_class_enigma2_1_1_plugboard_1a2d59981a73b2a2437d21826b144c0e68"/><section>
+    <title>Update()</title>
+<indexterm><primary>Update</primary><secondary>Enigma2.Plugboard</secondary></indexterm>
+<indexterm><primary>Enigma2.Plugboard</primary><secondary>Update</secondary></indexterm>
+<para><computeroutput>override void Enigma2.Plugboard.Update (GameTime gameTime)<computeroutput>[protected]</computeroutput></computeroutput></para><para>
+См. определение в файле <link linkend="__plugboard_8cs_source">Plugboard.cs</link> строка <link linkend="__plugboard_8cs_source_1l00038">38</link></para>
+</section>
+</section>
+<section>
+<title>Данные класса</title>
+<anchor xml:id="_class_enigma2_1_1_plugboard_1aa768fa24f1b313c4220c6a6f248b44f5"/><section>
+    <title>mouseOne</title>
+<indexterm><primary>mouseOne</primary><secondary>Enigma2.Plugboard</secondary></indexterm>
+<indexterm><primary>Enigma2.Plugboard</primary><secondary>mouseOne</secondary></indexterm>
+<para><computeroutput>MouseState Enigma2.Plugboard.mouseOne<computeroutput>[static]</computeroutput></computeroutput></para><para>
+См. определение в файле <link linkend="__plugboard_8cs_source">Plugboard.cs</link> строка <link linkend="__plugboard_8cs_source_1l00021">21</link></para>
+</section>
+<anchor xml:id="_class_enigma2_1_1_plugboard_1a690746428feaeb67bbfa7c4f05ce9fe6"/><section>
+    <title>mouseTwo</title>
+<indexterm><primary>mouseTwo</primary><secondary>Enigma2.Plugboard</secondary></indexterm>
+<indexterm><primary>Enigma2.Plugboard</primary><secondary>mouseTwo</secondary></indexterm>
+<para><computeroutput>MouseState Enigma2.Plugboard.mouseTwo<computeroutput>[static]</computeroutput></computeroutput></para><para>
+См. определение в файле <link linkend="__plugboard_8cs_source">Plugboard.cs</link> строка <link linkend="__plugboard_8cs_source_1l00021">21</link></para>
+</section>
+<anchor xml:id="_class_enigma2_1_1_plugboard_1a6816b76806a0d11fb22d64e0f9fbba99"/><section>
+    <title>replace</title>
+<indexterm><primary>replace</primary><secondary>Enigma2.Plugboard</secondary></indexterm>
+<indexterm><primary>Enigma2.Plugboard</primary><secondary>replace</secondary></indexterm>
+<para><computeroutput>Dictionary&lt;char, char&gt; Enigma2.Plugboard.replace = new Dictionary&lt;char, char&gt;()</computeroutput></para><para>
+См. определение в файле <link linkend="__plugboard_8cs_source">Plugboard.cs</link> строка <link linkend="__plugboard_8cs_source_1l00020">20</link></para>
+</section>
+<para>
+Объявления и описания членов класса находятся в файле:</para>
+Core/<link linkend="__plugboard_8cs">Plugboard.cs</link></section>
+</section>

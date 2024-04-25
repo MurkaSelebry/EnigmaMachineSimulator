@@ -1,0 +1,516 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__game_main_8cs_source" xml:lang="ru">
+<title>GameMain.cs</title>
+См. документацию.<programlisting linenumbering="unnumbered"><anchor xml:id="__game_main_8cs_source_1l00001"/>00001 <emphasis role="keyword">using&#32;</emphasis>System;
+<anchor xml:id="__game_main_8cs_source_1l00002"/>00002 <emphasis role="keyword">using&#32;</emphasis>System.Collections.Generic;
+<anchor xml:id="__game_main_8cs_source_1l00003"/>00003 <emphasis role="keyword">using&#32;</emphasis>System.Linq;
+<anchor xml:id="__game_main_8cs_source_1l00004"/>00004 <emphasis role="keyword">using&#32;</emphasis>Microsoft.Xna.Framework;
+<anchor xml:id="__game_main_8cs_source_1l00005"/>00005 <emphasis role="keyword">using&#32;</emphasis>Microsoft.Xna.Framework.Audio;
+<anchor xml:id="__game_main_8cs_source_1l00006"/>00006 <emphasis role="keyword">using&#32;</emphasis>Microsoft.Xna.Framework.Content;
+<anchor xml:id="__game_main_8cs_source_1l00007"/>00007 <emphasis role="keyword">using&#32;</emphasis>Microsoft.Xna.Framework.Graphics;
+<anchor xml:id="__game_main_8cs_source_1l00008"/>00008 <emphasis role="keyword">using&#32;</emphasis>Microsoft.Xna.Framework.Input;
+<anchor xml:id="__game_main_8cs_source_1l00009"/>00009 <emphasis role="keyword">using&#32;</emphasis>Microsoft.Xna.Framework.Media;
+<anchor xml:id="__game_main_8cs_source_1l00010"/><link linkend="__game_main_8cs_1ac374857d3a6da9627f0a654093c04538">00010</link> <emphasis role="keyword">using&#32;</emphasis><link linkend="__plugboard_8cs_1a8b703cd2b78e6accf5dad1c6e324ca37">Forms</link>=System.Windows.Forms;
+<anchor xml:id="__game_main_8cs_source_1l00011"/>00011 <emphasis role="keyword">using&#32;</emphasis>System.Diagnostics;
+<anchor xml:id="__game_main_8cs_source_1l00012"/>00012 
+<anchor xml:id="__game_main_8cs_source_1l00013"/>00013 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_enigma2">Enigma2</link>
+<anchor xml:id="__game_main_8cs_source_1l00014"/>00014 {
+<anchor xml:id="__game_main_8cs_source_1l00018"/><link linkend="_class_enigma2_1_1_game_main">00018</link> &#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">sealed</emphasis>&#32;<emphasis role="keyword">class&#32;</emphasis><link linkend="_class_enigma2_1_1_game_main">GameMain</link>&#32;:&#32;Microsoft.Xna.Framework.Game
+<anchor xml:id="__game_main_8cs_source_1l00019"/>00019 &#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00020"/>00020 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;GraphicsDeviceManager&#32;graphics;
+<anchor xml:id="__game_main_8cs_source_1l00021"/>00021 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SpriteBatch&#32;spriteBatch;
+<anchor xml:id="__game_main_8cs_source_1l00022"/><link linkend="_class_enigma2_1_1_game_main_1a9ba37a6c5028a07b7dfc43a8327faf47">00022</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_enigma2_1_1_base_enigma">BaseEnigma</link>&#32;<link linkend="_class_enigma2_1_1_game_main_1a9ba37a6c5028a07b7dfc43a8327faf47">enigma</link>&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<link linkend="_class_enigma2_1_1_base_enigma">BaseEnigma</link>();
+<anchor xml:id="__game_main_8cs_source_1l00023"/><link linkend="_class_enigma2_1_1_game_main_1a854fcefa9190257fb5d148c0f3838eb5">00023</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_enigma2_1_1_settings_form">SettingsForm</link>&#32;<link linkend="_class_enigma2_1_1_game_main_1a854fcefa9190257fb5d148c0f3838eb5">formSettings</link>;
+<anchor xml:id="__game_main_8cs_source_1l00024"/>00024 
+<anchor xml:id="__game_main_8cs_source_1l00025"/><link linkend="_class_enigma2_1_1_game_main_1a04290fc94a94b41eb8980584bac32555">00025</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">static</emphasis>&#32;MouseState&#32;<link linkend="_class_enigma2_1_1_game_main_1a04290fc94a94b41eb8980584bac32555">mouseOne</link>,&#32;<link linkend="_class_enigma2_1_1_game_main_1a3e8371d4ea48b000633930dc733df38d">mouseTwo</link>;
+<anchor xml:id="__game_main_8cs_source_1l00026"/><link linkend="_class_enigma2_1_1_game_main_1a9aab07803544f8f5f3b2cd112dec334b">00026</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">static</emphasis>&#32;KeyboardState&#32;<link linkend="_class_enigma2_1_1_game_main_1a9aab07803544f8f5f3b2cd112dec334b">keybOne</link>,&#32;<link linkend="_class_enigma2_1_1_game_main_1a571c793df25a5b255e0bd08adc2107b4">keybTwo</link>;
+<anchor xml:id="__game_main_8cs_source_1l00027"/><link linkend="_class_enigma2_1_1_game_main_1ada6aa9c46995956f41f52ac12efee7b2">00027</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keyword">static</emphasis>&#32;SpriteFont&#32;<link linkend="_class_enigma2_1_1_game_main_1ada6aa9c46995956f41f52ac12efee7b2">fontBase</link>,&#32;<link linkend="_class_enigma2_1_1_game_main_1ab58254bc957224320973432bc7d87f93">fontMini</link>,&#32;<link linkend="_class_enigma2_1_1_game_main_1abc807c2302a298e4eb38f966cc7438ad">fontSpec</link>,&#32;<link linkend="_class_enigma2_1_1_game_main_1af0cf4346d460eaeacfeb9a5eee2526b5">fontSpecMini</link>;
+<anchor xml:id="__game_main_8cs_source_1l00028"/>00028 
+<anchor xml:id="__game_main_8cs_source_1l00029"/>00029 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Color&#32;colorBack&#32;=&#32;Color.FromNonPremultiplied(55,&#32;58,&#32;65,&#32;255);
+<anchor xml:id="__game_main_8cs_source_1l00030"/>00030 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Color&#32;colorGray&#32;=&#32;Color.FromNonPremultiplied(97,&#32;97,&#32;97,&#32;255);
+<anchor xml:id="__game_main_8cs_source_1l00031"/>00031 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Texture2D&#32;textureBg,&#32;textureSymbol,&#32;textureLed,&#32;textureRotor,&#32;textureInfo,&#32;textureOut,&#32;textureBolt,&#32;textureLock,&#32;textureBack,&#32;textureText,
+<anchor xml:id="__game_main_8cs_source_1l00032"/>00032 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;texturePlug,&#32;textureActivePlug;
+<anchor xml:id="__game_main_8cs_source_1l00033"/>00033 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Texture2D[]&#32;sliders&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;Texture2D[2];
+<anchor xml:id="__game_main_8cs_source_1l00034"/>00034 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>[]&#32;sliderPositions&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>[4];
+<anchor xml:id="__game_main_8cs_source_1l00035"/>00035 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;SoundEffect&#32;soundUp,&#32;soundDown,&#32;soundTick;
+<anchor xml:id="__game_main_8cs_source_1l00036"/>00036 
+<anchor xml:id="__game_main_8cs_source_1l00037"/>00037 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">float</emphasis>&#32;volume&#32;=&#32;0.6f;
+<anchor xml:id="__game_main_8cs_source_1l00038"/><link linkend="_class_enigma2_1_1_game_main_1ac6dd6a405c5f137687069b7dbaf8b13d">00038</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">bool</emphasis>&#32;<link linkend="_class_enigma2_1_1_game_main_1ac6dd6a405c5f137687069b7dbaf8b13d">customReflector</link>&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="__game_main_8cs_source_1l00039"/><link linkend="_class_enigma2_1_1_game_main_1a1514e258edf3a2f59d48dd38e767b19b">00039</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">string</emphasis>&#32;<link linkend="_class_enigma2_1_1_game_main_1a1514e258edf3a2f59d48dd38e767b19b">reflector</link>&#32;=&#32;<emphasis role="stringliteral">&quot;&quot;</emphasis>;
+<anchor xml:id="__game_main_8cs_source_1l00040"/>00040 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;showPlugboard&#32;=&#32;<emphasis role="keyword">false</emphasis>;&#32;<emphasis role="comment">//&#32;TODO</emphasis>
+<anchor xml:id="__game_main_8cs_source_1l00041"/>00041 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;useM4&#32;=&#32;<emphasis role="keyword">false</emphasis>;&#32;<emphasis role="comment">//&#32;TODO</emphasis>
+<anchor xml:id="__game_main_8cs_source_1l00042"/>00042 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;isWait&#32;=&#32;<emphasis role="keyword">false</emphasis>,&#32;isRemove&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="__game_main_8cs_source_1l00043"/><link linkend="_class_enigma2_1_1_game_main_1a2d85539fefe29e0adf3822af7f521869">00043</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;Dictionary&lt;char,&#32;char&gt;&#32;<link linkend="_class_enigma2_1_1_game_main_1a2d85539fefe29e0adf3822af7f521869">replace</link>;
+<anchor xml:id="__game_main_8cs_source_1l00044"/>00044 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;List&lt;char&gt;&#32;charset&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;List&lt;char&gt;();
+<anchor xml:id="__game_main_8cs_source_1l00045"/>00045 
+<anchor xml:id="__game_main_8cs_source_1l00046"/>00046 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;WIDTH&#32;=&#32;538;
+<anchor xml:id="__game_main_8cs_source_1l00047"/>00047 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">const</emphasis>&#32;<emphasis role="keywordtype">int</emphasis>&#32;HEIGHT&#32;=&#32;640;
+<anchor xml:id="__game_main_8cs_source_1l00048"/>00048 
+<anchor xml:id="__game_main_8cs_source_1l00049"/><link linkend="_class_enigma2_1_1_game_main_1afa5f10cdf0a4fbf4234f44aac9348b37">00049</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<link linkend="_class_enigma2_1_1_game_main_1afa5f10cdf0a4fbf4234f44aac9348b37">GameMain</link>()
+<anchor xml:id="__game_main_8cs_source_1l00050"/>00050 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00051"/>00051 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;graphics&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;GraphicsDeviceManager(<emphasis role="keyword">this</emphasis>);
+<anchor xml:id="__game_main_8cs_source_1l00052"/>00052 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Content.RootDirectory&#32;=&#32;<emphasis role="stringliteral">&quot;Content&quot;</emphasis>;
+<anchor xml:id="__game_main_8cs_source_1l00053"/>00053 
+<anchor xml:id="__game_main_8cs_source_1l00054"/>00054 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.IsMouseVisible&#32;=&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="__game_main_8cs_source_1l00055"/>00055 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.Window.Title&#32;=&#32;<emphasis role="stringliteral">&quot;Enigma&#32;Simulator&quot;</emphasis>;
+<anchor xml:id="__game_main_8cs_source_1l00056"/>00056 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00057"/>00057 
+<anchor xml:id="__game_main_8cs_source_1l00058"/><link linkend="_class_enigma2_1_1_game_main_1a600b3a23fd7354229b853a5952f49fc3">00058</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">protected</emphasis>&#32;<emphasis role="keyword">override</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_enigma2_1_1_game_main_1a600b3a23fd7354229b853a5952f49fc3">LoadContent</link>()
+<anchor xml:id="__game_main_8cs_source_1l00059"/>00059 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00060"/>00060 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;spriteBatch&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;SpriteBatch(GraphicsDevice);
+<anchor xml:id="__game_main_8cs_source_1l00061"/>00061 
+<anchor xml:id="__game_main_8cs_source_1l00062"/>00062 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_enigma2_1_1_game_main_1ada6aa9c46995956f41f52ac12efee7b2">fontBase</link>&#32;=&#32;Content.Load&lt;SpriteFont&gt;(<emphasis role="stringliteral">&quot;BaseFont&quot;</emphasis>);
+<anchor xml:id="__game_main_8cs_source_1l00063"/>00063 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_enigma2_1_1_game_main_1ab58254bc957224320973432bc7d87f93">fontMini</link>&#32;=&#32;Content.Load&lt;SpriteFont&gt;(<emphasis role="stringliteral">&quot;MiniFont&quot;</emphasis>);
+<anchor xml:id="__game_main_8cs_source_1l00064"/>00064 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_enigma2_1_1_game_main_1abc807c2302a298e4eb38f966cc7438ad">fontSpec</link>&#32;=&#32;Content.Load&lt;SpriteFont&gt;(<emphasis role="stringliteral">&quot;SpecFont&quot;</emphasis>);
+<anchor xml:id="__game_main_8cs_source_1l00065"/>00065 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_enigma2_1_1_game_main_1af0cf4346d460eaeacfeb9a5eee2526b5">fontSpecMini</link>&#32;=&#32;Content.Load&lt;SpriteFont&gt;(<emphasis role="stringliteral">&quot;SpecMiniFont&quot;</emphasis>);
+<anchor xml:id="__game_main_8cs_source_1l00066"/>00066 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;textureSymbol&#32;=&#32;Content.Load&lt;Texture2D&gt;(<emphasis role="stringliteral">&quot;symbol&quot;</emphasis>);
+<anchor xml:id="__game_main_8cs_source_1l00067"/>00067 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;textureLed&#32;=&#32;Content.Load&lt;Texture2D&gt;(<emphasis role="stringliteral">&quot;led&quot;</emphasis>);
+<anchor xml:id="__game_main_8cs_source_1l00068"/>00068 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;textureRotor&#32;=&#32;Content.Load&lt;Texture2D&gt;(<emphasis role="stringliteral">&quot;rotor&quot;</emphasis>);
+<anchor xml:id="__game_main_8cs_source_1l00069"/>00069 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;textureInfo&#32;=&#32;Content.Load&lt;Texture2D&gt;(<emphasis role="stringliteral">&quot;info&quot;</emphasis>);
+<anchor xml:id="__game_main_8cs_source_1l00070"/>00070 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;textureOut&#32;=&#32;Content.Load&lt;Texture2D&gt;(<emphasis role="stringliteral">&quot;out&quot;</emphasis>);
+<anchor xml:id="__game_main_8cs_source_1l00071"/>00071 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;textureBolt&#32;=&#32;Content.Load&lt;Texture2D&gt;(<emphasis role="stringliteral">&quot;bolt&quot;</emphasis>);
+<anchor xml:id="__game_main_8cs_source_1l00072"/>00072 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;textureLock&#32;=&#32;Content.Load&lt;Texture2D&gt;(<emphasis role="stringliteral">&quot;lock&quot;</emphasis>);
+<anchor xml:id="__game_main_8cs_source_1l00073"/>00073 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;textureBack&#32;=&#32;Content.Load&lt;Texture2D&gt;(<emphasis role="stringliteral">&quot;back&quot;</emphasis>);
+<anchor xml:id="__game_main_8cs_source_1l00074"/>00074 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;textureText&#32;=&#32;Content.Load&lt;Texture2D&gt;(<emphasis role="stringliteral">&quot;text&quot;</emphasis>);
+<anchor xml:id="__game_main_8cs_source_1l00075"/>00075 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;textureBg&#32;=&#32;Content.Load&lt;Texture2D&gt;(<emphasis role="stringliteral">&quot;bg&quot;</emphasis>);
+<anchor xml:id="__game_main_8cs_source_1l00076"/>00076 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;texturePlug&#32;=&#32;Content.Load&lt;Texture2D&gt;(<emphasis role="stringliteral">&quot;plug&quot;</emphasis>);
+<anchor xml:id="__game_main_8cs_source_1l00077"/>00077 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;textureActivePlug&#32;=&#32;Content.Load&lt;Texture2D&gt;(<emphasis role="stringliteral">&quot;aplug&quot;</emphasis>);
+<anchor xml:id="__game_main_8cs_source_1l00078"/>00078 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;sliders[0]&#32;=&#32;Content.Load&lt;Texture2D&gt;(<emphasis role="stringliteral">&quot;slider0&quot;</emphasis>);
+<anchor xml:id="__game_main_8cs_source_1l00079"/>00079 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;sliders[1]&#32;=&#32;Content.Load&lt;Texture2D&gt;(<emphasis role="stringliteral">&quot;slider1&quot;</emphasis>);
+<anchor xml:id="__game_main_8cs_source_1l00080"/>00080 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;soundUp&#32;=&#32;Content.Load&lt;SoundEffect&gt;(<emphasis role="stringliteral">&quot;up&quot;</emphasis>);
+<anchor xml:id="__game_main_8cs_source_1l00081"/>00081 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;soundDown&#32;=&#32;Content.Load&lt;SoundEffect&gt;(<emphasis role="stringliteral">&quot;down&quot;</emphasis>);
+<anchor xml:id="__game_main_8cs_source_1l00082"/>00082 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;soundTick&#32;=&#32;Content.Load&lt;SoundEffect&gt;(<emphasis role="stringliteral">&quot;tick&quot;</emphasis>);
+<anchor xml:id="__game_main_8cs_source_1l00083"/>00083 
+<anchor xml:id="__game_main_8cs_source_1l00084"/>00084 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;sliderPositions[0]&#32;=&#32;0;
+<anchor xml:id="__game_main_8cs_source_1l00085"/>00085 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;sliderPositions[1]&#32;=&#32;0;
+<anchor xml:id="__game_main_8cs_source_1l00086"/>00086 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;sliderPositions[2]&#32;=&#32;0;
+<anchor xml:id="__game_main_8cs_source_1l00087"/>00087 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;sliderPositions[3]&#32;=&#32;0;
+<anchor xml:id="__game_main_8cs_source_1l00088"/>00088 
+<anchor xml:id="__game_main_8cs_source_1l00089"/>00089 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_enigma2_1_1_game_main_1a1514e258edf3a2f59d48dd38e767b19b">reflector</link>&#32;=&#32;<link linkend="_class_enigma2_1_1_base_enigma">BaseEnigma</link>.<link linkend="_class_enigma2_1_1_base_enigma_1a32f2d5f5b656ccdcf146b59a8e7abd60">reflectorB</link>;
+<anchor xml:id="__game_main_8cs_source_1l00090"/>00090 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//formSettings&#32;=&#32;new&#32;SettingsForm(this);</emphasis>
+<anchor xml:id="__game_main_8cs_source_1l00091"/>00091 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_enigma2_1_1_game_main_1a2d85539fefe29e0adf3822af7f521869">replace</link>&#32;=&#32;<link linkend="_class_enigma2_1_1_game_main_1a9ba37a6c5028a07b7dfc43a8327faf47">enigma</link>.<link linkend="_class_enigma2_1_1_base_enigma_1ac33a8464aa9b4e5b7ae0e67d8d0b0536">Replace</link>;
+<anchor xml:id="__game_main_8cs_source_1l00092"/>00092 
+<anchor xml:id="__game_main_8cs_source_1l00093"/>00093 
+<anchor xml:id="__game_main_8cs_source_1l00094"/>00094 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;graphics.PreferredBackBufferWidth&#32;=&#32;WIDTH;
+<anchor xml:id="__game_main_8cs_source_1l00095"/>00095 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;graphics.PreferredBackBufferHeight&#32;=&#32;HEIGHT;
+<anchor xml:id="__game_main_8cs_source_1l00096"/>00096 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;graphics.ApplyChanges();
+<anchor xml:id="__game_main_8cs_source_1l00097"/>00097 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00098"/>00098 
+<anchor xml:id="__game_main_8cs_source_1l00099"/><link linkend="_class_enigma2_1_1_game_main_1a728ad7694c31f2719dbbaea560531ee6">00099</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">protected</emphasis>&#32;<emphasis role="keyword">override</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_enigma2_1_1_game_main_1a728ad7694c31f2719dbbaea560531ee6">Update</link>(GameTime&#32;gameTime)
+<anchor xml:id="__game_main_8cs_source_1l00100"/>00100 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00101"/>00101 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_enigma2_1_1_game_main_1a3e8371d4ea48b000633930dc733df38d">mouseTwo</link>&#32;=&#32;<link linkend="_class_enigma2_1_1_game_main_1a04290fc94a94b41eb8980584bac32555">mouseOne</link>;
+<anchor xml:id="__game_main_8cs_source_1l00102"/>00102 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_enigma2_1_1_game_main_1a571c793df25a5b255e0bd08adc2107b4">keybTwo</link>&#32;=&#32;<link linkend="_class_enigma2_1_1_game_main_1a9aab07803544f8f5f3b2cd112dec334b">keybOne</link>;
+<anchor xml:id="__game_main_8cs_source_1l00103"/>00103 
+<anchor xml:id="__game_main_8cs_source_1l00104"/>00104 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_enigma2_1_1_game_main_1a04290fc94a94b41eb8980584bac32555">mouseOne</link>&#32;=&#32;Mouse.GetState();
+<anchor xml:id="__game_main_8cs_source_1l00105"/>00105 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_enigma2_1_1_game_main_1a9aab07803544f8f5f3b2cd112dec334b">keybOne</link>&#32;=&#32;Keyboard.GetState();
+<anchor xml:id="__game_main_8cs_source_1l00106"/>00106 
+<anchor xml:id="__game_main_8cs_source_1l00107"/>00107 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(isSend)
+<anchor xml:id="__game_main_8cs_source_1l00108"/>00108 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00109"/>00109 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;soundDown.Play(volume,&#32;0,&#32;0);
+<anchor xml:id="__game_main_8cs_source_1l00110"/>00110 
+<anchor xml:id="__game_main_8cs_source_1l00111"/>00111 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;r1&#32;=&#32;<link linkend="_class_enigma2_1_1_game_main_1a9ba37a6c5028a07b7dfc43a8327faf47">enigma</link>.<link linkend="_class_enigma2_1_1_base_enigma_1a1cf18c40e3a08009f43d7b178856c9e0">key</link>[0],&#32;r2&#32;=&#32;<link linkend="_class_enigma2_1_1_game_main_1a9ba37a6c5028a07b7dfc43a8327faf47">enigma</link>.<link linkend="_class_enigma2_1_1_base_enigma_1a1cf18c40e3a08009f43d7b178856c9e0">key</link>[1],&#32;r3&#32;=&#32;<link linkend="_class_enigma2_1_1_game_main_1a9ba37a6c5028a07b7dfc43a8327faf47">enigma</link>.<link linkend="_class_enigma2_1_1_base_enigma_1a1cf18c40e3a08009f43d7b178856c9e0">key</link>[2];
+<anchor xml:id="__game_main_8cs_source_1l00112"/>00112 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;charSend&#32;=&#32;<link linkend="_class_enigma2_1_1_game_main_1a9ba37a6c5028a07b7dfc43a8327faf47">enigma</link>.Encode(charCurrent,&#32;<link linkend="_class_enigma2_1_1_game_main_1a1514e258edf3a2f59d48dd38e767b19b">reflector</link>);
+<anchor xml:id="__game_main_8cs_source_1l00113"/>00113 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(r1&#32;!=&#32;<link linkend="_class_enigma2_1_1_game_main_1a9ba37a6c5028a07b7dfc43a8327faf47">enigma</link>.<link linkend="_class_enigma2_1_1_base_enigma_1a1cf18c40e3a08009f43d7b178856c9e0">key</link>[0])
+<anchor xml:id="__game_main_8cs_source_1l00114"/>00114 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;sliderPositions[0]&#32;=&#32;sliderPositions[0]&#32;==&#32;0&#32;?&#32;1&#32;:&#32;0;
+<anchor xml:id="__game_main_8cs_source_1l00115"/>00115 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(r2&#32;!=&#32;<link linkend="_class_enigma2_1_1_game_main_1a9ba37a6c5028a07b7dfc43a8327faf47">enigma</link>.<link linkend="_class_enigma2_1_1_base_enigma_1a1cf18c40e3a08009f43d7b178856c9e0">key</link>[1])
+<anchor xml:id="__game_main_8cs_source_1l00116"/>00116 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;sliderPositions[1]&#32;=&#32;sliderPositions[1]&#32;==&#32;0&#32;?&#32;1&#32;:&#32;0;
+<anchor xml:id="__game_main_8cs_source_1l00117"/>00117 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(r3&#32;!=&#32;<link linkend="_class_enigma2_1_1_game_main_1a9ba37a6c5028a07b7dfc43a8327faf47">enigma</link>.<link linkend="_class_enigma2_1_1_base_enigma_1a1cf18c40e3a08009f43d7b178856c9e0">key</link>[2])
+<anchor xml:id="__game_main_8cs_source_1l00118"/>00118 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;sliderPositions[2]&#32;=&#32;sliderPositions[2]&#32;==&#32;0&#32;?&#32;1&#32;:&#32;0;
+<anchor xml:id="__game_main_8cs_source_1l00119"/>00119 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">/*if&#32;(message.Length&#32;==&#32;22)</emphasis>
+<anchor xml:id="__game_main_8cs_source_1l00120"/>00120 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;message&#32;=&#32;message.Remove(0,&#32;1);*/</emphasis>
+<anchor xml:id="__game_main_8cs_source_1l00121"/>00121 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_enigma2_1_1_game_main_1a3e6351bd5cb71f0eda92b6c2e674f6c4">message</link>&#32;+=&#32;charSend;
+<anchor xml:id="__game_main_8cs_source_1l00122"/>00122 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;isSend&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="__game_main_8cs_source_1l00123"/>00123 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00124"/>00124 
+<anchor xml:id="__game_main_8cs_source_1l00125"/>00125 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">/*if&#32;(keybOne.IsKeyDown(Keys.Left))</emphasis>
+<anchor xml:id="__game_main_8cs_source_1l00126"/>00126 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;x&#32;-=&#32;1;</emphasis>
+<anchor xml:id="__game_main_8cs_source_1l00127"/>00127 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;else&#32;if&#32;(keybOne.IsKeyDown(Keys.Right))</emphasis>
+<anchor xml:id="__game_main_8cs_source_1l00128"/>00128 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;x&#32;+=&#32;1;</emphasis>
+<anchor xml:id="__game_main_8cs_source_1l00129"/>00129 <emphasis role="comment"></emphasis>
+<anchor xml:id="__game_main_8cs_source_1l00130"/>00130 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;if&#32;(keybOne.IsKeyDown(Keys.Up))</emphasis>
+<anchor xml:id="__game_main_8cs_source_1l00131"/>00131 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;y&#32;-=&#32;1;</emphasis>
+<anchor xml:id="__game_main_8cs_source_1l00132"/>00132 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;else&#32;if&#32;(keybOne.IsKeyDown(Keys.Down))</emphasis>
+<anchor xml:id="__game_main_8cs_source_1l00133"/>00133 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;y&#32;+=&#32;1;*/</emphasis>
+<anchor xml:id="__game_main_8cs_source_1l00134"/>00134 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;base.Update(gameTime);
+<anchor xml:id="__game_main_8cs_source_1l00135"/>00135 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00136"/>00136 
+<anchor xml:id="__game_main_8cs_source_1l00137"/>00137 
+<anchor xml:id="__game_main_8cs_source_1l00138"/>00138 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;startX&#32;=&#32;62;
+<anchor xml:id="__game_main_8cs_source_1l00139"/>00139 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;startY&#32;=&#32;468;
+<anchor xml:id="__game_main_8cs_source_1l00140"/>00140 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;x&#32;=&#32;0,&#32;y&#32;=&#32;0;
+<anchor xml:id="__game_main_8cs_source_1l00141"/>00141 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;isSettings&#32;=&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="__game_main_8cs_source_1l00142"/>00142 
+<anchor xml:id="__game_main_8cs_source_1l00143"/><link linkend="_class_enigma2_1_1_game_main_1ae3360c0053ff567bebcc5787de4e543b">00143</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_enigma2_1_1_game_main_1ae3360c0053ff567bebcc5787de4e543b">SetSettings</link>(<link linkend="_struct_enigma2_1_1_settings">Settings</link>&#32;settings)
+<anchor xml:id="__game_main_8cs_source_1l00144"/>00144 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00145"/>00145 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;enigma.ring&#32;=&#32;settings.<link linkend="_struct_enigma2_1_1_settings_1aa78f34d378b9eb5018a32be94af039f7">ring</link>;
+<anchor xml:id="__game_main_8cs_source_1l00146"/>00146 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;enigma._rotors&#32;=&#32;settings.<link linkend="_struct_enigma2_1_1_settings_1a08a762a0eee5050bfd481b13ada65925">rotors</link>;
+<anchor xml:id="__game_main_8cs_source_1l00147"/>00147 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;enigma.key&#32;=&#32;settings.<link linkend="_struct_enigma2_1_1_settings_1a8b8a95b2467d15c67191da02dab68e2c">key</link>;
+<anchor xml:id="__game_main_8cs_source_1l00148"/>00148 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;enigma.Replace&#32;=&#32;<link linkend="_class_enigma2_1_1_game_main_1a2d85539fefe29e0adf3822af7f521869">replace</link>&#32;=&#32;settings.<link linkend="_struct_enigma2_1_1_settings_1ab9687826f05dea58696a7df6894d5097">replace</link>;
+<anchor xml:id="__game_main_8cs_source_1l00149"/>00149 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_enigma2_1_1_game_main_1ac6dd6a405c5f137687069b7dbaf8b13d">customReflector</link>&#32;=&#32;settings.<link linkend="_struct_enigma2_1_1_settings_1a350b8e0f4ff88d5a9e497c647f9848ba">customReflector</link>;
+<anchor xml:id="__game_main_8cs_source_1l00150"/>00150 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_enigma2_1_1_game_main_1a1514e258edf3a2f59d48dd38e767b19b">reflector</link>&#32;=&#32;settings.<link linkend="_struct_enigma2_1_1_settings_1af7e0fbc1e56f28d7e7d501a0034d4c15">reflector</link>;
+<anchor xml:id="__game_main_8cs_source_1l00151"/>00151 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;volume&#32;=&#32;settings.<link linkend="_struct_enigma2_1_1_settings_1a93f957db78e54194f51eef0c503d18b5">sound</link>;
+<anchor xml:id="__game_main_8cs_source_1l00152"/>00152 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;useM4&#32;=&#32;settings.<link linkend="_struct_enigma2_1_1_settings_1a4d9705e96f593a5286caa2210ca38f4c">useM4</link>;
+<anchor xml:id="__game_main_8cs_source_1l00153"/>00153 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00154"/>00154 
+<anchor xml:id="__game_main_8cs_source_1l00155"/><link linkend="_class_enigma2_1_1_game_main_1aaa8bb801e494ee7329a835566c4a4488">00155</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_enigma2_1_1_game_main_1aaa8bb801e494ee7329a835566c4a4488">CloseSettings</link>()
+<anchor xml:id="__game_main_8cs_source_1l00156"/>00156 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00157"/>00157 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;isSettings&#32;=&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="__game_main_8cs_source_1l00158"/>00158 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00159"/>00159 
+<anchor xml:id="__game_main_8cs_source_1l00160"/><link linkend="_class_enigma2_1_1_game_main_1a5e4d6ae472eb5b8d28a502778c71e1cd">00160</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">protected</emphasis>&#32;<emphasis role="keyword">override</emphasis>&#32;<emphasis role="keywordtype">void</emphasis>&#32;<link linkend="_class_enigma2_1_1_game_main_1a5e4d6ae472eb5b8d28a502778c71e1cd">Draw</link>(GameTime&#32;gameTime)
+<anchor xml:id="__game_main_8cs_source_1l00161"/>00161 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00162"/>00162 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;GraphicsDevice.Clear(colorBack);
+<anchor xml:id="__game_main_8cs_source_1l00163"/>00163 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;spriteBatch.Begin();
+<anchor xml:id="__game_main_8cs_source_1l00164"/>00164 
+<anchor xml:id="__game_main_8cs_source_1l00165"/>00165 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;spriteBatch.Draw(textureBg,&#32;Vector2.Zero,&#32;Color.White);
+<anchor xml:id="__game_main_8cs_source_1l00166"/>00166 
+<anchor xml:id="__game_main_8cs_source_1l00167"/>00167 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(showPlugboard)
+<anchor xml:id="__game_main_8cs_source_1l00168"/>00168 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00169"/>00169 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;drawPlugs();
+<anchor xml:id="__game_main_8cs_source_1l00170"/>00170 
+<anchor xml:id="__game_main_8cs_source_1l00171"/>00171 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;drawPlugboardButtonHide();
+<anchor xml:id="__game_main_8cs_source_1l00172"/>00172 
+<anchor xml:id="__game_main_8cs_source_1l00173"/>00173 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//keybOne.GetPressedKeys</emphasis>
+<anchor xml:id="__game_main_8cs_source_1l00174"/>00174 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00175"/>00175 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>
+<anchor xml:id="__game_main_8cs_source_1l00176"/>00176 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00177"/>00177 
+<anchor xml:id="__game_main_8cs_source_1l00178"/>00178 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(useM4)
+<anchor xml:id="__game_main_8cs_source_1l00179"/>00179 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00180"/>00180 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;drawRotor(3,&#32;120&#32;-&#32;60&#32;-&#32;27);
+<anchor xml:id="__game_main_8cs_source_1l00181"/>00181 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;drawRotor(0,&#32;120);
+<anchor xml:id="__game_main_8cs_source_1l00182"/>00182 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;drawRotor(1,&#32;120&#32;+&#32;60&#32;+&#32;27);
+<anchor xml:id="__game_main_8cs_source_1l00183"/>00183 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;drawRotor(2,&#32;120&#32;+&#32;120&#32;+&#32;27&#32;+&#32;27);
+<anchor xml:id="__game_main_8cs_source_1l00184"/>00184 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00185"/>00185 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>
+<anchor xml:id="__game_main_8cs_source_1l00186"/>00186 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00187"/>00187 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;drawRotor(0,&#32;120);
+<anchor xml:id="__game_main_8cs_source_1l00188"/>00188 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;drawRotor(1,&#32;120&#32;+&#32;60&#32;+&#32;27);
+<anchor xml:id="__game_main_8cs_source_1l00189"/>00189 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;drawRotor(2,&#32;120&#32;+&#32;120&#32;+&#32;27&#32;+&#32;27);
+<anchor xml:id="__game_main_8cs_source_1l00190"/>00190 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00191"/>00191 
+<anchor xml:id="__game_main_8cs_source_1l00192"/>00192 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;spriteBatch.Draw(textureInfo,&#32;<emphasis role="keyword">new</emphasis>&#32;Vector2(431,&#32;10),&#32;Color.White);
+<anchor xml:id="__game_main_8cs_source_1l00193"/>00193 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;spriteBatch.Draw(textureOut,&#32;<emphasis role="keyword">new</emphasis>&#32;Vector2(464,&#32;99),&#32;Color.White);&#32;<emphasis role="comment">//&#32;391&#32;+&#32;(97&#32;/&#32;2)&#32;-&#32;15</emphasis>
+<anchor xml:id="__game_main_8cs_source_1l00194"/>00194 
+<anchor xml:id="__game_main_8cs_source_1l00195"/>00195 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;drawSettings();
+<anchor xml:id="__game_main_8cs_source_1l00196"/>00196 
+<anchor xml:id="__game_main_8cs_source_1l00197"/>00197 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;drawInput();
+<anchor xml:id="__game_main_8cs_source_1l00198"/>00198 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;drawOutput();
+<anchor xml:id="__game_main_8cs_source_1l00199"/>00199 
+<anchor xml:id="__game_main_8cs_source_1l00200"/>00200 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;drawPlugboardButtonShow();
+<anchor xml:id="__game_main_8cs_source_1l00201"/>00201 
+<anchor xml:id="__game_main_8cs_source_1l00202"/>00202 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;drawText();
+<anchor xml:id="__game_main_8cs_source_1l00203"/>00203 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">//</emphasis>
+<anchor xml:id="__game_main_8cs_source_1l00204"/>00204 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00205"/>00205 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="__game_main_8cs_source_1l00206"/>00206 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;spriteBatch.End();
+<anchor xml:id="__game_main_8cs_source_1l00207"/>00207 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;base.Draw(gameTime);
+<anchor xml:id="__game_main_8cs_source_1l00208"/>00208 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00209"/>00209 
+<anchor xml:id="__game_main_8cs_source_1l00210"/>00210 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;drawText()
+<anchor xml:id="__game_main_8cs_source_1l00211"/>00211 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00212"/>00212 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;spriteBatch.Draw(textureText,&#32;<emphasis role="keyword">new</emphasis>&#32;Vector2(20,&#32;20),&#32;Color.White);
+<anchor xml:id="__game_main_8cs_source_1l00213"/>00213 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;msg&#32;=&#32;<link linkend="_class_enigma2_1_1_game_main_1a3e6351bd5cb71f0eda92b6c2e674f6c4">message</link>;
+<anchor xml:id="__game_main_8cs_source_1l00214"/>00214 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>(<link linkend="_class_enigma2_1_1_game_main_1a3e6351bd5cb71f0eda92b6c2e674f6c4">message</link>.Length&#32;&gt;&#32;23)
+<anchor xml:id="__game_main_8cs_source_1l00215"/>00215 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;msg&#32;=&#32;<link linkend="_class_enigma2_1_1_game_main_1a3e6351bd5cb71f0eda92b6c2e674f6c4">message</link>.Substring(<link linkend="_class_enigma2_1_1_game_main_1a3e6351bd5cb71f0eda92b6c2e674f6c4">message</link>.Length&#32;-&#32;22,&#32;22);
+<anchor xml:id="__game_main_8cs_source_1l00216"/>00216 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Vector2&#32;tmp&#32;=&#32;<link linkend="_class_enigma2_1_1_game_main_1af0cf4346d460eaeacfeb9a5eee2526b5">fontSpecMini</link>.MeasureString(msg);
+<anchor xml:id="__game_main_8cs_source_1l00217"/>00217 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Vector2&#32;position&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;Vector2(40,&#32;42);
+<anchor xml:id="__game_main_8cs_source_1l00218"/>00218 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Rectangle&#32;pos&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;Rectangle((<emphasis role="keywordtype">int</emphasis>)position.X,&#32;(<emphasis role="keywordtype">int</emphasis>)position.Y,&#32;(<emphasis role="keywordtype">int</emphasis>)tmp.X,&#32;(<emphasis role="keywordtype">int</emphasis>)tmp.Y);
+<anchor xml:id="__game_main_8cs_source_1l00219"/>00219 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;spriteBatch.DrawString(<link linkend="_class_enigma2_1_1_game_main_1af0cf4346d460eaeacfeb9a5eee2526b5">fontSpecMini</link>,&#32;msg,&#32;position,&#32;Color.Black);
+<anchor xml:id="__game_main_8cs_source_1l00220"/>00220 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>(pos.Contains(<link linkend="_class_enigma2_1_1_game_main_1a04290fc94a94b41eb8980584bac32555">mouseOne</link>.X,&#32;<link linkend="_class_enigma2_1_1_game_main_1a04290fc94a94b41eb8980584bac32555">mouseOne</link>.Y)&#32;&amp;&amp;&#32;<link linkend="_class_enigma2_1_1_game_main_1a04290fc94a94b41eb8980584bac32555">mouseOne</link>.LeftButton&#32;==&#32;ButtonState.Pressed&#32;&amp;&amp;&#32;<link linkend="_class_enigma2_1_1_game_main_1a3e8371d4ea48b000633930dc733df38d">mouseTwo</link>.LeftButton&#32;==&#32;ButtonState.Released)
+<anchor xml:id="__game_main_8cs_source_1l00221"/>00221 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00222"/>00222 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_enigma2_1_1_game_main_1a854fcefa9190257fb5d148c0f3838eb5">formSettings</link>.<link linkend="_class_enigma2_1_1_settings_form_1a308f388fc580f47f293daaf18e5062c6">Copy</link>();
+<anchor xml:id="__game_main_8cs_source_1l00223"/>00223 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00224"/>00224 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00225"/>00225 
+<anchor xml:id="__game_main_8cs_source_1l00226"/>00226 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;drawPlugboardButtonShow()
+<anchor xml:id="__game_main_8cs_source_1l00227"/>00227 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00228"/>00228 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Rectangle&#32;position&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;Rectangle(224,&#32;620,&#32;90,&#32;20);
+<anchor xml:id="__game_main_8cs_source_1l00229"/>00229 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="__game_main_8cs_source_1l00230"/>00230 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(position.Contains(<link linkend="_class_enigma2_1_1_game_main_1a04290fc94a94b41eb8980584bac32555">mouseOne</link>.X,&#32;<link linkend="_class_enigma2_1_1_game_main_1a04290fc94a94b41eb8980584bac32555">mouseOne</link>.Y)&#32;&amp;&amp;&#32;<link linkend="_class_enigma2_1_1_game_main_1a04290fc94a94b41eb8980584bac32555">mouseOne</link>.LeftButton&#32;==&#32;ButtonState.Pressed&#32;&amp;&amp;&#32;<link linkend="_class_enigma2_1_1_game_main_1a3e8371d4ea48b000633930dc733df38d">mouseTwo</link>.LeftButton&#32;==&#32;ButtonState.Released)
+<anchor xml:id="__game_main_8cs_source_1l00231"/>00231 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00232"/>00232 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;showPlugboard&#32;=&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="__game_main_8cs_source_1l00233"/>00233 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;soundTick.Play(volume,&#32;0,&#32;0);
+<anchor xml:id="__game_main_8cs_source_1l00234"/>00234 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.Window.Title&#32;=&#32;<emphasis role="stringliteral">&quot;Enigma&#32;Simulator&#32;[Plugboard]&quot;</emphasis>;
+<anchor xml:id="__game_main_8cs_source_1l00235"/>00235 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;isSettings&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="__game_main_8cs_source_1l00236"/>00236 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_enigma2_1_1_game_main_1a854fcefa9190257fb5d148c0f3838eb5">formSettings</link>.Hide();
+<anchor xml:id="__game_main_8cs_source_1l00237"/>00237 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">/*graphics.PreferredBackBufferHeight&#32;=&#32;HEIGHT&#32;-&#32;400;</emphasis>
+<anchor xml:id="__game_main_8cs_source_1l00238"/>00238 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;graphics.ApplyChanges();*/</emphasis>
+<anchor xml:id="__game_main_8cs_source_1l00239"/>00239 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00240"/>00240 
+<anchor xml:id="__game_main_8cs_source_1l00241"/>00241 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;spriteBatch.Draw(textureBack,&#32;position,&#32;Color.White);
+<anchor xml:id="__game_main_8cs_source_1l00242"/>00242 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00243"/>00243 
+<anchor xml:id="__game_main_8cs_source_1l00244"/>00244 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;drawPlugboardButtonHide()
+<anchor xml:id="__game_main_8cs_source_1l00245"/>00245 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00246"/>00246 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Rectangle&#32;position&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;Rectangle(314,&#32;20,&#32;90,&#32;20);
+<anchor xml:id="__game_main_8cs_source_1l00247"/>00247 
+<anchor xml:id="__game_main_8cs_source_1l00248"/>00248 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(position.Contains(<link linkend="_class_enigma2_1_1_game_main_1a04290fc94a94b41eb8980584bac32555">mouseOne</link>.X&#32;+&#32;90,&#32;<link linkend="_class_enigma2_1_1_game_main_1a04290fc94a94b41eb8980584bac32555">mouseOne</link>.Y&#32;+&#32;20)&#32;&amp;&amp;&#32;<link linkend="_class_enigma2_1_1_game_main_1a04290fc94a94b41eb8980584bac32555">mouseOne</link>.LeftButton&#32;==&#32;ButtonState.Pressed&#32;&amp;&amp;&#32;<link linkend="_class_enigma2_1_1_game_main_1a3e8371d4ea48b000633930dc733df38d">mouseTwo</link>.LeftButton&#32;==&#32;ButtonState.Released)
+<anchor xml:id="__game_main_8cs_source_1l00249"/>00249 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00250"/>00250 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;showPlugboard&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="__game_main_8cs_source_1l00251"/>00251 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;soundTick.Play(volume,&#32;0,&#32;0);
+<anchor xml:id="__game_main_8cs_source_1l00252"/>00252 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;this.Window.Title&#32;=&#32;<emphasis role="stringliteral">&quot;Enigma&#32;Simulator&quot;</emphasis>;
+<anchor xml:id="__game_main_8cs_source_1l00253"/>00253 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;isSettings&#32;=&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="__game_main_8cs_source_1l00254"/>00254 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="comment">/*graphics.PreferredBackBufferHeight&#32;=&#32;HEIGHT;</emphasis>
+<anchor xml:id="__game_main_8cs_source_1l00255"/>00255 <emphasis role="comment">&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;graphics.ApplyChanges();*/</emphasis>
+<anchor xml:id="__game_main_8cs_source_1l00256"/>00256 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00257"/>00257 
+<anchor xml:id="__game_main_8cs_source_1l00258"/>00258 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;spriteBatch.Draw(textureBack,&#32;position,&#32;<emphasis role="keyword">null</emphasis>,&#32;Color.White,&#32;180&#32;*&#32;MathHelper.Pi&#32;/&#32;180,&#32;Vector2.Zero,&#32;SpriteEffects.None,&#32;1);
+<anchor xml:id="__game_main_8cs_source_1l00259"/>00259 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00260"/>00260 
+<anchor xml:id="__game_main_8cs_source_1l00261"/>00261 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;drawSettings()
+<anchor xml:id="__game_main_8cs_source_1l00262"/>00262 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00263"/>00263 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Rectangle&#32;position&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;Rectangle(425,&#32;243,&#32;35,&#32;35);
+<anchor xml:id="__game_main_8cs_source_1l00264"/>00264 
+<anchor xml:id="__game_main_8cs_source_1l00265"/>00265 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(position.Contains(<link linkend="_class_enigma2_1_1_game_main_1a04290fc94a94b41eb8980584bac32555">mouseOne</link>.X,&#32;<link linkend="_class_enigma2_1_1_game_main_1a04290fc94a94b41eb8980584bac32555">mouseOne</link>.Y)&#32;&amp;&amp;&#32;<link linkend="_class_enigma2_1_1_game_main_1a04290fc94a94b41eb8980584bac32555">mouseOne</link>.LeftButton&#32;==&#32;ButtonState.Pressed&#32;&amp;&amp;&#32;<link linkend="_class_enigma2_1_1_game_main_1a3e8371d4ea48b000633930dc733df38d">mouseTwo</link>.LeftButton&#32;==&#32;ButtonState.Released&#32;&amp;&amp;&#32;isSettings)
+<anchor xml:id="__game_main_8cs_source_1l00266"/>00266 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00267"/>00267 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;isSettings&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="__game_main_8cs_source_1l00268"/>00268 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;soundTick.Play(volume,&#32;0,&#32;0);
+<anchor xml:id="__game_main_8cs_source_1l00269"/>00269 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_enigma2_1_1_game_main_1a854fcefa9190257fb5d148c0f3838eb5">formSettings</link>.Show();
+<anchor xml:id="__game_main_8cs_source_1l00270"/>00270 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00271"/>00271 
+<anchor xml:id="__game_main_8cs_source_1l00272"/>00272 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;spriteBatch.Draw(textureBolt,&#32;<emphasis role="keyword">new</emphasis>&#32;Vector2(400,&#32;238),&#32;Color.White);
+<anchor xml:id="__game_main_8cs_source_1l00273"/>00273 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;spriteBatch.Draw(textureBolt,&#32;<emphasis role="keyword">new</emphasis>&#32;Vector2(400&#32;+&#32;75,&#32;238),&#32;Color.White);
+<anchor xml:id="__game_main_8cs_source_1l00274"/>00274 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;spriteBatch.Draw(textureLock,&#32;position,&#32;Color.White);
+<anchor xml:id="__game_main_8cs_source_1l00275"/>00275 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;spriteBatch.Draw(textureBolt,&#32;<emphasis role="keyword">new</emphasis>&#32;Vector2(400,&#32;278),&#32;Color.White);
+<anchor xml:id="__game_main_8cs_source_1l00276"/>00276 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;spriteBatch.Draw(textureBolt,&#32;<emphasis role="keyword">new</emphasis>&#32;Vector2(400&#32;+&#32;75,&#32;278),&#32;Color.White);
+<anchor xml:id="__game_main_8cs_source_1l00277"/>00277 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00278"/>00278 
+<anchor xml:id="__game_main_8cs_source_1l00279"/>00279 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;drawRotor(<emphasis role="keywordtype">int</emphasis>&#32;rotor,&#32;<emphasis role="keywordtype">int</emphasis>&#32;xStart)
+<anchor xml:id="__game_main_8cs_source_1l00280"/>00280 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00281"/>00281 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;spriteBatch.Draw(textureRotor,&#32;<emphasis role="keyword">new</emphasis>&#32;Vector2(xStart,&#32;150),&#32;Color.White);
+<anchor xml:id="__game_main_8cs_source_1l00282"/>00282 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;symbol&#32;=&#32;(char)(<link linkend="_class_enigma2_1_1_game_main_1a9ba37a6c5028a07b7dfc43a8327faf47">enigma</link>.<link linkend="_class_enigma2_1_1_base_enigma_1a1cf18c40e3a08009f43d7b178856c9e0">key</link>[rotor]&#32;+&#32;65);
+<anchor xml:id="__game_main_8cs_source_1l00283"/>00283 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;spriteBatch.DrawString(<link linkend="_class_enigma2_1_1_game_main_1ada6aa9c46995956f41f52ac12efee7b2">fontBase</link>,&#32;symbol.ToString(),&#32;<emphasis role="keyword">new</emphasis>&#32;Vector2(xStart&#32;+&#32;18&#32;+&#32;(symbol&#32;==&#32;<emphasis role="charliteral">&apos;I&apos;</emphasis>&#32;?&#32;4&#32;:&#32;0),&#32;206),&#32;Color.Black);
+<anchor xml:id="__game_main_8cs_source_1l00284"/>00284 
+<anchor xml:id="__game_main_8cs_source_1l00285"/>00285 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Rectangle&#32;position&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;Rectangle(xStart&#32;+&#32;45&#32;+&#32;(27&#32;/&#32;2),&#32;150,&#32;14,&#32;116);
+<anchor xml:id="__game_main_8cs_source_1l00286"/>00286 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Rectangle&#32;pos1&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;Rectangle(position.X,&#32;position.Y,&#32;position.Width,&#32;position.Height&#32;-&#32;58);
+<anchor xml:id="__game_main_8cs_source_1l00287"/>00287 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Rectangle&#32;pos2&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;Rectangle(position.X,&#32;position.Y&#32;+&#32;58,&#32;position.Width,&#32;position.Height&#32;-&#32;58);
+<anchor xml:id="__game_main_8cs_source_1l00288"/>00288 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(pos1.Contains(<link linkend="_class_enigma2_1_1_game_main_1a04290fc94a94b41eb8980584bac32555">mouseOne</link>.X,&#32;<link linkend="_class_enigma2_1_1_game_main_1a04290fc94a94b41eb8980584bac32555">mouseOne</link>.Y)&#32;&amp;&amp;&#32;<link linkend="_class_enigma2_1_1_game_main_1a04290fc94a94b41eb8980584bac32555">mouseOne</link>.LeftButton&#32;==&#32;ButtonState.Pressed&#32;&amp;&amp;&#32;<link linkend="_class_enigma2_1_1_game_main_1a3e8371d4ea48b000633930dc733df38d">mouseTwo</link>.LeftButton&#32;==&#32;ButtonState.Released&#32;&amp;&amp;&#32;isSettings)
+<anchor xml:id="__game_main_8cs_source_1l00289"/>00289 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00290"/>00290 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_enigma2_1_1_game_main_1a9ba37a6c5028a07b7dfc43a8327faf47">enigma</link>.BackAt(rotor);
+<anchor xml:id="__game_main_8cs_source_1l00291"/>00291 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;sliderPositions[rotor]&#32;=&#32;sliderPositions[rotor]&#32;==&#32;0&#32;?&#32;1&#32;:&#32;0;
+<anchor xml:id="__game_main_8cs_source_1l00292"/>00292 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;soundUp.Play(volume,&#32;0,&#32;0);
+<anchor xml:id="__game_main_8cs_source_1l00293"/>00293 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00294"/>00294 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>&#32;<emphasis role="keywordflow">if</emphasis>&#32;(pos2.Contains(<link linkend="_class_enigma2_1_1_game_main_1a04290fc94a94b41eb8980584bac32555">mouseOne</link>.X,&#32;<link linkend="_class_enigma2_1_1_game_main_1a04290fc94a94b41eb8980584bac32555">mouseOne</link>.Y)&#32;&amp;&amp;&#32;<link linkend="_class_enigma2_1_1_game_main_1a04290fc94a94b41eb8980584bac32555">mouseOne</link>.LeftButton&#32;==&#32;ButtonState.Pressed&#32;&amp;&amp;&#32;<link linkend="_class_enigma2_1_1_game_main_1a3e8371d4ea48b000633930dc733df38d">mouseTwo</link>.LeftButton&#32;==&#32;ButtonState.Released&#32;&amp;&amp;&#32;isSettings)
+<anchor xml:id="__game_main_8cs_source_1l00295"/>00295 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00296"/>00296 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_enigma2_1_1_game_main_1a9ba37a6c5028a07b7dfc43a8327faf47">enigma</link>.MoveAt(rotor);
+<anchor xml:id="__game_main_8cs_source_1l00297"/>00297 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;sliderPositions[rotor]&#32;=&#32;sliderPositions[rotor]&#32;==&#32;0&#32;?&#32;1&#32;:&#32;0;
+<anchor xml:id="__game_main_8cs_source_1l00298"/>00298 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;soundUp.Play(volume,&#32;0,&#32;0);
+<anchor xml:id="__game_main_8cs_source_1l00299"/>00299 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00300"/>00300 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;spriteBatch.Draw(sliders[sliderPositions[rotor]],&#32;position,&#32;Color.White);
+<anchor xml:id="__game_main_8cs_source_1l00301"/>00301 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00302"/>00302 
+<anchor xml:id="__game_main_8cs_source_1l00303"/>00303 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;drawOutput()
+<anchor xml:id="__game_main_8cs_source_1l00304"/>00304 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00305"/>00305 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;
+<anchor xml:id="__game_main_8cs_source_1l00306"/>00306 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">foreach</emphasis>&#32;(var&#32;x&#32;<emphasis role="keywordflow">in</emphasis>&#32;<emphasis role="stringliteral">&quot;QWERTZUIO&quot;</emphasis>)
+<anchor xml:id="__game_main_8cs_source_1l00307"/>00307 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00308"/>00308 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;drawLed(startX&#32;+&#32;47&#32;*&#32;i,&#32;startY&#32;-&#32;150&#32;-&#32;10,&#32;x);
+<anchor xml:id="__game_main_8cs_source_1l00309"/>00309 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;i++;
+<anchor xml:id="__game_main_8cs_source_1l00310"/>00310 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00311"/>00311 
+<anchor xml:id="__game_main_8cs_source_1l00312"/>00312 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;i&#32;=&#32;0;
+<anchor xml:id="__game_main_8cs_source_1l00313"/>00313 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">foreach</emphasis>&#32;(var&#32;x&#32;<emphasis role="keywordflow">in</emphasis>&#32;<emphasis role="stringliteral">&quot;ASDFGHJK&quot;</emphasis>)
+<anchor xml:id="__game_main_8cs_source_1l00314"/>00314 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00315"/>00315 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;drawLed(startX&#32;+&#32;(47&#32;/&#32;2)&#32;+&#32;1&#32;+&#32;47&#32;*&#32;i,&#32;startY&#32;-&#32;100&#32;-&#32;10,&#32;x);
+<anchor xml:id="__game_main_8cs_source_1l00316"/>00316 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;i++;
+<anchor xml:id="__game_main_8cs_source_1l00317"/>00317 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00318"/>00318 
+<anchor xml:id="__game_main_8cs_source_1l00319"/>00319 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;i&#32;=&#32;0;
+<anchor xml:id="__game_main_8cs_source_1l00320"/>00320 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">foreach</emphasis>&#32;(var&#32;x&#32;<emphasis role="keywordflow">in</emphasis>&#32;<emphasis role="stringliteral">&quot;PYXCVBNML&quot;</emphasis>)
+<anchor xml:id="__game_main_8cs_source_1l00321"/>00321 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00322"/>00322 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;drawLed(startX&#32;+&#32;47&#32;*&#32;i,&#32;startY&#32;-&#32;50&#32;-&#32;10,&#32;x);
+<anchor xml:id="__game_main_8cs_source_1l00323"/>00323 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;i++;
+<anchor xml:id="__game_main_8cs_source_1l00324"/>00324 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00325"/>00325 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00326"/>00326 
+<anchor xml:id="__game_main_8cs_source_1l00327"/>00327 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;drawInput()
+<anchor xml:id="__game_main_8cs_source_1l00328"/>00328 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00329"/>00329 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;
+<anchor xml:id="__game_main_8cs_source_1l00330"/>00330 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">foreach</emphasis>&#32;(var&#32;x&#32;<emphasis role="keywordflow">in</emphasis>&#32;<emphasis role="stringliteral">&quot;QWERTZUIO&quot;</emphasis>)
+<anchor xml:id="__game_main_8cs_source_1l00331"/>00331 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00332"/>00332 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;drawButton(startX&#32;+&#32;47&#32;*&#32;i,&#32;startY,&#32;x);
+<anchor xml:id="__game_main_8cs_source_1l00333"/>00333 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;i++;
+<anchor xml:id="__game_main_8cs_source_1l00334"/>00334 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00335"/>00335 
+<anchor xml:id="__game_main_8cs_source_1l00336"/>00336 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;i&#32;=&#32;0;
+<anchor xml:id="__game_main_8cs_source_1l00337"/>00337 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">foreach</emphasis>&#32;(var&#32;x&#32;<emphasis role="keywordflow">in</emphasis>&#32;<emphasis role="stringliteral">&quot;ASDFGHJK&quot;</emphasis>)
+<anchor xml:id="__game_main_8cs_source_1l00338"/>00338 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00339"/>00339 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;drawButton(startX&#32;+&#32;(47&#32;/&#32;2)&#32;+&#32;1&#32;+&#32;47&#32;*&#32;i,&#32;startY&#32;+&#32;50,&#32;x);
+<anchor xml:id="__game_main_8cs_source_1l00340"/>00340 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;i++;
+<anchor xml:id="__game_main_8cs_source_1l00341"/>00341 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00342"/>00342 
+<anchor xml:id="__game_main_8cs_source_1l00343"/>00343 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;i&#32;=&#32;0;
+<anchor xml:id="__game_main_8cs_source_1l00344"/>00344 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">foreach</emphasis>&#32;(var&#32;x&#32;<emphasis role="keywordflow">in</emphasis>&#32;<emphasis role="stringliteral">&quot;PYXCVBNML&quot;</emphasis>)
+<anchor xml:id="__game_main_8cs_source_1l00345"/>00345 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00346"/>00346 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;drawButton(startX&#32;+&#32;47&#32;*&#32;i,&#32;startY&#32;+&#32;100,&#32;x);
+<anchor xml:id="__game_main_8cs_source_1l00347"/>00347 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;i++;
+<anchor xml:id="__game_main_8cs_source_1l00348"/>00348 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00349"/>00349 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00350"/>00350 
+<anchor xml:id="__game_main_8cs_source_1l00351"/>00351 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;isNumber&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="__game_main_8cs_source_1l00352"/>00352 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;drawPlugs()
+<anchor xml:id="__game_main_8cs_source_1l00353"/>00353 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00354"/>00354 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;startY&#32;=&#32;HEIGHT&#32;-&#32;410;
+<anchor xml:id="__game_main_8cs_source_1l00355"/>00355 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;startX&#32;=&#32;20;
+<anchor xml:id="__game_main_8cs_source_1l00356"/>00356 
+<anchor xml:id="__game_main_8cs_source_1l00357"/>00357 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;spriteBatch.DrawString(<link linkend="_class_enigma2_1_1_game_main_1abc807c2302a298e4eb38f966cc7438ad">fontSpec</link>,&#32;<emphasis role="stringliteral">&quot;Steckerbrett&quot;</emphasis>,&#32;<emphasis role="keyword">new</emphasis>&#32;Vector2(100,&#32;130),&#32;Color.White);
+<anchor xml:id="__game_main_8cs_source_1l00358"/>00358 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;copy&#32;=&#32;<emphasis role="stringliteral">&quot;by&#32;A.Valko&#32;�&#32;2015&quot;</emphasis>;
+<anchor xml:id="__game_main_8cs_source_1l00359"/>00359 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Vector2&#32;size&#32;=&#32;<link linkend="_class_enigma2_1_1_game_main_1af0cf4346d460eaeacfeb9a5eee2526b5">fontSpecMini</link>.MeasureString(copy);
+<anchor xml:id="__game_main_8cs_source_1l00360"/>00360 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Rectangle&#32;pos&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;Rectangle((<emphasis role="keywordtype">int</emphasis>)((WIDTH&#32;-&#32;size.X)&#32;/&#32;2),&#32;HEIGHT&#32;-&#32;22,&#32;(<emphasis role="keywordtype">int</emphasis>)size.X,&#32;(<emphasis role="keywordtype">int</emphasis>)size.Y);
+<anchor xml:id="__game_main_8cs_source_1l00361"/>00361 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;spriteBatch.DrawString(<link linkend="_class_enigma2_1_1_game_main_1af0cf4346d460eaeacfeb9a5eee2526b5">fontSpecMini</link>,&#32;copy,&#32;<emphasis role="keyword">new</emphasis>&#32;Vector2((WIDTH&#32;-&#32;size.X)&#32;/&#32;2,&#32;HEIGHT&#32;-&#32;22),&#32;Color.White);
+<anchor xml:id="__game_main_8cs_source_1l00362"/>00362 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>(pos.Contains(<link linkend="_class_enigma2_1_1_game_main_1a04290fc94a94b41eb8980584bac32555">mouseOne</link>.X,&#32;<link linkend="_class_enigma2_1_1_game_main_1a04290fc94a94b41eb8980584bac32555">mouseOne</link>.Y)&#32;&amp;&amp;&#32;<link linkend="_class_enigma2_1_1_game_main_1a04290fc94a94b41eb8980584bac32555">mouseOne</link>.LeftButton&#32;==&#32;ButtonState.Pressed&#32;&amp;&amp;&#32;<link linkend="_class_enigma2_1_1_game_main_1a3e8371d4ea48b000633930dc733df38d">mouseTwo</link>.LeftButton&#32;==&#32;ButtonState.Released)
+<anchor xml:id="__game_main_8cs_source_1l00363"/>00363 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00364"/>00364 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Process.Start(<emphasis role="stringliteral">&quot;https://vk.com/artemworld&quot;</emphasis>);
+<anchor xml:id="__game_main_8cs_source_1l00365"/>00365 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00366"/>00366 
+<anchor xml:id="__game_main_8cs_source_1l00367"/>00367 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Rectangle&#32;pos1&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;Rectangle(6,&#32;285,&#32;18,&#32;50),&#32;pos2&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;Rectangle(513,&#32;285,&#32;18,&#32;50);
+<anchor xml:id="__game_main_8cs_source_1l00368"/>00368 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;spriteBatch.Draw(texturePlug,&#32;pos1,&#32;<emphasis role="keyword">new</emphasis>&#32;Rectangle(0,&#32;0,&#32;18,&#32;50),&#32;Color.White);
+<anchor xml:id="__game_main_8cs_source_1l00369"/>00369 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;spriteBatch.Draw(texturePlug,&#32;pos2,&#32;<emphasis role="keyword">new</emphasis>&#32;Rectangle(0,&#32;0,&#32;18,&#32;50),&#32;Color.White);
+<anchor xml:id="__game_main_8cs_source_1l00370"/>00370 
+<anchor xml:id="__game_main_8cs_source_1l00371"/>00371 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;((pos1.Contains(<link linkend="_class_enigma2_1_1_game_main_1a04290fc94a94b41eb8980584bac32555">mouseOne</link>.X,&#32;<link linkend="_class_enigma2_1_1_game_main_1a04290fc94a94b41eb8980584bac32555">mouseOne</link>.Y)&#32;||&#32;pos2.Contains(<link linkend="_class_enigma2_1_1_game_main_1a04290fc94a94b41eb8980584bac32555">mouseOne</link>.X,&#32;<link linkend="_class_enigma2_1_1_game_main_1a04290fc94a94b41eb8980584bac32555">mouseOne</link>.Y))&#32;&amp;&amp;&#32;<link linkend="_class_enigma2_1_1_game_main_1a04290fc94a94b41eb8980584bac32555">mouseOne</link>.LeftButton&#32;==&#32;ButtonState.Pressed&#32;&amp;&amp;&#32;<link linkend="_class_enigma2_1_1_game_main_1a3e8371d4ea48b000633930dc733df38d">mouseTwo</link>.LeftButton&#32;==&#32;ButtonState.Released)
+<anchor xml:id="__game_main_8cs_source_1l00372"/>00372 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;isNumber&#32;=&#32;!isNumber;
+<anchor xml:id="__game_main_8cs_source_1l00373"/>00373 
+<anchor xml:id="__game_main_8cs_source_1l00374"/>00374 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>[]&#32;arr1,&#32;arr2,&#32;arr3;
+<anchor xml:id="__game_main_8cs_source_1l00375"/>00375 
+<anchor xml:id="__game_main_8cs_source_1l00376"/>00376 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;arr1&#32;=&#32;<emphasis role="stringliteral">&quot;ABCDEFGHI&quot;</emphasis>.ToCharArray();
+<anchor xml:id="__game_main_8cs_source_1l00377"/>00377 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;arr2&#32;=&#32;<emphasis role="stringliteral">&quot;JKLMNOPQ&quot;</emphasis>.ToCharArray();
+<anchor xml:id="__game_main_8cs_source_1l00378"/>00378 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;arr3&#32;=&#32;<emphasis role="stringliteral">&quot;RSTUVWXYZ&quot;</emphasis>.ToCharArray();
+<anchor xml:id="__game_main_8cs_source_1l00379"/>00379 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;
+<anchor xml:id="__game_main_8cs_source_1l00380"/>00380 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;i&#32;=&#32;0;
+<anchor xml:id="__game_main_8cs_source_1l00381"/>00381 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">foreach</emphasis>&#32;(<emphasis role="keywordtype">char</emphasis>&#32;c&#32;<emphasis role="keywordflow">in</emphasis>&#32;arr1)
+<anchor xml:id="__game_main_8cs_source_1l00382"/>00382 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00383"/>00383 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;drawPlug(startX&#32;+&#32;60&#32;*&#32;i,&#32;startY,&#32;c);
+<anchor xml:id="__game_main_8cs_source_1l00384"/>00384 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;i++;
+<anchor xml:id="__game_main_8cs_source_1l00385"/>00385 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00386"/>00386 
+<anchor xml:id="__game_main_8cs_source_1l00387"/>00387 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;i&#32;=&#32;0;
+<anchor xml:id="__game_main_8cs_source_1l00388"/>00388 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">foreach</emphasis>&#32;(<emphasis role="keywordtype">char</emphasis>&#32;c&#32;<emphasis role="keywordflow">in</emphasis>&#32;arr2)
+<anchor xml:id="__game_main_8cs_source_1l00389"/>00389 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00390"/>00390 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;drawPlug(startX&#32;+&#32;31&#32;+&#32;60&#32;*&#32;i,&#32;startY&#32;+&#32;60,&#32;c);
+<anchor xml:id="__game_main_8cs_source_1l00391"/>00391 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;i++;
+<anchor xml:id="__game_main_8cs_source_1l00392"/>00392 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00393"/>00393 
+<anchor xml:id="__game_main_8cs_source_1l00394"/>00394 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;i&#32;=&#32;0;
+<anchor xml:id="__game_main_8cs_source_1l00395"/>00395 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">foreach</emphasis>&#32;(<emphasis role="keywordtype">char</emphasis>&#32;c&#32;<emphasis role="keywordflow">in</emphasis>&#32;arr3)
+<anchor xml:id="__game_main_8cs_source_1l00396"/>00396 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00397"/>00397 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;drawPlug(startX&#32;+&#32;60&#32;*&#32;i,&#32;startY&#32;+&#32;120,&#32;c);
+<anchor xml:id="__game_main_8cs_source_1l00398"/>00398 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;i++;
+<anchor xml:id="__game_main_8cs_source_1l00399"/>00399 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00400"/>00400 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00401"/>00401 
+<anchor xml:id="__game_main_8cs_source_1l00402"/>00402 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;waitSymbol&#32;=&#32;<emphasis role="charliteral">&apos;\0&apos;</emphasis>;
+<anchor xml:id="__game_main_8cs_source_1l00403"/>00403 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;drawPlug(<emphasis role="keywordtype">int</emphasis>&#32;x,&#32;<emphasis role="keywordtype">int</emphasis>&#32;y,&#32;<emphasis role="keywordtype">char</emphasis>&#32;symbol)
+<anchor xml:id="__game_main_8cs_source_1l00404"/>00404 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00405"/>00405 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Rectangle&#32;position&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;Rectangle(x,&#32;y,&#32;18,&#32;71);
+<anchor xml:id="__game_main_8cs_source_1l00406"/>00406 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(position.Contains(<link linkend="_class_enigma2_1_1_game_main_1a04290fc94a94b41eb8980584bac32555">mouseOne</link>.X,&#32;<link linkend="_class_enigma2_1_1_game_main_1a04290fc94a94b41eb8980584bac32555">mouseOne</link>.Y)&#32;&amp;&amp;&#32;<link linkend="_class_enigma2_1_1_game_main_1a04290fc94a94b41eb8980584bac32555">mouseOne</link>.LeftButton&#32;==&#32;ButtonState.Pressed&#32;&amp;&amp;&#32;<link linkend="_class_enigma2_1_1_game_main_1a3e8371d4ea48b000633930dc733df38d">mouseTwo</link>.LeftButton&#32;==&#32;ButtonState.Released)
+<anchor xml:id="__game_main_8cs_source_1l00407"/>00407 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00408"/>00408 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(isWait)
+<anchor xml:id="__game_main_8cs_source_1l00409"/>00409 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00410"/>00410 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(symbol&#32;==&#32;waitSymbol)
+<anchor xml:id="__game_main_8cs_source_1l00411"/>00411 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;charset.Remove(symbol);
+<anchor xml:id="__game_main_8cs_source_1l00412"/>00412 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>&#32;<emphasis role="keywordflow">if</emphasis>&#32;(<link linkend="_class_enigma2_1_1_game_main_1a2d85539fefe29e0adf3822af7f521869">replace</link>.ContainsKey(symbol))
+<anchor xml:id="__game_main_8cs_source_1l00413"/>00413 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00414"/>00414 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;charset.Remove(waitSymbol);
+<anchor xml:id="__game_main_8cs_source_1l00415"/>00415 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00416"/>00416 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>
+<anchor xml:id="__game_main_8cs_source_1l00417"/>00417 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00418"/>00418 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_enigma2_1_1_game_main_1a2d85539fefe29e0adf3822af7f521869">replace</link>[symbol]&#32;=&#32;waitSymbol;
+<anchor xml:id="__game_main_8cs_source_1l00419"/>00419 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_enigma2_1_1_game_main_1a2d85539fefe29e0adf3822af7f521869">replace</link>[waitSymbol]&#32;=&#32;symbol;
+<anchor xml:id="__game_main_8cs_source_1l00420"/>00420 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;charset.Remove(waitSymbol);
+<anchor xml:id="__game_main_8cs_source_1l00421"/>00421 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;charset.Remove(symbol);
+<anchor xml:id="__game_main_8cs_source_1l00422"/>00422 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00423"/>00423 
+<anchor xml:id="__game_main_8cs_source_1l00424"/>00424 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;waitSymbol&#32;=&#32;<emphasis role="charliteral">&apos;\0&apos;</emphasis>;
+<anchor xml:id="__game_main_8cs_source_1l00425"/>00425 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;isWait&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="__game_main_8cs_source_1l00426"/>00426 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00427"/>00427 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>
+<anchor xml:id="__game_main_8cs_source_1l00428"/>00428 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00429"/>00429 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(<link linkend="_class_enigma2_1_1_game_main_1a2d85539fefe29e0adf3822af7f521869">replace</link>.ContainsKey(symbol))
+<anchor xml:id="__game_main_8cs_source_1l00430"/>00430 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00431"/>00431 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_enigma2_1_1_game_main_1a2d85539fefe29e0adf3822af7f521869">replace</link>.Remove(<link linkend="_class_enigma2_1_1_game_main_1a2d85539fefe29e0adf3822af7f521869">replace</link>[symbol]);
+<anchor xml:id="__game_main_8cs_source_1l00432"/>00432 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<link linkend="_class_enigma2_1_1_game_main_1a2d85539fefe29e0adf3822af7f521869">replace</link>.Remove(symbol);
+<anchor xml:id="__game_main_8cs_source_1l00433"/>00433 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00434"/>00434 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>
+<anchor xml:id="__game_main_8cs_source_1l00435"/>00435 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00436"/>00436 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;isWait&#32;=&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="__game_main_8cs_source_1l00437"/>00437 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;waitSymbol&#32;=&#32;symbol;
+<anchor xml:id="__game_main_8cs_source_1l00438"/>00438 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;charset.Add(waitSymbol);
+<anchor xml:id="__game_main_8cs_source_1l00439"/>00439 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00440"/>00440 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00441"/>00441 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;soundTick.Play(volume,&#32;-1,&#32;0);
+<anchor xml:id="__game_main_8cs_source_1l00442"/>00442 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00443"/>00443 
+<anchor xml:id="__game_main_8cs_source_1l00444"/>00444 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;val&#32;=&#32;BaseEnigma.code(symbol)&#32;+&#32;1;
+<anchor xml:id="__game_main_8cs_source_1l00445"/>00445 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;ssym&#32;=&#32;isNumber&#32;?&#32;val.ToString()&#32;:&#32;symbol.ToString();
+<anchor xml:id="__game_main_8cs_source_1l00446"/>00446 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;plused&#32;=&#32;isNumber&#32;?&#32;(val&#32;&lt;&#32;10&#32;?&#32;0&#32;:&#32;-5)&#32;:&#32;(symbol&#32;==&#32;<emphasis role="stringliteral">&apos;I&apos;</emphasis>&#32;?&#32;5&#32;:&#32;0);
+<anchor xml:id="__game_main_8cs_source_1l00447"/>00447 
+<anchor xml:id="__game_main_8cs_source_1l00448"/>00448 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(isWait)
+<anchor xml:id="__game_main_8cs_source_1l00449"/>00449 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00450"/>00450 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(symbol&#32;==&#32;waitSymbol)
+<anchor xml:id="__game_main_8cs_source_1l00451"/>00451 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;spriteBatch.DrawString(<link linkend="_class_enigma2_1_1_game_main_1ada6aa9c46995956f41f52ac12efee7b2">fontBase</link>,&#32;ssym,&#32;<emphasis role="keyword">new</emphasis>&#32;Vector2(x&#32;+&#32;plused,&#32;y&#32;-&#32;4),&#32;Color.White);
+<anchor xml:id="__game_main_8cs_source_1l00452"/>00452 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>
+<anchor xml:id="__game_main_8cs_source_1l00453"/>00453 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;spriteBatch.DrawString(<link linkend="_class_enigma2_1_1_game_main_1ada6aa9c46995956f41f52ac12efee7b2">fontBase</link>,&#32;ssym,&#32;<emphasis role="keyword">new</emphasis>&#32;Vector2(x&#32;+&#32;plused,&#32;y&#32;-&#32;4),&#32;Color.Gray);
+<anchor xml:id="__game_main_8cs_source_1l00454"/>00454 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00455"/>00455 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>
+<anchor xml:id="__game_main_8cs_source_1l00456"/>00456 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;spriteBatch.DrawString(<link linkend="_class_enigma2_1_1_game_main_1ada6aa9c46995956f41f52ac12efee7b2">fontBase</link>,&#32;ssym,&#32;<emphasis role="keyword">new</emphasis>&#32;Vector2(x&#32;+&#32;plused,&#32;y&#32;-&#32;4),&#32;Color.White);
+<anchor xml:id="__game_main_8cs_source_1l00457"/>00457 
+<anchor xml:id="__game_main_8cs_source_1l00458"/>00458 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(charset.Contains(symbol))
+<anchor xml:id="__game_main_8cs_source_1l00459"/>00459 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;spriteBatch.Draw(textureActivePlug,&#32;position,&#32;Color.White);
+<anchor xml:id="__game_main_8cs_source_1l00460"/>00460 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>&#32;<emphasis role="keywordflow">if</emphasis>&#32;(<link linkend="_class_enigma2_1_1_game_main_1a2d85539fefe29e0adf3822af7f521869">replace</link>.ContainsKey(symbol))
+<anchor xml:id="__game_main_8cs_source_1l00461"/>00461 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00462"/>00462 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;spriteBatch.Draw(textureActivePlug,&#32;position,&#32;Color.White);
+<anchor xml:id="__game_main_8cs_source_1l00463"/>00463 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;cval&#32;=&#32;BaseEnigma.code(<link linkend="_class_enigma2_1_1_game_main_1a2d85539fefe29e0adf3822af7f521869">replace</link>[symbol])&#32;+&#32;1;
+<anchor xml:id="__game_main_8cs_source_1l00464"/>00464 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">string</emphasis>&#32;csym&#32;=&#32;isNumber&#32;?&#32;cval.ToString()&#32;:&#32;<link linkend="_class_enigma2_1_1_game_main_1a2d85539fefe29e0adf3822af7f521869">replace</link>[symbol].ToString();
+<anchor xml:id="__game_main_8cs_source_1l00465"/>00465 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">int</emphasis>&#32;cplused&#32;=&#32;isNumber&#32;?&#32;(cval&#32;&lt;&#32;10&#32;?&#32;0&#32;:&#32;-3)&#32;:&#32;(<link linkend="_class_enigma2_1_1_game_main_1a2d85539fefe29e0adf3822af7f521869">replace</link>[symbol]&#32;==&#32;<emphasis role="stringliteral">&apos;I&apos;</emphasis>&#32;?&#32;3&#32;:&#32;0);
+<anchor xml:id="__game_main_8cs_source_1l00466"/>00466 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;spriteBatch.DrawString(<link linkend="_class_enigma2_1_1_game_main_1ab58254bc957224320973432bc7d87f93">fontMini</link>,&#32;csym,&#32;<emphasis role="keyword">new</emphasis>&#32;Vector2(position.X&#32;+&#32;5&#32;+&#32;cplused,&#32;position.Y&#32;+&#32;40),&#32;Color.White);
+<anchor xml:id="__game_main_8cs_source_1l00467"/>00467 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00468"/>00468 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>
+<anchor xml:id="__game_main_8cs_source_1l00469"/>00469 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;spriteBatch.Draw(texturePlug,&#32;position,&#32;Color.Gray);
+<anchor xml:id="__game_main_8cs_source_1l00470"/>00470 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00471"/>00471 
+<anchor xml:id="__game_main_8cs_source_1l00472"/>00472 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;isSend&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="__game_main_8cs_source_1l00473"/>00473 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">bool</emphasis>&#32;sended&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="__game_main_8cs_source_1l00474"/>00474 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;charCurrent&#32;=&#32;<emphasis role="charliteral">&apos;\0&apos;</emphasis>;
+<anchor xml:id="__game_main_8cs_source_1l00475"/>00475 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">char</emphasis>&#32;charSend&#32;=&#32;<emphasis role="charliteral">&apos;\0&apos;</emphasis>;
+<anchor xml:id="__game_main_8cs_source_1l00476"/><link linkend="_class_enigma2_1_1_game_main_1a3e6351bd5cb71f0eda92b6c2e674f6c4">00476</link> &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keyword">public</emphasis>&#32;<emphasis role="keywordtype">string</emphasis>&#32;<link linkend="_class_enigma2_1_1_game_main_1a3e6351bd5cb71f0eda92b6c2e674f6c4">message</link>&#32;=&#32;<emphasis role="stringliteral">&quot;&quot;</emphasis>;
+<anchor xml:id="__game_main_8cs_source_1l00477"/>00477 
+<anchor xml:id="__game_main_8cs_source_1l00478"/>00478 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;drawLed(<emphasis role="keywordtype">int</emphasis>&#32;x,&#32;<emphasis role="keywordtype">int</emphasis>&#32;y,&#32;<emphasis role="keywordtype">char</emphasis>&#32;symbol)
+<anchor xml:id="__game_main_8cs_source_1l00479"/>00479 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00480"/>00480 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Rectangle&#32;rect&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;Rectangle(x,&#32;y,&#32;37,&#32;37);
+<anchor xml:id="__game_main_8cs_source_1l00481"/>00481 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Color&#32;color&#32;=&#32;symbol&#32;==&#32;charSend&#32;?&#32;Color.White&#32;:&#32;colorGray;
+<anchor xml:id="__game_main_8cs_source_1l00482"/>00482 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;spriteBatch.Draw(textureLed,&#32;rect,&#32;Color.White);
+<anchor xml:id="__game_main_8cs_source_1l00483"/>00483 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;spriteBatch.DrawString(<link linkend="_class_enigma2_1_1_game_main_1ada6aa9c46995956f41f52ac12efee7b2">fontBase</link>,&#32;symbol.ToString(),&#32;<emphasis role="keyword">new</emphasis>&#32;Vector2(x&#32;+&#32;11&#32;+&#32;(symbol&#32;==&#32;<emphasis role="charliteral">&apos;I&apos;</emphasis>&#32;?&#32;4&#32;:&#32;0),&#32;y&#32;+&#32;8),&#32;color);
+<anchor xml:id="__game_main_8cs_source_1l00484"/>00484 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00485"/>00485 
+<anchor xml:id="__game_main_8cs_source_1l00486"/>00486 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordtype">void</emphasis>&#32;drawButton(<emphasis role="keywordtype">int</emphasis>&#32;x,&#32;<emphasis role="keywordtype">int</emphasis>&#32;y,&#32;<emphasis role="keywordtype">char</emphasis>&#32;symbol)
+<anchor xml:id="__game_main_8cs_source_1l00487"/>00487 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00488"/>00488 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Rectangle&#32;rect&#32;=&#32;<emphasis role="keyword">new</emphasis>&#32;Rectangle(x,&#32;y,&#32;37,&#32;37);
+<anchor xml:id="__game_main_8cs_source_1l00489"/>00489 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;Color&#32;color;
+<anchor xml:id="__game_main_8cs_source_1l00490"/>00490 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(rect.Contains(<link linkend="_class_enigma2_1_1_game_main_1a04290fc94a94b41eb8980584bac32555">mouseOne</link>.X,&#32;<link linkend="_class_enigma2_1_1_game_main_1a04290fc94a94b41eb8980584bac32555">mouseOne</link>.Y)&#32;&amp;&amp;&#32;<link linkend="_class_enigma2_1_1_game_main_1a04290fc94a94b41eb8980584bac32555">mouseOne</link>.LeftButton&#32;==&#32;ButtonState.Pressed&#32;&amp;&amp;&#32;isSettings)
+<anchor xml:id="__game_main_8cs_source_1l00491"/>00491 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00492"/>00492 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;color&#32;=&#32;Color.Gray;
+<anchor xml:id="__game_main_8cs_source_1l00493"/>00493 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(!sended)
+<anchor xml:id="__game_main_8cs_source_1l00494"/>00494 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00495"/>00495 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;charCurrent&#32;=&#32;symbol;
+<anchor xml:id="__game_main_8cs_source_1l00496"/>00496 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;sended&#32;=&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="__game_main_8cs_source_1l00497"/>00497 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;isSend&#32;=&#32;<emphasis role="keyword">true</emphasis>;
+<anchor xml:id="__game_main_8cs_source_1l00498"/>00498 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00499"/>00499 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00500"/>00500 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">else</emphasis>
+<anchor xml:id="__game_main_8cs_source_1l00501"/>00501 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00502"/>00502 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;color&#32;=&#32;Color.White;
+<anchor xml:id="__game_main_8cs_source_1l00503"/>00503 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;<emphasis role="keywordflow">if</emphasis>&#32;(charCurrent&#32;==&#32;symbol)
+<anchor xml:id="__game_main_8cs_source_1l00504"/>00504 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;{
+<anchor xml:id="__game_main_8cs_source_1l00505"/>00505 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;charCurrent&#32;=&#32;charSend&#32;=&#32;<emphasis role="charliteral">&apos;\0&apos;</emphasis>;
+<anchor xml:id="__game_main_8cs_source_1l00506"/>00506 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;sended&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="__game_main_8cs_source_1l00507"/>00507 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;isSend&#32;=&#32;<emphasis role="keyword">false</emphasis>;
+<anchor xml:id="__game_main_8cs_source_1l00508"/>00508 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00509"/>00509 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00510"/>00510 
+<anchor xml:id="__game_main_8cs_source_1l00511"/>00511 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;spriteBatch.Draw(textureSymbol,&#32;rect,&#32;color);
+<anchor xml:id="__game_main_8cs_source_1l00512"/>00512 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;spriteBatch.DrawString(<link linkend="_class_enigma2_1_1_game_main_1ada6aa9c46995956f41f52ac12efee7b2">fontBase</link>,&#32;symbol.ToString(),&#32;<emphasis role="keyword">new</emphasis>&#32;Vector2(x&#32;+&#32;11&#32;+&#32;(symbol&#32;==&#32;<emphasis role="charliteral">&apos;I&apos;</emphasis>&#32;?&#32;4&#32;:&#32;0),&#32;y&#32;+&#32;8),&#32;color);
+<anchor xml:id="__game_main_8cs_source_1l00513"/>00513 &#32;&#32;&#32;&#32;&#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00514"/>00514 &#32;&#32;&#32;&#32;}
+<anchor xml:id="__game_main_8cs_source_1l00515"/>00515 }
+</programlisting></section>

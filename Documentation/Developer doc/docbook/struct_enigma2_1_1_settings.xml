@@ -1,0 +1,101 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_struct_enigma2_1_1_settings" xml:lang="ru">
+<title>Структура Enigma2.Settings</title>
+<indexterm><primary>Enigma2.Settings</primary></indexterm>
+<simplesect>
+    <title>Открытые атрибуты    </title>
+        <itemizedlist>
+            <listitem><para>int[] <link linkend="_struct_enigma2_1_1_settings_1a8b8a95b2467d15c67191da02dab68e2c">key</link></para>
+</listitem>
+            <listitem><para>int[] <link linkend="_struct_enigma2_1_1_settings_1aa78f34d378b9eb5018a32be94af039f7">ring</link></para>
+</listitem>
+            <listitem><para>int[] <link linkend="_struct_enigma2_1_1_settings_1a08a762a0eee5050bfd481b13ada65925">rotors</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_enigma2_1_1_settings_1a350b8e0f4ff88d5a9e497c647f9848ba">customReflector</link></para>
+</listitem>
+            <listitem><para>string <link linkend="_struct_enigma2_1_1_settings_1af7e0fbc1e56f28d7e7d501a0034d4c15">reflector</link></para>
+</listitem>
+            <listitem><para>float <link linkend="_struct_enigma2_1_1_settings_1a93f957db78e54194f51eef0c503d18b5">sound</link></para>
+</listitem>
+            <listitem><para>bool <link linkend="_struct_enigma2_1_1_settings_1a4d9705e96f593a5286caa2210ca38f4c">useM4</link></para>
+</listitem>
+            <listitem><para>Dictionary&lt; char, char &gt; <link linkend="_struct_enigma2_1_1_settings_1ab9687826f05dea58696a7df6894d5097">replace</link></para>
+</listitem>
+            <listitem><para>int <link linkend="_struct_enigma2_1_1_settings_1ac7e1647b7cb15cbcd8173dfac7b8063e">reflIndex</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Подробное описание</title>
+<para>
+См. определение в файле <link linkend="__settings_form_8cs_source">SettingsForm.cs</link> строка <link linkend="__settings_form_8cs_source_1l00231">231</link></para>
+</section>
+<section>
+<title>Данные класса</title>
+<anchor xml:id="_struct_enigma2_1_1_settings_1a350b8e0f4ff88d5a9e497c647f9848ba"/><section>
+    <title>customReflector</title>
+<indexterm><primary>customReflector</primary><secondary>Enigma2.Settings</secondary></indexterm>
+<indexterm><primary>Enigma2.Settings</primary><secondary>customReflector</secondary></indexterm>
+<para><computeroutput>bool Enigma2.Settings.customReflector</computeroutput></para><para>
+См. определение в файле <link linkend="__settings_form_8cs_source">SettingsForm.cs</link> строка <link linkend="__settings_form_8cs_source_1l00236">236</link></para>
+</section>
+<anchor xml:id="_struct_enigma2_1_1_settings_1a8b8a95b2467d15c67191da02dab68e2c"/><section>
+    <title>key</title>
+<indexterm><primary>key</primary><secondary>Enigma2.Settings</secondary></indexterm>
+<indexterm><primary>Enigma2.Settings</primary><secondary>key</secondary></indexterm>
+<para><computeroutput>int [] Enigma2.Settings.key</computeroutput></para><para>
+См. определение в файле <link linkend="__settings_form_8cs_source">SettingsForm.cs</link> строка <link linkend="__settings_form_8cs_source_1l00233">233</link></para>
+</section>
+<anchor xml:id="_struct_enigma2_1_1_settings_1af7e0fbc1e56f28d7e7d501a0034d4c15"/><section>
+    <title>reflector</title>
+<indexterm><primary>reflector</primary><secondary>Enigma2.Settings</secondary></indexterm>
+<indexterm><primary>Enigma2.Settings</primary><secondary>reflector</secondary></indexterm>
+<para><computeroutput>string Enigma2.Settings.reflector</computeroutput></para><para>
+См. определение в файле <link linkend="__settings_form_8cs_source">SettingsForm.cs</link> строка <link linkend="__settings_form_8cs_source_1l00237">237</link></para>
+</section>
+<anchor xml:id="_struct_enigma2_1_1_settings_1ac7e1647b7cb15cbcd8173dfac7b8063e"/><section>
+    <title>reflIndex</title>
+<indexterm><primary>reflIndex</primary><secondary>Enigma2.Settings</secondary></indexterm>
+<indexterm><primary>Enigma2.Settings</primary><secondary>reflIndex</secondary></indexterm>
+<para><computeroutput>int Enigma2.Settings.reflIndex</computeroutput></para><para>
+См. определение в файле <link linkend="__settings_form_8cs_source">SettingsForm.cs</link> строка <link linkend="__settings_form_8cs_source_1l00241">241</link></para>
+</section>
+<anchor xml:id="_struct_enigma2_1_1_settings_1ab9687826f05dea58696a7df6894d5097"/><section>
+    <title>replace</title>
+<indexterm><primary>replace</primary><secondary>Enigma2.Settings</secondary></indexterm>
+<indexterm><primary>Enigma2.Settings</primary><secondary>replace</secondary></indexterm>
+<para><computeroutput>Dictionary&lt;char, char&gt; Enigma2.Settings.replace</computeroutput></para><para>
+См. определение в файле <link linkend="__settings_form_8cs_source">SettingsForm.cs</link> строка <link linkend="__settings_form_8cs_source_1l00240">240</link></para>
+</section>
+<anchor xml:id="_struct_enigma2_1_1_settings_1aa78f34d378b9eb5018a32be94af039f7"/><section>
+    <title>ring</title>
+<indexterm><primary>ring</primary><secondary>Enigma2.Settings</secondary></indexterm>
+<indexterm><primary>Enigma2.Settings</primary><secondary>ring</secondary></indexterm>
+<para><computeroutput>int [] Enigma2.Settings.ring</computeroutput></para><para>
+См. определение в файле <link linkend="__settings_form_8cs_source">SettingsForm.cs</link> строка <link linkend="__settings_form_8cs_source_1l00234">234</link></para>
+</section>
+<anchor xml:id="_struct_enigma2_1_1_settings_1a08a762a0eee5050bfd481b13ada65925"/><section>
+    <title>rotors</title>
+<indexterm><primary>rotors</primary><secondary>Enigma2.Settings</secondary></indexterm>
+<indexterm><primary>Enigma2.Settings</primary><secondary>rotors</secondary></indexterm>
+<para><computeroutput>int [] Enigma2.Settings.rotors</computeroutput></para><para>
+См. определение в файле <link linkend="__settings_form_8cs_source">SettingsForm.cs</link> строка <link linkend="__settings_form_8cs_source_1l00235">235</link></para>
+</section>
+<anchor xml:id="_struct_enigma2_1_1_settings_1a93f957db78e54194f51eef0c503d18b5"/><section>
+    <title>sound</title>
+<indexterm><primary>sound</primary><secondary>Enigma2.Settings</secondary></indexterm>
+<indexterm><primary>Enigma2.Settings</primary><secondary>sound</secondary></indexterm>
+<para><computeroutput>float Enigma2.Settings.sound</computeroutput></para><para>
+См. определение в файле <link linkend="__settings_form_8cs_source">SettingsForm.cs</link> строка <link linkend="__settings_form_8cs_source_1l00238">238</link></para>
+</section>
+<anchor xml:id="_struct_enigma2_1_1_settings_1a4d9705e96f593a5286caa2210ca38f4c"/><section>
+    <title>useM4</title>
+<indexterm><primary>useM4</primary><secondary>Enigma2.Settings</secondary></indexterm>
+<indexterm><primary>Enigma2.Settings</primary><secondary>useM4</secondary></indexterm>
+<para><computeroutput>bool Enigma2.Settings.useM4</computeroutput></para><para>
+См. определение в файле <link linkend="__settings_form_8cs_source">SettingsForm.cs</link> строка <link linkend="__settings_form_8cs_source_1l00239">239</link></para>
+</section>
+<para>
+Объявления и описания членов структуры находятся в файле:</para>
+Core/<link linkend="__settings_form_8cs">SettingsForm.cs</link></section>
+</section>

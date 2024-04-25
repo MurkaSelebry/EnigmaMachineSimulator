@@ -1,0 +1,126 @@
+.TH "Enigma2.BaseEnigma" 3 "Enigma Machine Sumulator" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Enigma2.BaseEnigma
+.SH SYNOPSIS
+.br
+.PP
+.SS "Открытые члены"
+
+.in +1c
+.ti -1c
+.RI "void \fBDecrement\fP ()"
+.br
+.in -1c
+.SS "Открытые статические члены"
+
+.in +1c
+.ti -1c
+.RI "static int[] \fBtoKey\fP (string str)"
+.br
+.ti -1c
+.RI "static int[] \fBtoKey\fP (int num)"
+.br
+.ti -1c
+.RI "static char \fBencode\fP (char symbol, int[] \fBkey\fP, int[] rotrs, int[] \fBring\fP, string reflector, Dictionary< char, char > plugboard)"
+.br
+.ti -1c
+.RI "static int \fBcode\fP (char ch)"
+.br
+.in -1c
+.SS "Открытые атрибуты"
+
+.in +1c
+.ti -1c
+.RI "Dictionary< char, char > \fBReplace\fP = new Dictionary<char, char>()"
+.br
+.ti -1c
+.RI "int[] \fBkey\fP = \fBtoKey\fP('AAA')"
+.br
+.ti -1c
+.RI "int[] \fB_rotors\fP = \fBtoKey\fP('ABC')"
+.br
+.ti -1c
+.RI "int[] \fBring\fP = \fBtoKey\fP('AAA')"
+.br
+.in -1c
+.SS "Статические открытые данные"
+
+.in +1c
+.ti -1c
+.RI "static string \fBreflectorB\fP = 'YRUHQSLDPXNGOKMIEBFZCWVJAT'"
+.br
+.ti -1c
+.RI "static string \fBreflectorBThin\fP = 'ENKQAUYWJICOPBLMDXZVFTHRGS'"
+.br
+.ti -1c
+.RI "static string \fBreflectorC\fP = 'FVPJIAOYEDRZXWGCTKUQSBNMHL'"
+.br
+.ti -1c
+.RI "static string \fBreflectorCThin\fP = 'RDOBJNTKVEHMLFCWZAXGYIPSUQ'"
+.br
+.in -1c
+.SH "Подробное описание"
+.PP 
+См\&. определение в файле \fBBaseEnigma\&.cs\fP строка \fB8\fP
+.SH "Методы"
+.PP 
+.SS "static int Enigma2\&.BaseEnigma\&.code (char ch)\fR [static]\fP"
+
+.PP
+См\&. определение в файле \fBBaseEnigma\&.cs\fP строка \fB187\fP
+.SS "void Enigma2\&.BaseEnigma\&.Decrement ()"
+
+.PP
+См\&. определение в файле \fBBaseEnigma\&.cs\fP строка \fB197\fP
+.SS "static char Enigma2\&.BaseEnigma\&.encode (char symbol, int[] key, int[] rotrs, int[] ring, string reflector, Dictionary< char, char > plugboard)\fR [static]\fP"
+
+.PP
+См\&. определение в файле \fBBaseEnigma\&.cs\fP строка \fB74\fP
+.SS "static int[] Enigma2\&.BaseEnigma\&.toKey (int num)\fR [static]\fP"
+
+.PP
+См\&. определение в файле \fBBaseEnigma\&.cs\fP строка \fB57\fP
+.SS "static int[] Enigma2\&.BaseEnigma\&.toKey (string str)\fR [static]\fP"
+
+.PP
+См\&. определение в файле \fBBaseEnigma\&.cs\fP строка \fB53\fP
+.SH "Данные класса"
+.PP 
+.SS "int [] Enigma2\&.BaseEnigma\&._rotors = \fBtoKey\fP('ABC')"
+
+.PP
+См\&. определение в файле \fBBaseEnigma\&.cs\fP строка \fB25\fP
+.SS "int [] Enigma2\&.BaseEnigma\&.key = \fBtoKey\fP('AAA')"
+
+.PP
+См\&. определение в файле \fBBaseEnigma\&.cs\fP строка \fB24\fP
+.SS "string Enigma2\&.BaseEnigma\&.reflectorB = 'YRUHQSLDPXNGOKMIEBFZCWVJAT'\fR [static]\fP"
+
+.PP
+См\&. определение в файле \fBBaseEnigma\&.cs\fP строка \fB17\fP
+.SS "string Enigma2\&.BaseEnigma\&.reflectorBThin = 'ENKQAUYWJICOPBLMDXZVFTHRGS'\fR [static]\fP"
+
+.PP
+См\&. определение в файле \fBBaseEnigma\&.cs\fP строка \fB18\fP
+.SS "string Enigma2\&.BaseEnigma\&.reflectorC = 'FVPJIAOYEDRZXWGCTKUQSBNMHL'\fR [static]\fP"
+
+.PP
+См\&. определение в файле \fBBaseEnigma\&.cs\fP строка \fB19\fP
+.SS "string Enigma2\&.BaseEnigma\&.reflectorCThin = 'RDOBJNTKVEHMLFCWZAXGYIPSUQ'\fR [static]\fP"
+
+.PP
+См\&. определение в файле \fBBaseEnigma\&.cs\fP строка \fB20\fP
+.SS "Dictionary<char, char> Enigma2\&.BaseEnigma\&.Replace = new Dictionary<char, char>()"
+
+.PP
+См\&. определение в файле \fBBaseEnigma\&.cs\fP строка \fB22\fP
+.SS "int [] Enigma2\&.BaseEnigma\&.ring = \fBtoKey\fP('AAA')"
+
+.PP
+См\&. определение в файле \fBBaseEnigma\&.cs\fP строка \fB26\fP
+
+.SH "Автор"
+.PP 
+Автоматически создано Doxygen для Enigma Machine Sumulator из исходного текста\&.

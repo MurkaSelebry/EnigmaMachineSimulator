@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_d6170c5dc5383b92e748a775ecfcdec9" xml:lang="ru">
+<title>Содержание директории obj/x64/Debug</title>
+<indexterm><primary>Содержание директории obj/x64/Debug</primary></indexterm>
+<simplesect>
+    <title>Директории    </title>
+        <itemizedlist>
+            <listitem><para>директория <link linkend="_dir_ff240213cc7d4060a6e61e81f10db9df">net5.0-windows</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

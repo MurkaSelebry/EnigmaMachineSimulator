@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="ru">
+  <compounddef id="namespace_enigma2" kind="namespace" language="C#">
+    <compoundname>Enigma2</compoundname>
+    <innerclass refid="class_enigma2_1_1_base_enigma" prot="public">Enigma2::BaseEnigma</innerclass>
+    <innerclass refid="class_enigma2_1_1_e_label" prot="public">Enigma2::ELabel</innerclass>
+    <innerclass refid="class_enigma2_1_1_game_main" prot="public">Enigma2::GameMain</innerclass>
+    <innerclass refid="class_enigma2_1_1_plugboard" prot="public">Enigma2::Plugboard</innerclass>
+    <innerclass refid="class_enigma2_1_1_program" prot="public">Enigma2::Program</innerclass>
+    <innerclass refid="struct_enigma2_1_1_settings" prot="public">Enigma2::Settings</innerclass>
+    <innerclass refid="class_enigma2_1_1_settings_form" prot="public">Enigma2::SettingsForm</innerclass>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Core/BaseEnigma.cs" line="6" column="1"/>
+  </compounddef>
+</doxygen>

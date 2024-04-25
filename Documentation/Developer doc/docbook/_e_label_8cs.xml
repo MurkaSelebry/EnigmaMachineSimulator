@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__e_label_8cs" xml:lang="ru">
+<title>Файл Core/ELabel.cs</title>
+<indexterm><primary>Core/ELabel.cs</primary></indexterm>
+<simplesect>
+    <title>Классы    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_enigma2_1_1_e_label">Enigma2.ELabel</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Пространства имен    </title>
+        <itemizedlist>
+            <listitem><para>namespace <link linkend="_namespace_enigma2">Enigma2</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

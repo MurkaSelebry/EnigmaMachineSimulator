@@ -1,0 +1,188 @@
+\doxysection{Класс Enigma2.\+Base\+Enigma}
+\hypertarget{class_enigma2_1_1_base_enigma}{}\label{class_enigma2_1_1_base_enigma}\index{Enigma2.BaseEnigma@{Enigma2.BaseEnigma}}
+\doxysubsubsection*{Открытые члены}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a9433299e70b88416ff8291897a7ca9f1}{Decrement}} ()
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые статические члены}
+\begin{DoxyCompactItemize}
+\item 
+static int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_enigma2_1_1_base_enigma_ad5100d5c767f1b84b9ddade6e6a6b0b6}{to\+Key}} (string str)
+\item 
+static int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_enigma2_1_1_base_enigma_aa4110ccdf05866d43035758efb3f07dd}{to\+Key}} (int num)
+\item 
+static char \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a766f61716959aedb7abcfdae3f7765b0}{encode}} (char symbol, int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}, int\mbox{[}$\,$\mbox{]} rotrs, int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a2a356e12f7fe871b54b92ebc7fab6dfe}{ring}}, string reflector, Dictionary$<$ char, char $>$ plugboard)
+\item 
+static int \mbox{\hyperlink{class_enigma2_1_1_base_enigma_aa0a99d30ae4cffa75089d3b82bf4f361}{code}} (char ch)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Открытые атрибуты}
+\begin{DoxyCompactItemize}
+\item 
+Dictionary$<$ char, char $>$ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_ac33a8464aa9b4e5b7ae0e67d8d0b0536}{Replace}} = new Dictionary$<$char, char$>$()
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}} = \mbox{\hyperlink{class_enigma2_1_1_base_enigma_ad5100d5c767f1b84b9ddade6e6a6b0b6}{to\+Key}}("{}AAA"{})
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a85ee3103139f257ae413a5017d793adc}{\+\_\+rotors}} = \mbox{\hyperlink{class_enigma2_1_1_base_enigma_ad5100d5c767f1b84b9ddade6e6a6b0b6}{to\+Key}}("{}ABC"{})
+\item 
+int\mbox{[}$\,$\mbox{]} \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a2a356e12f7fe871b54b92ebc7fab6dfe}{ring}} = \mbox{\hyperlink{class_enigma2_1_1_base_enigma_ad5100d5c767f1b84b9ddade6e6a6b0b6}{to\+Key}}("{}AAA"{})
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Статические открытые данные}
+\begin{DoxyCompactItemize}
+\item 
+static string \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a32f2d5f5b656ccdcf146b59a8e7abd60}{reflectorB}} = "{}YRUHQSLDPXNGOKMIEBFZCWVJAT"{}
+\item 
+static string \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a7e09866f2a216fa715ca5df235a6894d}{reflector\+BThin}} = "{}ENKQAUYWJICOPBLMDXZVFTHRGS"{}
+\item 
+static string \mbox{\hyperlink{class_enigma2_1_1_base_enigma_aa4738e4356128eb989c6c27696552e5e}{reflectorC}} = "{}FVPJIAOYEDRZXWGCTKUQSBNMHL"{}
+\item 
+static string \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a0433cb09450405f2bf50cfe298784e30}{reflector\+CThin}} = "{}RDOBJNTKVEHMLFCWZAXGYIPSUQ"{}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Подробное описание}
+
+
+См. определение в файле \mbox{\hyperlink{_base_enigma_8cs_source}{Base\+Enigma.\+cs}} строка \mbox{\hyperlink{_base_enigma_8cs_source_l00008}{8}}
+
+
+
+\doxysubsection{Методы}
+\Hypertarget{class_enigma2_1_1_base_enigma_aa0a99d30ae4cffa75089d3b82bf4f361}\label{class_enigma2_1_1_base_enigma_aa0a99d30ae4cffa75089d3b82bf4f361} 
+\index{Enigma2.BaseEnigma@{Enigma2.BaseEnigma}!code@{code}}
+\index{code@{code}!Enigma2.BaseEnigma@{Enigma2.BaseEnigma}}
+\doxysubsubsection{\texorpdfstring{code()}{code()}}
+{\footnotesize\ttfamily static int Enigma2.\+Base\+Enigma.\+code (\begin{DoxyParamCaption}\item[{char}]{ch }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+См. определение в файле \mbox{\hyperlink{_base_enigma_8cs_source}{Base\+Enigma.\+cs}} строка \mbox{\hyperlink{_base_enigma_8cs_source_l00187}{187}}
+
+\Hypertarget{class_enigma2_1_1_base_enigma_a9433299e70b88416ff8291897a7ca9f1}\label{class_enigma2_1_1_base_enigma_a9433299e70b88416ff8291897a7ca9f1} 
+\index{Enigma2.BaseEnigma@{Enigma2.BaseEnigma}!Decrement@{Decrement}}
+\index{Decrement@{Decrement}!Enigma2.BaseEnigma@{Enigma2.BaseEnigma}}
+\doxysubsubsection{\texorpdfstring{Decrement()}{Decrement()}}
+{\footnotesize\ttfamily void Enigma2.\+Base\+Enigma.\+Decrement (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+См. определение в файле \mbox{\hyperlink{_base_enigma_8cs_source}{Base\+Enigma.\+cs}} строка \mbox{\hyperlink{_base_enigma_8cs_source_l00197}{197}}
+
+\Hypertarget{class_enigma2_1_1_base_enigma_a766f61716959aedb7abcfdae3f7765b0}\label{class_enigma2_1_1_base_enigma_a766f61716959aedb7abcfdae3f7765b0} 
+\index{Enigma2.BaseEnigma@{Enigma2.BaseEnigma}!encode@{encode}}
+\index{encode@{encode}!Enigma2.BaseEnigma@{Enigma2.BaseEnigma}}
+\doxysubsubsection{\texorpdfstring{encode()}{encode()}}
+{\footnotesize\ttfamily static char Enigma2.\+Base\+Enigma.\+encode (\begin{DoxyParamCaption}\item[{char}]{symbol,  }\item[{int\mbox{[}$\,$\mbox{]}}]{key,  }\item[{int\mbox{[}$\,$\mbox{]}}]{rotrs,  }\item[{int\mbox{[}$\,$\mbox{]}}]{ring,  }\item[{string}]{reflector,  }\item[{Dictionary$<$ char, char $>$}]{plugboard }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+См. определение в файле \mbox{\hyperlink{_base_enigma_8cs_source}{Base\+Enigma.\+cs}} строка \mbox{\hyperlink{_base_enigma_8cs_source_l00074}{74}}
+
+\Hypertarget{class_enigma2_1_1_base_enigma_aa4110ccdf05866d43035758efb3f07dd}\label{class_enigma2_1_1_base_enigma_aa4110ccdf05866d43035758efb3f07dd} 
+\index{Enigma2.BaseEnigma@{Enigma2.BaseEnigma}!toKey@{toKey}}
+\index{toKey@{toKey}!Enigma2.BaseEnigma@{Enigma2.BaseEnigma}}
+\doxysubsubsection{\texorpdfstring{toKey()}{toKey()}\hspace{0.1cm}{\footnotesize\ttfamily [1/2]}}
+{\footnotesize\ttfamily static int\mbox{[}$\,$\mbox{]} Enigma2.\+Base\+Enigma.\+to\+Key (\begin{DoxyParamCaption}\item[{int}]{num }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+См. определение в файле \mbox{\hyperlink{_base_enigma_8cs_source}{Base\+Enigma.\+cs}} строка \mbox{\hyperlink{_base_enigma_8cs_source_l00057}{57}}
+
+\Hypertarget{class_enigma2_1_1_base_enigma_ad5100d5c767f1b84b9ddade6e6a6b0b6}\label{class_enigma2_1_1_base_enigma_ad5100d5c767f1b84b9ddade6e6a6b0b6} 
+\index{Enigma2.BaseEnigma@{Enigma2.BaseEnigma}!toKey@{toKey}}
+\index{toKey@{toKey}!Enigma2.BaseEnigma@{Enigma2.BaseEnigma}}
+\doxysubsubsection{\texorpdfstring{toKey()}{toKey()}\hspace{0.1cm}{\footnotesize\ttfamily [2/2]}}
+{\footnotesize\ttfamily static int\mbox{[}$\,$\mbox{]} Enigma2.\+Base\+Enigma.\+to\+Key (\begin{DoxyParamCaption}\item[{string}]{str }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+См. определение в файле \mbox{\hyperlink{_base_enigma_8cs_source}{Base\+Enigma.\+cs}} строка \mbox{\hyperlink{_base_enigma_8cs_source_l00053}{53}}
+
+
+
+\doxysubsection{Данные класса}
+\Hypertarget{class_enigma2_1_1_base_enigma_a85ee3103139f257ae413a5017d793adc}\label{class_enigma2_1_1_base_enigma_a85ee3103139f257ae413a5017d793adc} 
+\index{Enigma2.BaseEnigma@{Enigma2.BaseEnigma}!\_rotors@{\_rotors}}
+\index{\_rotors@{\_rotors}!Enigma2.BaseEnigma@{Enigma2.BaseEnigma}}
+\doxysubsubsection{\texorpdfstring{\_rotors}{\_rotors}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} Enigma2.\+Base\+Enigma.\+\_\+rotors = \mbox{\hyperlink{class_enigma2_1_1_base_enigma_ad5100d5c767f1b84b9ddade6e6a6b0b6}{to\+Key}}("{}ABC"{})}
+
+
+
+См. определение в файле \mbox{\hyperlink{_base_enigma_8cs_source}{Base\+Enigma.\+cs}} строка \mbox{\hyperlink{_base_enigma_8cs_source_l00025}{25}}
+
+\Hypertarget{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}\label{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0} 
+\index{Enigma2.BaseEnigma@{Enigma2.BaseEnigma}!key@{key}}
+\index{key@{key}!Enigma2.BaseEnigma@{Enigma2.BaseEnigma}}
+\doxysubsubsection{\texorpdfstring{key}{key}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} Enigma2.\+Base\+Enigma.\+key = \mbox{\hyperlink{class_enigma2_1_1_base_enigma_ad5100d5c767f1b84b9ddade6e6a6b0b6}{to\+Key}}("{}AAA"{})}
+
+
+
+См. определение в файле \mbox{\hyperlink{_base_enigma_8cs_source}{Base\+Enigma.\+cs}} строка \mbox{\hyperlink{_base_enigma_8cs_source_l00024}{24}}
+
+\Hypertarget{class_enigma2_1_1_base_enigma_a32f2d5f5b656ccdcf146b59a8e7abd60}\label{class_enigma2_1_1_base_enigma_a32f2d5f5b656ccdcf146b59a8e7abd60} 
+\index{Enigma2.BaseEnigma@{Enigma2.BaseEnigma}!reflectorB@{reflectorB}}
+\index{reflectorB@{reflectorB}!Enigma2.BaseEnigma@{Enigma2.BaseEnigma}}
+\doxysubsubsection{\texorpdfstring{reflectorB}{reflectorB}}
+{\footnotesize\ttfamily string Enigma2.\+Base\+Enigma.\+reflectorB = "{}YRUHQSLDPXNGOKMIEBFZCWVJAT"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+См. определение в файле \mbox{\hyperlink{_base_enigma_8cs_source}{Base\+Enigma.\+cs}} строка \mbox{\hyperlink{_base_enigma_8cs_source_l00017}{17}}
+
+\Hypertarget{class_enigma2_1_1_base_enigma_a7e09866f2a216fa715ca5df235a6894d}\label{class_enigma2_1_1_base_enigma_a7e09866f2a216fa715ca5df235a6894d} 
+\index{Enigma2.BaseEnigma@{Enigma2.BaseEnigma}!reflectorBThin@{reflectorBThin}}
+\index{reflectorBThin@{reflectorBThin}!Enigma2.BaseEnigma@{Enigma2.BaseEnigma}}
+\doxysubsubsection{\texorpdfstring{reflectorBThin}{reflectorBThin}}
+{\footnotesize\ttfamily string Enigma2.\+Base\+Enigma.\+reflector\+BThin = "{}ENKQAUYWJICOPBLMDXZVFTHRGS"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+См. определение в файле \mbox{\hyperlink{_base_enigma_8cs_source}{Base\+Enigma.\+cs}} строка \mbox{\hyperlink{_base_enigma_8cs_source_l00018}{18}}
+
+\Hypertarget{class_enigma2_1_1_base_enigma_aa4738e4356128eb989c6c27696552e5e}\label{class_enigma2_1_1_base_enigma_aa4738e4356128eb989c6c27696552e5e} 
+\index{Enigma2.BaseEnigma@{Enigma2.BaseEnigma}!reflectorC@{reflectorC}}
+\index{reflectorC@{reflectorC}!Enigma2.BaseEnigma@{Enigma2.BaseEnigma}}
+\doxysubsubsection{\texorpdfstring{reflectorC}{reflectorC}}
+{\footnotesize\ttfamily string Enigma2.\+Base\+Enigma.\+reflectorC = "{}FVPJIAOYEDRZXWGCTKUQSBNMHL"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+См. определение в файле \mbox{\hyperlink{_base_enigma_8cs_source}{Base\+Enigma.\+cs}} строка \mbox{\hyperlink{_base_enigma_8cs_source_l00019}{19}}
+
+\Hypertarget{class_enigma2_1_1_base_enigma_a0433cb09450405f2bf50cfe298784e30}\label{class_enigma2_1_1_base_enigma_a0433cb09450405f2bf50cfe298784e30} 
+\index{Enigma2.BaseEnigma@{Enigma2.BaseEnigma}!reflectorCThin@{reflectorCThin}}
+\index{reflectorCThin@{reflectorCThin}!Enigma2.BaseEnigma@{Enigma2.BaseEnigma}}
+\doxysubsubsection{\texorpdfstring{reflectorCThin}{reflectorCThin}}
+{\footnotesize\ttfamily string Enigma2.\+Base\+Enigma.\+reflector\+CThin = "{}RDOBJNTKVEHMLFCWZAXGYIPSUQ"{}\hspace{0.3cm}{\ttfamily [static]}}
+
+
+
+См. определение в файле \mbox{\hyperlink{_base_enigma_8cs_source}{Base\+Enigma.\+cs}} строка \mbox{\hyperlink{_base_enigma_8cs_source_l00020}{20}}
+
+\Hypertarget{class_enigma2_1_1_base_enigma_ac33a8464aa9b4e5b7ae0e67d8d0b0536}\label{class_enigma2_1_1_base_enigma_ac33a8464aa9b4e5b7ae0e67d8d0b0536} 
+\index{Enigma2.BaseEnigma@{Enigma2.BaseEnigma}!Replace@{Replace}}
+\index{Replace@{Replace}!Enigma2.BaseEnigma@{Enigma2.BaseEnigma}}
+\doxysubsubsection{\texorpdfstring{Replace}{Replace}}
+{\footnotesize\ttfamily Dictionary$<$char, char$>$ Enigma2.\+Base\+Enigma.\+Replace = new Dictionary$<$char, char$>$()}
+
+
+
+См. определение в файле \mbox{\hyperlink{_base_enigma_8cs_source}{Base\+Enigma.\+cs}} строка \mbox{\hyperlink{_base_enigma_8cs_source_l00022}{22}}
+
+\Hypertarget{class_enigma2_1_1_base_enigma_a2a356e12f7fe871b54b92ebc7fab6dfe}\label{class_enigma2_1_1_base_enigma_a2a356e12f7fe871b54b92ebc7fab6dfe} 
+\index{Enigma2.BaseEnigma@{Enigma2.BaseEnigma}!ring@{ring}}
+\index{ring@{ring}!Enigma2.BaseEnigma@{Enigma2.BaseEnigma}}
+\doxysubsubsection{\texorpdfstring{ring}{ring}}
+{\footnotesize\ttfamily int \mbox{[}$\,$\mbox{]} Enigma2.\+Base\+Enigma.\+ring = \mbox{\hyperlink{class_enigma2_1_1_base_enigma_ad5100d5c767f1b84b9ddade6e6a6b0b6}{to\+Key}}("{}AAA"{})}
+
+
+
+См. определение в файле \mbox{\hyperlink{_base_enigma_8cs_source}{Base\+Enigma.\+cs}} строка \mbox{\hyperlink{_base_enigma_8cs_source_l00026}{26}}
+
+
+
+Объявления и описания членов класса находятся в файле\+:\begin{DoxyCompactItemize}
+\item 
+Core/\mbox{\hyperlink{_base_enigma_8cs}{Base\+Enigma.\+cs}}\end{DoxyCompactItemize}

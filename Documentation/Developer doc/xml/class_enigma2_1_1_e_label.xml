@@ -1,0 +1,89 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="ru">
+  <compounddef id="class_enigma2_1_1_e_label" kind="class" language="C#" prot="public">
+    <compoundname>Enigma2::ELabel</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">System.Windows.Forms.Label</basecompoundref>
+    <sectiondef kind="property">
+      <memberdef kind="property" id="class_enigma2_1_1_e_label_1aad8eebe6ca990f4dc0d1d99507011fba" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>int</type>
+        <definition>int Enigma2.ELabel.RotateAngle</definition>
+        <argsstring></argsstring>
+        <name>RotateAngle</name>
+        <qualifiedname>Enigma2.ELabel.RotateAngle</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/ELabel.cs" line="11" column="20" bodyfile="Core/ELabel.cs" bodystart="11" bodyend="11"/>
+      </memberdef>
+      <memberdef kind="property" id="class_enigma2_1_1_e_label_1a1bdcc7b023a7a15bf8b711d9b8b6eb0b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
+        <type>string</type>
+        <definition>string Enigma2.ELabel.NewText</definition>
+        <argsstring></argsstring>
+        <name>NewText</name>
+        <qualifiedname>Enigma2.ELabel.NewText</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/ELabel.cs" line="12" column="23" bodyfile="Core/ELabel.cs" bodystart="12" bodyend="12"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_enigma2_1_1_e_label_1adbeff2c16504ae3fa5d63dbc7579f97c" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Enigma2.ELabel.OnPaint</definition>
+        <argsstring>(System.Windows.Forms.PaintEventArgs e)</argsstring>
+        <name>OnPaint</name>
+        <qualifiedname>Enigma2.ELabel.OnPaint</qualifiedname>
+        <param>
+          <type>System.Windows.Forms.PaintEventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/ELabel.cs" line="13" column="33" bodyfile="Core/ELabel.cs" bodystart="13" bodyend="20"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Enigma2.ELabel</label>
+        <link refid="class_enigma2_1_1_e_label"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>System::Windows::Forms::Label</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Enigma2.ELabel</label>
+        <link refid="class_enigma2_1_1_e_label"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>System::Windows::Forms::Label</label>
+      </node>
+    </collaborationgraph>
+    <location file="Core/ELabel.cs" line="9" column="5" bodyfile="Core/ELabel.cs" bodystart="10" bodyend="21"/>
+    <listofallmembers>
+      <member refid="class_enigma2_1_1_e_label_1a1bdcc7b023a7a15bf8b711d9b8b6eb0b" prot="public" virt="non-virtual"><scope>Enigma2::ELabel</scope><name>NewText</name></member>
+      <member refid="class_enigma2_1_1_e_label_1adbeff2c16504ae3fa5d63dbc7579f97c" prot="protected" virt="non-virtual"><scope>Enigma2::ELabel</scope><name>OnPaint</name></member>
+      <member refid="class_enigma2_1_1_e_label_1aad8eebe6ca990f4dc0d1d99507011fba" prot="public" virt="non-virtual"><scope>Enigma2::ELabel</scope><name>RotateAngle</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

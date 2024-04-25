@@ -1,0 +1,1218 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="ru">
+  <compounddef id="class_enigma2_1_1_game_main" kind="class" language="C#" prot="public" sealed="yes">
+    <compoundname>Enigma2::GameMain</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Microsoft.Xna.Framework.Game</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1af087422c056cb6fe4d99b0f67b7a0b89" prot="private" static="no" mutable="no">
+        <type>GraphicsDeviceManager</type>
+        <definition>GraphicsDeviceManager Enigma2.GameMain.graphics</definition>
+        <argsstring></argsstring>
+        <name>graphics</name>
+        <qualifiedname>Enigma2.GameMain.graphics</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="20" column="31" bodyfile="GameMain.cs" bodystart="20" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1a63fc7bf6f722e567db0b7c4797b210b7" prot="private" static="no" mutable="no">
+        <type>SpriteBatch</type>
+        <definition>SpriteBatch Enigma2.GameMain.spriteBatch</definition>
+        <argsstring></argsstring>
+        <name>spriteBatch</name>
+        <qualifiedname>Enigma2.GameMain.spriteBatch</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="21" column="21" bodyfile="GameMain.cs" bodystart="21" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1af8615ee9e8b4dd4b56d1d725c546b4dd" prot="private" static="no" mutable="no">
+        <type>Color</type>
+        <definition>Color Enigma2.GameMain.colorBack</definition>
+        <argsstring></argsstring>
+        <name>colorBack</name>
+        <qualifiedname>Enigma2.GameMain.colorBack</qualifiedname>
+        <initializer>= Color.FromNonPremultiplied(55, 58, 65, 255)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="29" column="15" bodyfile="GameMain.cs" bodystart="29" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1a526c9c91eb5051b56efede4ef8d87a97" prot="private" static="no" mutable="no">
+        <type>Color</type>
+        <definition>Color Enigma2.GameMain.colorGray</definition>
+        <argsstring></argsstring>
+        <name>colorGray</name>
+        <qualifiedname>Enigma2.GameMain.colorGray</qualifiedname>
+        <initializer>= Color.FromNonPremultiplied(97, 97, 97, 255)</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="30" column="15" bodyfile="GameMain.cs" bodystart="30" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1a5cb475574df4a4e5c96811dd1890fd8f" prot="private" static="no" mutable="no">
+        <type>Texture2D</type>
+        <definition>Texture2D Enigma2.GameMain.textureBg</definition>
+        <argsstring></argsstring>
+        <name>textureBg</name>
+        <qualifiedname>Enigma2.GameMain.textureBg</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="31" column="19" bodyfile="GameMain.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1adda12f050e09cd2cf6e9aaa71d2c21c4" prot="private" static="no" mutable="no">
+        <type>Texture2D</type>
+        <definition>Texture2D Enigma2.GameMain.textureSymbol</definition>
+        <argsstring></argsstring>
+        <name>textureSymbol</name>
+        <qualifiedname>Enigma2.GameMain.textureSymbol</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="31" column="29" bodyfile="GameMain.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1a8b53732007a2073c2e8c4c7cf66f594c" prot="private" static="no" mutable="no">
+        <type>Texture2D</type>
+        <definition>Texture2D Enigma2.GameMain.textureLed</definition>
+        <argsstring></argsstring>
+        <name>textureLed</name>
+        <qualifiedname>Enigma2.GameMain.textureLed</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="31" column="43" bodyfile="GameMain.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1a4c0ba3d6b5e8c5fd83a2a7bdf60df95d" prot="private" static="no" mutable="no">
+        <type>Texture2D</type>
+        <definition>Texture2D Enigma2.GameMain.textureRotor</definition>
+        <argsstring></argsstring>
+        <name>textureRotor</name>
+        <qualifiedname>Enigma2.GameMain.textureRotor</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="31" column="54" bodyfile="GameMain.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1a1f3b1d456e625b74c0a65f1d87884411" prot="private" static="no" mutable="no">
+        <type>Texture2D</type>
+        <definition>Texture2D Enigma2.GameMain.textureInfo</definition>
+        <argsstring></argsstring>
+        <name>textureInfo</name>
+        <qualifiedname>Enigma2.GameMain.textureInfo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="31" column="67" bodyfile="GameMain.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1a38b53d6af87685d82c002234eae42ae2" prot="private" static="no" mutable="no">
+        <type>Texture2D</type>
+        <definition>Texture2D Enigma2.GameMain.textureOut</definition>
+        <argsstring></argsstring>
+        <name>textureOut</name>
+        <qualifiedname>Enigma2.GameMain.textureOut</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="31" column="79" bodyfile="GameMain.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1a0033593569395646586f29a87b2fe4ec" prot="private" static="no" mutable="no">
+        <type>Texture2D</type>
+        <definition>Texture2D Enigma2.GameMain.textureBolt</definition>
+        <argsstring></argsstring>
+        <name>textureBolt</name>
+        <qualifiedname>Enigma2.GameMain.textureBolt</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="31" column="90" bodyfile="GameMain.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1a4e50b03db3b663055237799846805926" prot="private" static="no" mutable="no">
+        <type>Texture2D</type>
+        <definition>Texture2D Enigma2.GameMain.textureLock</definition>
+        <argsstring></argsstring>
+        <name>textureLock</name>
+        <qualifiedname>Enigma2.GameMain.textureLock</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="31" column="102" bodyfile="GameMain.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1a62c4d01c583c45c9a39a7d7c9394a5b4" prot="private" static="no" mutable="no">
+        <type>Texture2D</type>
+        <definition>Texture2D Enigma2.GameMain.textureBack</definition>
+        <argsstring></argsstring>
+        <name>textureBack</name>
+        <qualifiedname>Enigma2.GameMain.textureBack</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="31" column="114" bodyfile="GameMain.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1a2e5d503d93b304265f8439579e888e4e" prot="private" static="no" mutable="no">
+        <type>Texture2D</type>
+        <definition>Texture2D Enigma2.GameMain.textureText</definition>
+        <argsstring></argsstring>
+        <name>textureText</name>
+        <qualifiedname>Enigma2.GameMain.textureText</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="31" column="126" bodyfile="GameMain.cs" bodystart="31" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1ae5af409a04c69ae6a526b9eb50cc0b7c" prot="private" static="no" mutable="no">
+        <type>Texture2D</type>
+        <definition>Texture2D Enigma2.GameMain.texturePlug</definition>
+        <argsstring></argsstring>
+        <name>texturePlug</name>
+        <qualifiedname>Enigma2.GameMain.texturePlug</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="32" column="13" bodyfile="GameMain.cs" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1acf035ed1a5bc6a511fb4593201b6bd1b" prot="private" static="no" mutable="no">
+        <type>Texture2D</type>
+        <definition>Texture2D Enigma2.GameMain.textureActivePlug</definition>
+        <argsstring></argsstring>
+        <name>textureActivePlug</name>
+        <qualifiedname>Enigma2.GameMain.textureActivePlug</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="32" column="25" bodyfile="GameMain.cs" bodystart="32" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1a6fcb2eb68dda65afbcbb8ccac4fafdc6" prot="private" static="no" mutable="no">
+        <type>Texture2D[]</type>
+        <definition>Texture2D [] Enigma2.GameMain.sliders</definition>
+        <argsstring></argsstring>
+        <name>sliders</name>
+        <qualifiedname>Enigma2.GameMain.sliders</qualifiedname>
+        <initializer>= new Texture2D[2]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="33" column="19" bodyfile="GameMain.cs" bodystart="33" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1a64d8f47595827251180a786213f4be0b" prot="private" static="no" mutable="no">
+        <type>int[]</type>
+        <definition>int [] Enigma2.GameMain.sliderPositions</definition>
+        <argsstring></argsstring>
+        <name>sliderPositions</name>
+        <qualifiedname>Enigma2.GameMain.sliderPositions</qualifiedname>
+        <initializer>= new int[4]</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="34" column="13" bodyfile="GameMain.cs" bodystart="34" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1a95dd5e9879f0823c219ee5ebcb6dd664" prot="private" static="no" mutable="no">
+        <type>SoundEffect</type>
+        <definition>SoundEffect Enigma2.GameMain.soundUp</definition>
+        <argsstring></argsstring>
+        <name>soundUp</name>
+        <qualifiedname>Enigma2.GameMain.soundUp</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="35" column="21" bodyfile="GameMain.cs" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1a7d72b8a0e3e959f4f589b4d435d84e83" prot="private" static="no" mutable="no">
+        <type>SoundEffect</type>
+        <definition>SoundEffect Enigma2.GameMain.soundDown</definition>
+        <argsstring></argsstring>
+        <name>soundDown</name>
+        <qualifiedname>Enigma2.GameMain.soundDown</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="35" column="29" bodyfile="GameMain.cs" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1a5b3588d3cfdfd859f510a90d03bdde45" prot="private" static="no" mutable="no">
+        <type>SoundEffect</type>
+        <definition>SoundEffect Enigma2.GameMain.soundTick</definition>
+        <argsstring></argsstring>
+        <name>soundTick</name>
+        <qualifiedname>Enigma2.GameMain.soundTick</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="35" column="39" bodyfile="GameMain.cs" bodystart="35" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1a0258d025b79dd5882cd5ed4ec313782a" prot="private" static="no" mutable="no">
+        <type>float</type>
+        <definition>float Enigma2.GameMain.volume</definition>
+        <argsstring></argsstring>
+        <name>volume</name>
+        <qualifiedname>Enigma2.GameMain.volume</qualifiedname>
+        <initializer>= 0.6f</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="37" column="15" bodyfile="GameMain.cs" bodystart="37" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1ae58f52222f541a7d3b8e90bdd780d12b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Enigma2.GameMain.showPlugboard</definition>
+        <argsstring></argsstring>
+        <name>showPlugboard</name>
+        <qualifiedname>Enigma2.GameMain.showPlugboard</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="40" column="14" bodyfile="GameMain.cs" bodystart="40" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1a9ec24ae80d7a19568e14e9e859a2ffd7" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Enigma2.GameMain.useM4</definition>
+        <argsstring></argsstring>
+        <name>useM4</name>
+        <qualifiedname>Enigma2.GameMain.useM4</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="41" column="14" bodyfile="GameMain.cs" bodystart="41" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1ace3dcd76c4a9725eff7d6dc91422275d" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Enigma2.GameMain.isWait</definition>
+        <argsstring></argsstring>
+        <name>isWait</name>
+        <qualifiedname>Enigma2.GameMain.isWait</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="42" column="14" bodyfile="GameMain.cs" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1abca1674d0b8e35e9bfed6fdba4b81c4a" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Enigma2.GameMain.isRemove</definition>
+        <argsstring></argsstring>
+        <name>isRemove</name>
+        <qualifiedname>Enigma2.GameMain.isRemove</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="42" column="22" bodyfile="GameMain.cs" bodystart="42" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1ad2fb70ceb49d7caf43bc970ae8deff42" prot="private" static="no" mutable="no">
+        <type>List&lt; char &gt;</type>
+        <definition>List&lt;char&gt; Enigma2.GameMain.charset</definition>
+        <argsstring></argsstring>
+        <name>charset</name>
+        <qualifiedname>Enigma2.GameMain.charset</qualifiedname>
+        <initializer>= new List&lt;char&gt;()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="44" column="14" bodyfile="GameMain.cs" bodystart="44" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1ae9430556958bedc3855d2f1f07b18557" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Enigma2.GameMain.startX</definition>
+        <argsstring></argsstring>
+        <name>startX</name>
+        <qualifiedname>Enigma2.GameMain.startX</qualifiedname>
+        <initializer>= 62</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="138" column="13" bodyfile="GameMain.cs" bodystart="138" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1ae3944d550654d3839171fe9036fb4b16" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Enigma2.GameMain.startY</definition>
+        <argsstring></argsstring>
+        <name>startY</name>
+        <qualifiedname>Enigma2.GameMain.startY</qualifiedname>
+        <initializer>= 468</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="139" column="13" bodyfile="GameMain.cs" bodystart="139" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1a37e1babfd19282a1deb412bbf8d0437f" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Enigma2.GameMain.x</definition>
+        <argsstring></argsstring>
+        <name>x</name>
+        <qualifiedname>Enigma2.GameMain.x</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="140" column="13" bodyfile="GameMain.cs" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1a6c8e06e6f7972a8ae8f9917cdb1224f6" prot="private" static="no" mutable="no">
+        <type>int</type>
+        <definition>int Enigma2.GameMain.y</definition>
+        <argsstring></argsstring>
+        <name>y</name>
+        <qualifiedname>Enigma2.GameMain.y</qualifiedname>
+        <initializer>= 0</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="140" column="16" bodyfile="GameMain.cs" bodystart="140" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1a05c4d7182128d2bfcf120f0bd6ca2b12" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Enigma2.GameMain.isSettings</definition>
+        <argsstring></argsstring>
+        <name>isSettings</name>
+        <qualifiedname>Enigma2.GameMain.isSettings</qualifiedname>
+        <initializer>= true</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="141" column="14" bodyfile="GameMain.cs" bodystart="141" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1af99900e636a7eaa4af86aac5d24cad0f" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Enigma2.GameMain.isNumber</definition>
+        <argsstring></argsstring>
+        <name>isNumber</name>
+        <qualifiedname>Enigma2.GameMain.isNumber</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="351" column="14" bodyfile="GameMain.cs" bodystart="351" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1a6e5d7ac2e110b81e64b0f35abc08b73e" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Enigma2.GameMain.waitSymbol</definition>
+        <argsstring></argsstring>
+        <name>waitSymbol</name>
+        <qualifiedname>Enigma2.GameMain.waitSymbol</qualifiedname>
+        <initializer>= &apos;\0&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="402" column="14" bodyfile="GameMain.cs" bodystart="402" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1afa0ce984ad25e42165e2e36f83a3b98b" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Enigma2.GameMain.isSend</definition>
+        <argsstring></argsstring>
+        <name>isSend</name>
+        <qualifiedname>Enigma2.GameMain.isSend</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="472" column="14" bodyfile="GameMain.cs" bodystart="472" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1ae472a78c78eba532a0f0284e3a5587a3" prot="private" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Enigma2.GameMain.sended</definition>
+        <argsstring></argsstring>
+        <name>sended</name>
+        <qualifiedname>Enigma2.GameMain.sended</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="473" column="14" bodyfile="GameMain.cs" bodystart="473" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1aa2cf1dec7ba4d558d360838d00f2370a" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Enigma2.GameMain.charCurrent</definition>
+        <argsstring></argsstring>
+        <name>charCurrent</name>
+        <qualifiedname>Enigma2.GameMain.charCurrent</qualifiedname>
+        <initializer>= &apos;\0&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="474" column="14" bodyfile="GameMain.cs" bodystart="474" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1ae18cb8e59b6fb89fd4d3f5383eee6461" prot="private" static="no" mutable="no">
+        <type>char</type>
+        <definition>char Enigma2.GameMain.charSend</definition>
+        <argsstring></argsstring>
+        <name>charSend</name>
+        <qualifiedname>Enigma2.GameMain.charSend</qualifiedname>
+        <initializer>= &apos;\0&apos;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="475" column="14" bodyfile="GameMain.cs" bodystart="475" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-attrib">
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1a9ba37a6c5028a07b7dfc43a8327faf47" prot="public" static="no" mutable="no">
+        <type><ref refid="class_enigma2_1_1_base_enigma" kindref="compound">BaseEnigma</ref></type>
+        <definition>BaseEnigma Enigma2.GameMain.enigma</definition>
+        <argsstring></argsstring>
+        <name>enigma</name>
+        <qualifiedname>Enigma2.GameMain.enigma</qualifiedname>
+        <initializer>= new <ref refid="class_enigma2_1_1_base_enigma" kindref="compound">BaseEnigma</ref>()</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="22" column="27" bodyfile="GameMain.cs" bodystart="22" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1a854fcefa9190257fb5d148c0f3838eb5" prot="public" static="no" mutable="no">
+        <type><ref refid="class_enigma2_1_1_settings_form" kindref="compound">SettingsForm</ref></type>
+        <definition>SettingsForm Enigma2.GameMain.formSettings</definition>
+        <argsstring></argsstring>
+        <name>formSettings</name>
+        <qualifiedname>Enigma2.GameMain.formSettings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="23" column="29" bodyfile="GameMain.cs" bodystart="23" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1ac6dd6a405c5f137687069b7dbaf8b13d" prot="public" static="no" mutable="no">
+        <type>bool</type>
+        <definition>bool Enigma2.GameMain.customReflector</definition>
+        <argsstring></argsstring>
+        <name>customReflector</name>
+        <qualifiedname>Enigma2.GameMain.customReflector</qualifiedname>
+        <initializer>= false</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="38" column="21" bodyfile="GameMain.cs" bodystart="38" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1a1514e258edf3a2f59d48dd38e767b19b" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Enigma2.GameMain.reflector</definition>
+        <argsstring></argsstring>
+        <name>reflector</name>
+        <qualifiedname>Enigma2.GameMain.reflector</qualifiedname>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="39" column="23" bodyfile="GameMain.cs" bodystart="39" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1a2d85539fefe29e0adf3822af7f521869" prot="public" static="no" mutable="no">
+        <type>Dictionary&lt; char, char &gt;</type>
+        <definition>Dictionary&lt;char, char&gt; Enigma2.GameMain.replace</definition>
+        <argsstring></argsstring>
+        <name>replace</name>
+        <qualifiedname>Enigma2.GameMain.replace</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="43" column="27" bodyfile="GameMain.cs" bodystart="43" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1a3e6351bd5cb71f0eda92b6c2e674f6c4" prot="public" static="no" mutable="no">
+        <type>string</type>
+        <definition>string Enigma2.GameMain.message</definition>
+        <argsstring></argsstring>
+        <name>message</name>
+        <qualifiedname>Enigma2.GameMain.message</qualifiedname>
+        <initializer>= &quot;&quot;</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="476" column="23" bodyfile="GameMain.cs" bodystart="476" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-static-attrib">
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1a04290fc94a94b41eb8980584bac32555" prot="public" static="yes" mutable="no">
+        <type>MouseState</type>
+        <definition>MouseState Enigma2.GameMain.mouseOne</definition>
+        <argsstring></argsstring>
+        <name>mouseOne</name>
+        <qualifiedname>Enigma2.GameMain.mouseOne</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="25" column="34" bodyfile="GameMain.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1a3e8371d4ea48b000633930dc733df38d" prot="public" static="yes" mutable="no">
+        <type>MouseState</type>
+        <definition>MouseState Enigma2.GameMain.mouseTwo</definition>
+        <argsstring></argsstring>
+        <name>mouseTwo</name>
+        <qualifiedname>Enigma2.GameMain.mouseTwo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="25" column="43" bodyfile="GameMain.cs" bodystart="25" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1a9aab07803544f8f5f3b2cd112dec334b" prot="public" static="yes" mutable="no">
+        <type>KeyboardState</type>
+        <definition>KeyboardState Enigma2.GameMain.keybOne</definition>
+        <argsstring></argsstring>
+        <name>keybOne</name>
+        <qualifiedname>Enigma2.GameMain.keybOne</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="26" column="37" bodyfile="GameMain.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1a571c793df25a5b255e0bd08adc2107b4" prot="public" static="yes" mutable="no">
+        <type>KeyboardState</type>
+        <definition>KeyboardState Enigma2.GameMain.keybTwo</definition>
+        <argsstring></argsstring>
+        <name>keybTwo</name>
+        <qualifiedname>Enigma2.GameMain.keybTwo</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="26" column="45" bodyfile="GameMain.cs" bodystart="26" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1ada6aa9c46995956f41f52ac12efee7b2" prot="public" static="yes" mutable="no">
+        <type>SpriteFont</type>
+        <definition>SpriteFont Enigma2.GameMain.fontBase</definition>
+        <argsstring></argsstring>
+        <name>fontBase</name>
+        <qualifiedname>Enigma2.GameMain.fontBase</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="27" column="34" bodyfile="GameMain.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1ab58254bc957224320973432bc7d87f93" prot="public" static="yes" mutable="no">
+        <type>SpriteFont</type>
+        <definition>SpriteFont Enigma2.GameMain.fontMini</definition>
+        <argsstring></argsstring>
+        <name>fontMini</name>
+        <qualifiedname>Enigma2.GameMain.fontMini</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="27" column="43" bodyfile="GameMain.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1abc807c2302a298e4eb38f966cc7438ad" prot="public" static="yes" mutable="no">
+        <type>SpriteFont</type>
+        <definition>SpriteFont Enigma2.GameMain.fontSpec</definition>
+        <argsstring></argsstring>
+        <name>fontSpec</name>
+        <qualifiedname>Enigma2.GameMain.fontSpec</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="27" column="52" bodyfile="GameMain.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1af0cf4346d460eaeacfeb9a5eee2526b5" prot="public" static="yes" mutable="no">
+        <type>SpriteFont</type>
+        <definition>SpriteFont Enigma2.GameMain.fontSpecMini</definition>
+        <argsstring></argsstring>
+        <name>fontSpecMini</name>
+        <qualifiedname>Enigma2.GameMain.fontSpecMini</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="27" column="61" bodyfile="GameMain.cs" bodystart="27" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-static-attrib">
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1ac574cd8311aa6d102c4ba303ec52548e" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int Enigma2.GameMain.WIDTH</definition>
+        <argsstring></argsstring>
+        <name>WIDTH</name>
+        <qualifiedname>Enigma2.GameMain.WIDTH</qualifiedname>
+        <initializer>= 538</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="46" column="19" bodyfile="GameMain.cs" bodystart="46" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_game_main_1a0314b11c50dbf602539db739ad2b719d" prot="private" static="yes" mutable="no">
+        <type>const int</type>
+        <definition>const int Enigma2.GameMain.HEIGHT</definition>
+        <argsstring></argsstring>
+        <name>HEIGHT</name>
+        <qualifiedname>Enigma2.GameMain.HEIGHT</qualifiedname>
+        <initializer>= 640</initializer>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="47" column="19" bodyfile="GameMain.cs" bodystart="47" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_enigma2_1_1_game_main_1afa5f10cdf0a4fbf4234f44aac9348b37" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Enigma2.GameMain.GameMain</definition>
+        <argsstring>()</argsstring>
+        <name>GameMain</name>
+        <qualifiedname>Enigma2.GameMain.GameMain</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="49" column="16" bodyfile="GameMain.cs" bodystart="49" bodyend="56"/>
+      </memberdef>
+      <memberdef kind="function" id="class_enigma2_1_1_game_main_1ae3360c0053ff567bebcc5787de4e543b" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Enigma2.GameMain.SetSettings</definition>
+        <argsstring>(Settings settings)</argsstring>
+        <name>SetSettings</name>
+        <qualifiedname>Enigma2.GameMain.SetSettings</qualifiedname>
+        <param>
+          <type><ref refid="struct_enigma2_1_1_settings" kindref="compound">Settings</ref></type>
+          <declname>settings</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="143" column="21" bodyfile="GameMain.cs" bodystart="143" bodyend="153"/>
+      </memberdef>
+      <memberdef kind="function" id="class_enigma2_1_1_game_main_1aaa8bb801e494ee7329a835566c4a4488" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Enigma2.GameMain.CloseSettings</definition>
+        <argsstring>()</argsstring>
+        <name>CloseSettings</name>
+        <qualifiedname>Enigma2.GameMain.CloseSettings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="155" column="21" bodyfile="GameMain.cs" bodystart="155" bodyend="158"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_enigma2_1_1_game_main_1a600b3a23fd7354229b853a5952f49fc3" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Enigma2.GameMain.LoadContent</definition>
+        <argsstring>()</argsstring>
+        <name>LoadContent</name>
+        <qualifiedname>Enigma2.GameMain.LoadContent</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="58" column="33" bodyfile="GameMain.cs" bodystart="58" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="class_enigma2_1_1_game_main_1a728ad7694c31f2719dbbaea560531ee6" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Enigma2.GameMain.Update</definition>
+        <argsstring>(GameTime gameTime)</argsstring>
+        <name>Update</name>
+        <qualifiedname>Enigma2.GameMain.Update</qualifiedname>
+        <param>
+          <type>GameTime</type>
+          <declname>gameTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="99" column="33" bodyfile="GameMain.cs" bodystart="99" bodyend="135"/>
+      </memberdef>
+      <memberdef kind="function" id="class_enigma2_1_1_game_main_1a5e4d6ae472eb5b8d28a502778c71e1cd" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Enigma2.GameMain.Draw</definition>
+        <argsstring>(GameTime gameTime)</argsstring>
+        <name>Draw</name>
+        <qualifiedname>Enigma2.GameMain.Draw</qualifiedname>
+        <param>
+          <type>GameTime</type>
+          <declname>gameTime</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="160" column="33" bodyfile="GameMain.cs" bodystart="160" bodyend="208"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_enigma2_1_1_game_main_1a6ef6a461797b1db8d35618b289bd6275" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Enigma2.GameMain.drawText</definition>
+        <argsstring>()</argsstring>
+        <name>drawText</name>
+        <qualifiedname>Enigma2.GameMain.drawText</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="210" column="14" bodyfile="GameMain.cs" bodystart="210" bodyend="224"/>
+      </memberdef>
+      <memberdef kind="function" id="class_enigma2_1_1_game_main_1aed8d1ada514c86f38470667cb5b277f2" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Enigma2.GameMain.drawPlugboardButtonShow</definition>
+        <argsstring>()</argsstring>
+        <name>drawPlugboardButtonShow</name>
+        <qualifiedname>Enigma2.GameMain.drawPlugboardButtonShow</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="226" column="14" bodyfile="GameMain.cs" bodystart="226" bodyend="242"/>
+      </memberdef>
+      <memberdef kind="function" id="class_enigma2_1_1_game_main_1abfe95aea1554962cffd4de37454b8f66" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Enigma2.GameMain.drawPlugboardButtonHide</definition>
+        <argsstring>()</argsstring>
+        <name>drawPlugboardButtonHide</name>
+        <qualifiedname>Enigma2.GameMain.drawPlugboardButtonHide</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="244" column="14" bodyfile="GameMain.cs" bodystart="244" bodyend="259"/>
+      </memberdef>
+      <memberdef kind="function" id="class_enigma2_1_1_game_main_1a9d6b8af286cc0c1e8ff08a5f80c22432" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Enigma2.GameMain.drawSettings</definition>
+        <argsstring>()</argsstring>
+        <name>drawSettings</name>
+        <qualifiedname>Enigma2.GameMain.drawSettings</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="261" column="14" bodyfile="GameMain.cs" bodystart="261" bodyend="277"/>
+      </memberdef>
+      <memberdef kind="function" id="class_enigma2_1_1_game_main_1a11180d9e2f26414bd7d5e0a63171a56a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Enigma2.GameMain.drawRotor</definition>
+        <argsstring>(int rotor, int xStart)</argsstring>
+        <name>drawRotor</name>
+        <qualifiedname>Enigma2.GameMain.drawRotor</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>rotor</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>xStart</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="279" column="14" bodyfile="GameMain.cs" bodystart="279" bodyend="301"/>
+      </memberdef>
+      <memberdef kind="function" id="class_enigma2_1_1_game_main_1a650cc4b0186ca8f417dd3c614391bd3a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Enigma2.GameMain.drawOutput</definition>
+        <argsstring>()</argsstring>
+        <name>drawOutput</name>
+        <qualifiedname>Enigma2.GameMain.drawOutput</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="303" column="14" bodyfile="GameMain.cs" bodystart="303" bodyend="325"/>
+      </memberdef>
+      <memberdef kind="function" id="class_enigma2_1_1_game_main_1ab0a8d148e22f8c49bb866ac859c2aded" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Enigma2.GameMain.drawInput</definition>
+        <argsstring>()</argsstring>
+        <name>drawInput</name>
+        <qualifiedname>Enigma2.GameMain.drawInput</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="327" column="14" bodyfile="GameMain.cs" bodystart="327" bodyend="349"/>
+      </memberdef>
+      <memberdef kind="function" id="class_enigma2_1_1_game_main_1a309a3ba8e505c3fbd1525c64e74f245e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Enigma2.GameMain.drawPlugs</definition>
+        <argsstring>()</argsstring>
+        <name>drawPlugs</name>
+        <qualifiedname>Enigma2.GameMain.drawPlugs</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="352" column="14" bodyfile="GameMain.cs" bodystart="352" bodyend="400"/>
+      </memberdef>
+      <memberdef kind="function" id="class_enigma2_1_1_game_main_1a99f68581debc4fd84e071ac8929a5de0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Enigma2.GameMain.drawPlug</definition>
+        <argsstring>(int x, int y, char symbol)</argsstring>
+        <name>drawPlug</name>
+        <qualifiedname>Enigma2.GameMain.drawPlug</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>symbol</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="403" column="14" bodyfile="GameMain.cs" bodystart="403" bodyend="470"/>
+      </memberdef>
+      <memberdef kind="function" id="class_enigma2_1_1_game_main_1a96582c478cb0a5438f3effbec73e720a" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Enigma2.GameMain.drawLed</definition>
+        <argsstring>(int x, int y, char symbol)</argsstring>
+        <name>drawLed</name>
+        <qualifiedname>Enigma2.GameMain.drawLed</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>symbol</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="478" column="14" bodyfile="GameMain.cs" bodystart="478" bodyend="484"/>
+      </memberdef>
+      <memberdef kind="function" id="class_enigma2_1_1_game_main_1aa1af19dc66a77519b34cc9c6a9132e77" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Enigma2.GameMain.drawButton</definition>
+        <argsstring>(int x, int y, char symbol)</argsstring>
+        <name>drawButton</name>
+        <qualifiedname>Enigma2.GameMain.drawButton</qualifiedname>
+        <param>
+          <type>int</type>
+          <declname>x</declname>
+        </param>
+        <param>
+          <type>int</type>
+          <declname>y</declname>
+        </param>
+        <param>
+          <type>char</type>
+          <declname>symbol</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="GameMain.cs" line="486" column="14" bodyfile="GameMain.cs" bodystart="486" bodyend="513"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+<para>This is the main type for your game. </para>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Enigma2.GameMain</label>
+        <link refid="class_enigma2_1_1_game_main"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Microsoft::Xna::Framework::Game</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Enigma2.GameMain</label>
+        <link refid="class_enigma2_1_1_game_main"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+        <childnode refid="3" relation="usage">
+          <edgelabel>enigma</edgelabel>
+        </childnode>
+        <childnode refid="4" relation="usage">
+          <edgelabel>formSettings</edgelabel>
+        </childnode>
+      </node>
+      <node id="3">
+        <label>Enigma2.BaseEnigma</label>
+        <link refid="class_enigma2_1_1_base_enigma"/>
+      </node>
+      <node id="4">
+        <label>Enigma2.SettingsForm</label>
+        <link refid="class_enigma2_1_1_settings_form"/>
+        <childnode refid="5" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="5">
+        <label>Form</label>
+      </node>
+      <node id="2">
+        <label>Microsoft::Xna::Framework::Game</label>
+      </node>
+    </collaborationgraph>
+    <location file="GameMain.cs" line="18" column="11" bodyfile="GameMain.cs" bodystart="19" bodyend="514"/>
+    <listofallmembers>
+      <member refid="class_enigma2_1_1_game_main_1aa2cf1dec7ba4d558d360838d00f2370a" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>charCurrent</name></member>
+      <member refid="class_enigma2_1_1_game_main_1ae18cb8e59b6fb89fd4d3f5383eee6461" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>charSend</name></member>
+      <member refid="class_enigma2_1_1_game_main_1ad2fb70ceb49d7caf43bc970ae8deff42" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>charset</name></member>
+      <member refid="class_enigma2_1_1_game_main_1aaa8bb801e494ee7329a835566c4a4488" prot="public" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>CloseSettings</name></member>
+      <member refid="class_enigma2_1_1_game_main_1af8615ee9e8b4dd4b56d1d725c546b4dd" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>colorBack</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a526c9c91eb5051b56efede4ef8d87a97" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>colorGray</name></member>
+      <member refid="class_enigma2_1_1_game_main_1ac6dd6a405c5f137687069b7dbaf8b13d" prot="public" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>customReflector</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a5e4d6ae472eb5b8d28a502778c71e1cd" prot="protected" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>Draw</name></member>
+      <member refid="class_enigma2_1_1_game_main_1aa1af19dc66a77519b34cc9c6a9132e77" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>drawButton</name></member>
+      <member refid="class_enigma2_1_1_game_main_1ab0a8d148e22f8c49bb866ac859c2aded" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>drawInput</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a96582c478cb0a5438f3effbec73e720a" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>drawLed</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a650cc4b0186ca8f417dd3c614391bd3a" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>drawOutput</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a99f68581debc4fd84e071ac8929a5de0" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>drawPlug</name></member>
+      <member refid="class_enigma2_1_1_game_main_1abfe95aea1554962cffd4de37454b8f66" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>drawPlugboardButtonHide</name></member>
+      <member refid="class_enigma2_1_1_game_main_1aed8d1ada514c86f38470667cb5b277f2" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>drawPlugboardButtonShow</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a309a3ba8e505c3fbd1525c64e74f245e" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>drawPlugs</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a11180d9e2f26414bd7d5e0a63171a56a" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>drawRotor</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a9d6b8af286cc0c1e8ff08a5f80c22432" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>drawSettings</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a6ef6a461797b1db8d35618b289bd6275" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>drawText</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a9ba37a6c5028a07b7dfc43a8327faf47" prot="public" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>enigma</name></member>
+      <member refid="class_enigma2_1_1_game_main_1ada6aa9c46995956f41f52ac12efee7b2" prot="public" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>fontBase</name></member>
+      <member refid="class_enigma2_1_1_game_main_1ab58254bc957224320973432bc7d87f93" prot="public" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>fontMini</name></member>
+      <member refid="class_enigma2_1_1_game_main_1abc807c2302a298e4eb38f966cc7438ad" prot="public" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>fontSpec</name></member>
+      <member refid="class_enigma2_1_1_game_main_1af0cf4346d460eaeacfeb9a5eee2526b5" prot="public" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>fontSpecMini</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a854fcefa9190257fb5d148c0f3838eb5" prot="public" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>formSettings</name></member>
+      <member refid="class_enigma2_1_1_game_main_1afa5f10cdf0a4fbf4234f44aac9348b37" prot="public" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>GameMain</name></member>
+      <member refid="class_enigma2_1_1_game_main_1af087422c056cb6fe4d99b0f67b7a0b89" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>graphics</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a0314b11c50dbf602539db739ad2b719d" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>HEIGHT</name></member>
+      <member refid="class_enigma2_1_1_game_main_1af99900e636a7eaa4af86aac5d24cad0f" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>isNumber</name></member>
+      <member refid="class_enigma2_1_1_game_main_1abca1674d0b8e35e9bfed6fdba4b81c4a" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>isRemove</name></member>
+      <member refid="class_enigma2_1_1_game_main_1afa0ce984ad25e42165e2e36f83a3b98b" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>isSend</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a05c4d7182128d2bfcf120f0bd6ca2b12" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>isSettings</name></member>
+      <member refid="class_enigma2_1_1_game_main_1ace3dcd76c4a9725eff7d6dc91422275d" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>isWait</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a9aab07803544f8f5f3b2cd112dec334b" prot="public" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>keybOne</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a571c793df25a5b255e0bd08adc2107b4" prot="public" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>keybTwo</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a600b3a23fd7354229b853a5952f49fc3" prot="protected" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>LoadContent</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a3e6351bd5cb71f0eda92b6c2e674f6c4" prot="public" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>message</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a04290fc94a94b41eb8980584bac32555" prot="public" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>mouseOne</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a3e8371d4ea48b000633930dc733df38d" prot="public" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>mouseTwo</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a1514e258edf3a2f59d48dd38e767b19b" prot="public" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>reflector</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a2d85539fefe29e0adf3822af7f521869" prot="public" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>replace</name></member>
+      <member refid="class_enigma2_1_1_game_main_1ae472a78c78eba532a0f0284e3a5587a3" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>sended</name></member>
+      <member refid="class_enigma2_1_1_game_main_1ae3360c0053ff567bebcc5787de4e543b" prot="public" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>SetSettings</name></member>
+      <member refid="class_enigma2_1_1_game_main_1ae58f52222f541a7d3b8e90bdd780d12b" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>showPlugboard</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a64d8f47595827251180a786213f4be0b" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>sliderPositions</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a6fcb2eb68dda65afbcbb8ccac4fafdc6" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>sliders</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a7d72b8a0e3e959f4f589b4d435d84e83" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>soundDown</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a5b3588d3cfdfd859f510a90d03bdde45" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>soundTick</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a95dd5e9879f0823c219ee5ebcb6dd664" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>soundUp</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a63fc7bf6f722e567db0b7c4797b210b7" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>spriteBatch</name></member>
+      <member refid="class_enigma2_1_1_game_main_1ae9430556958bedc3855d2f1f07b18557" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>startX</name></member>
+      <member refid="class_enigma2_1_1_game_main_1ae3944d550654d3839171fe9036fb4b16" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>startY</name></member>
+      <member refid="class_enigma2_1_1_game_main_1acf035ed1a5bc6a511fb4593201b6bd1b" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>textureActivePlug</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a62c4d01c583c45c9a39a7d7c9394a5b4" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>textureBack</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a5cb475574df4a4e5c96811dd1890fd8f" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>textureBg</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a0033593569395646586f29a87b2fe4ec" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>textureBolt</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a1f3b1d456e625b74c0a65f1d87884411" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>textureInfo</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a8b53732007a2073c2e8c4c7cf66f594c" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>textureLed</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a4e50b03db3b663055237799846805926" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>textureLock</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a38b53d6af87685d82c002234eae42ae2" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>textureOut</name></member>
+      <member refid="class_enigma2_1_1_game_main_1ae5af409a04c69ae6a526b9eb50cc0b7c" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>texturePlug</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a4c0ba3d6b5e8c5fd83a2a7bdf60df95d" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>textureRotor</name></member>
+      <member refid="class_enigma2_1_1_game_main_1adda12f050e09cd2cf6e9aaa71d2c21c4" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>textureSymbol</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a2e5d503d93b304265f8439579e888e4e" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>textureText</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a728ad7694c31f2719dbbaea560531ee6" prot="protected" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>Update</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a9ec24ae80d7a19568e14e9e859a2ffd7" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>useM4</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a0258d025b79dd5882cd5ed4ec313782a" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>volume</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a6e5d7ac2e110b81e64b0f35abc08b73e" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>waitSymbol</name></member>
+      <member refid="class_enigma2_1_1_game_main_1ac574cd8311aa6d102c4ba303ec52548e" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>WIDTH</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a37e1babfd19282a1deb412bbf8d0437f" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>x</name></member>
+      <member refid="class_enigma2_1_1_game_main_1a6c8e06e6f7972a8ae8f9917cdb1224f6" prot="private" virt="non-virtual"><scope>Enigma2::GameMain</scope><name>y</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

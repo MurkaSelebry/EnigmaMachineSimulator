@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="ru">
+  <compounddef id="dir_c6310732a22f63c0c2fc5595561e68f1" kind="dir">
+    <compoundname>Core</compoundname>
+    <innerfile refid="_base_enigma_8cs">BaseEnigma.cs</innerfile>
+    <innerfile refid="_e_label_8cs">ELabel.cs</innerfile>
+    <innerfile refid="_plugboard_8cs">Plugboard.cs</innerfile>
+    <innerfile refid="_settings_form_8cs">SettingsForm.cs</innerfile>
+    <innerfile refid="_settings_form_8_designer_8cs">SettingsForm.Designer.cs</innerfile>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <location file="Core/"/>
+  </compounddef>
+</doxygen>

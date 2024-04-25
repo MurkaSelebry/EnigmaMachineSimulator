@@ -1,0 +1,182 @@
+.TH "Enigma2.GameMain" 3 "Enigma Machine Sumulator" \" -*- nroff -*-
+.ad l
+.nh
+.SH NAME
+Enigma2.GameMain \- This is the main type for your game\&.  
+
+.SH SYNOPSIS
+.br
+.PP
+.PP
+Базовые классы:Microsoft\&.Xna\&.Framework\&.Game\&.
+.SS "Открытые члены"
+
+.in +1c
+.ti -1c
+.RI "\fBGameMain\fP ()"
+.br
+.ti -1c
+.RI "void \fBSetSettings\fP (\fBSettings\fP settings)"
+.br
+.ti -1c
+.RI "void \fBCloseSettings\fP ()"
+.br
+.in -1c
+.SS "Открытые атрибуты"
+
+.in +1c
+.ti -1c
+.RI "\fBBaseEnigma\fP \fBenigma\fP = new \fBBaseEnigma\fP()"
+.br
+.ti -1c
+.RI "\fBSettingsForm\fP \fBformSettings\fP"
+.br
+.ti -1c
+.RI "bool \fBcustomReflector\fP = false"
+.br
+.ti -1c
+.RI "string \fBreflector\fP = ''"
+.br
+.ti -1c
+.RI "Dictionary< char, char > \fBreplace\fP"
+.br
+.ti -1c
+.RI "string \fBmessage\fP = ''"
+.br
+.in -1c
+.SS "Статические открытые данные"
+
+.in +1c
+.ti -1c
+.RI "static MouseState \fBmouseOne\fP"
+.br
+.ti -1c
+.RI "static MouseState \fBmouseTwo\fP"
+.br
+.ti -1c
+.RI "static KeyboardState \fBkeybOne\fP"
+.br
+.ti -1c
+.RI "static KeyboardState \fBkeybTwo\fP"
+.br
+.ti -1c
+.RI "static SpriteFont \fBfontBase\fP"
+.br
+.ti -1c
+.RI "static SpriteFont \fBfontMini\fP"
+.br
+.ti -1c
+.RI "static SpriteFont \fBfontSpec\fP"
+.br
+.ti -1c
+.RI "static SpriteFont \fBfontSpecMini\fP"
+.br
+.in -1c
+.SS "Защищенные члены"
+
+.in +1c
+.ti -1c
+.RI "override void \fBLoadContent\fP ()"
+.br
+.ti -1c
+.RI "override void \fBUpdate\fP (GameTime gameTime)"
+.br
+.ti -1c
+.RI "override void \fBDraw\fP (GameTime gameTime)"
+.br
+.in -1c
+.SH "Подробное описание"
+.PP 
+This is the main type for your game\&. 
+.PP
+См\&. определение в файле \fBGameMain\&.cs\fP строка \fB18\fP
+.SH "Конструктор(ы)"
+.PP 
+.SS "Enigma2\&.GameMain\&.GameMain ()"
+
+.PP
+См\&. определение в файле \fBGameMain\&.cs\fP строка \fB49\fP
+.SH "Методы"
+.PP 
+.SS "void Enigma2\&.GameMain\&.CloseSettings ()"
+
+.PP
+См\&. определение в файле \fBGameMain\&.cs\fP строка \fB155\fP
+.SS "override void Enigma2\&.GameMain\&.Draw (GameTime gameTime)\fR [protected]\fP"
+
+.PP
+См\&. определение в файле \fBGameMain\&.cs\fP строка \fB160\fP
+.SS "override void Enigma2\&.GameMain\&.LoadContent ()\fR [protected]\fP"
+
+.PP
+См\&. определение в файле \fBGameMain\&.cs\fP строка \fB58\fP
+.SS "void Enigma2\&.GameMain\&.SetSettings (\fBSettings\fP settings)"
+
+.PP
+См\&. определение в файле \fBGameMain\&.cs\fP строка \fB143\fP
+.SS "override void Enigma2\&.GameMain\&.Update (GameTime gameTime)\fR [protected]\fP"
+
+.PP
+См\&. определение в файле \fBGameMain\&.cs\fP строка \fB99\fP
+.SH "Данные класса"
+.PP 
+.SS "bool Enigma2\&.GameMain\&.customReflector = false"
+
+.PP
+См\&. определение в файле \fBGameMain\&.cs\fP строка \fB38\fP
+.SS "\fBBaseEnigma\fP Enigma2\&.GameMain\&.enigma = new \fBBaseEnigma\fP()"
+
+.PP
+См\&. определение в файле \fBGameMain\&.cs\fP строка \fB22\fP
+.SS "SpriteFont Enigma2\&.GameMain\&.fontBase\fR [static]\fP"
+
+.PP
+См\&. определение в файле \fBGameMain\&.cs\fP строка \fB27\fP
+.SS "SpriteFont Enigma2\&.GameMain\&.fontMini\fR [static]\fP"
+
+.PP
+См\&. определение в файле \fBGameMain\&.cs\fP строка \fB27\fP
+.SS "SpriteFont Enigma2\&.GameMain\&.fontSpec\fR [static]\fP"
+
+.PP
+См\&. определение в файле \fBGameMain\&.cs\fP строка \fB27\fP
+.SS "SpriteFont Enigma2\&.GameMain\&.fontSpecMini\fR [static]\fP"
+
+.PP
+См\&. определение в файле \fBGameMain\&.cs\fP строка \fB27\fP
+.SS "\fBSettingsForm\fP Enigma2\&.GameMain\&.formSettings"
+
+.PP
+См\&. определение в файле \fBGameMain\&.cs\fP строка \fB23\fP
+.SS "KeyboardState Enigma2\&.GameMain\&.keybOne\fR [static]\fP"
+
+.PP
+См\&. определение в файле \fBGameMain\&.cs\fP строка \fB26\fP
+.SS "KeyboardState Enigma2\&.GameMain\&.keybTwo\fR [static]\fP"
+
+.PP
+См\&. определение в файле \fBGameMain\&.cs\fP строка \fB26\fP
+.SS "string Enigma2\&.GameMain\&.message = ''"
+
+.PP
+См\&. определение в файле \fBGameMain\&.cs\fP строка \fB476\fP
+.SS "MouseState Enigma2\&.GameMain\&.mouseOne\fR [static]\fP"
+
+.PP
+См\&. определение в файле \fBGameMain\&.cs\fP строка \fB25\fP
+.SS "MouseState Enigma2\&.GameMain\&.mouseTwo\fR [static]\fP"
+
+.PP
+См\&. определение в файле \fBGameMain\&.cs\fP строка \fB25\fP
+.SS "string Enigma2\&.GameMain\&.reflector = ''"
+
+.PP
+См\&. определение в файле \fBGameMain\&.cs\fP строка \fB39\fP
+.SS "Dictionary<char, char> Enigma2\&.GameMain\&.replace"
+
+.PP
+См\&. определение в файле \fBGameMain\&.cs\fP строка \fB43\fP
+
+.SH "Автор"
+.PP 
+Автоматически создано Doxygen для Enigma Machine Sumulator из исходного текста\&.

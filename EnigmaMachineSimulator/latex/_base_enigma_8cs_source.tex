@@ -1,0 +1,234 @@
+\doxysection{Base\+Enigma.\+cs}
+\hypertarget{_base_enigma_8cs_source}{}\label{_base_enigma_8cs_source}\index{Core/BaseEnigma.cs@{Core/BaseEnigma.cs}}
+\mbox{\hyperlink{_base_enigma_8cs}{Go to the documentation of this file.}}
+\begin{DoxyCode}{0}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00001}00001\ \textcolor{keyword}{using\ }System;}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00002}00002\ \textcolor{keyword}{using\ }System.Collections.Generic;}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00003}00003\ \textcolor{keyword}{using\ }System.Linq;}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00004}00004\ \textcolor{keyword}{using\ }System.Text;}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00005}00005\ }
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00006}\mbox{\hyperlink{namespace_enigma2}{00006}}\ \textcolor{keyword}{namespace\ }\mbox{\hyperlink{namespace_enigma2}{Enigma2}}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00007}00007\ \{}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00008}\mbox{\hyperlink{class_enigma2_1_1_base_enigma}{00008}}\ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_enigma2_1_1_base_enigma}{BaseEnigma}}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00009}00009\ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00010}00010\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{string}[]\ rotors\ =\ \textcolor{keyword}{new}[]\ \{\ \textcolor{stringliteral}{"{}EKMFLGDQVZNTOWYHXUSPAIBRCJ"{}},\textcolor{stringliteral}{"{}AJDKSIRUXBLHWTMCQGZNPYFVOE"{}},\textcolor{stringliteral}{"{}BDFHJLCPRTXVZNYEIWGAKMUSQO"{}},}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00011}00011\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}ESOVPZJAYQUIRHXLNFTGKDCMWB"{}},\textcolor{stringliteral}{"{}VZBRGITYUPSDNHLXAWMJQOFECK"{}},\textcolor{stringliteral}{"{}JPGVOUMFYQBENHZRDKASXLICTW"{}},}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00012}00012\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}NZJHGRCXMYSWBOUFAIVLPEKQDT"{}},\textcolor{stringliteral}{"{}FKQHTLXOCBJSPDZRAMEWNIUYGV"{}},}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00013}00013\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{stringliteral}{"{}LEYJVCNIXWPBQMDRTAKZGFUHOS"{}},\ \textcolor{stringliteral}{"{}FSOKANUERHMBTIYCWLQPZXVGJD"{}}\};}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00014}00014\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}[][]\ symbols\ =\ \textcolor{stringliteral}{"{}q,q;e,e;v,v;j,j;z,z;z,m;z,m;z,m"{}}.Split(\textcolor{charliteral}{';'}).Select(x\ =>\ x.Split(\textcolor{charliteral}{','}).Select(y\ =>\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_aa0a99d30ae4cffa75089d3b82bf4f361}{code}}(y.ToCharArray()[0])).ToArray()).ToArray();}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00015}00015\ }
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00016}00016\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{string}\ abc\ =\ \textcolor{stringliteral}{"{}ABCDEFGHIJKLMNOPQRSTUVWXYZ"{}};}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00017}\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a32f2d5f5b656ccdcf146b59a8e7abd60}{00017}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a32f2d5f5b656ccdcf146b59a8e7abd60}{reflectorB}}\ =\ \textcolor{stringliteral}{"{}YRUHQSLDPXNGOKMIEBFZCWVJAT"{}};}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00018}\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a7e09866f2a216fa715ca5df235a6894d}{00018}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a7e09866f2a216fa715ca5df235a6894d}{reflectorBThin}}\ =\ \textcolor{stringliteral}{"{}ENKQAUYWJICOPBLMDXZVFTHRGS"{}};}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00019}\mbox{\hyperlink{class_enigma2_1_1_base_enigma_aa4738e4356128eb989c6c27696552e5e}{00019}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_aa4738e4356128eb989c6c27696552e5e}{reflectorC}}\ =\ \textcolor{stringliteral}{"{}FVPJIAOYEDRZXWGCTKUQSBNMHL"{}};}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00020}\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a0433cb09450405f2bf50cfe298784e30}{00020}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{string}\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a0433cb09450405f2bf50cfe298784e30}{reflectorCThin}}\ =\ \textcolor{stringliteral}{"{}RDOBJNTKVEHMLFCWZAXGYIPSUQ"{}};}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00021}00021\ }
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00022}\mbox{\hyperlink{class_enigma2_1_1_base_enigma_ac33a8464aa9b4e5b7ae0e67d8d0b0536}{00022}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ Dictionary<char,\ char>\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_ac33a8464aa9b4e5b7ae0e67d8d0b0536}{Replace}}\ =\ \textcolor{keyword}{new}\ Dictionary<char,\ char>();}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00023}00023\ }
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00024}\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{00024}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}[]\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}\ =\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_ad5100d5c767f1b84b9ddade6e6a6b0b6}{toKey}}(\textcolor{stringliteral}{"{}AAA"{}});}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00025}\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a85ee3103139f257ae413a5017d793adc}{00025}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}[]\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a85ee3103139f257ae413a5017d793adc}{\_rotors}}\ =\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_ad5100d5c767f1b84b9ddade6e6a6b0b6}{toKey}}(\textcolor{stringliteral}{"{}ABC"{}});}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00026}\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a2a356e12f7fe871b54b92ebc7fab6dfe}{00026}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{int}[]\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a2a356e12f7fe871b54b92ebc7fab6dfe}{ring}}\ =\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_ad5100d5c767f1b84b9ddade6e6a6b0b6}{toKey}}(\textcolor{stringliteral}{"{}AAA"{}});}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00027}00027\ }
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00028}00028\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*static\ void\ Main(string[]\ args)}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00029}00029\ \textcolor{comment}{\ \ \ \ \ \ \ \ \{}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00030}00030\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ int[]\ key\ =\ toKey("{}AAAZ"{});}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00031}00031\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ int[]\ \_rotors\ =\ toKey("{}ABCI"{});}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00032}00032\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ int[]\ ring\ =\ toKey("{}AAAY"{});}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00033}00033\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00034}00034\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ string\ enc\ =\ "{}"{};}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00035}00035\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ string\ dec\ =\ "{}"{};}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00036}00036\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ string\ message\ =\ "{}hellomycoolfriendiloveyoumyfrienisthisonetwoonetwoonethisiscoooolnews"{};}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00037}00037\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00038}00038\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ foreach\ (char\ x\ in\ message)}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00039}00039\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ enc\ +=\ encode(x,\ key,\ \_rotors,\ ring,\ reflectorBThin,\ null);}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00040}00040\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(enc);}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00041}00041\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00042}00042\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ key\ =\ toKey("{}AAAZ"{});}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00043}00043\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \_rotors\ =\ toKey("{}ABCI"{});}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00044}00044\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ ring\ =\ toKey("{}AAAY"{});}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00045}00045\ \textcolor{comment}{}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00046}00046\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ foreach\ (char\ x\ in\ enc)}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00047}00047\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ dec\ +=\ encode(x,\ key,\ \_rotors,\ ring,\ reflectorBThin,\ null);}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00048}00048\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ Console.WriteLine(dec);}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00049}00049\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ }}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00050}00050\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ Console.Read();}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00051}00051\ \textcolor{comment}{\ \ \ \ \ \ \ \ \}*/}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00052}00052\ }
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00053}\mbox{\hyperlink{class_enigma2_1_1_base_enigma_ad5100d5c767f1b84b9ddade6e6a6b0b6}{00053}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}[]\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_ad5100d5c767f1b84b9ddade6e6a6b0b6}{toKey}}(\textcolor{keywordtype}{string}\ str)}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00054}00054\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00055}00055\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ str.Select(x\ =>\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_aa0a99d30ae4cffa75089d3b82bf4f361}{code}}(x)).ToArray();}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00056}00056\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00057}\mbox{\hyperlink{class_enigma2_1_1_base_enigma_aa4110ccdf05866d43035758efb3f07dd}{00057}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}[]\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_aa4110ccdf05866d43035758efb3f07dd}{toKey}}(\textcolor{keywordtype}{int}\ num)}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00058}00058\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00059}00059\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ num.ToString().Select(x\ =>\ \textcolor{keywordtype}{int}.Parse(x.ToString())\ -\/\ 1).ToArray();}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00060}00060\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00061}00061\ }
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00062}00062\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{string}\ reverse(\textcolor{keywordtype}{string}\ msg)}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00063}00063\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00064}00064\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ i\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00065}00065\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{string}\ repl\ =\ \textcolor{keyword}{new}\ string(msg.Select(y\ =>}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00066}00066\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00067}00067\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ char\ temp\ =\ abc[msg.IndexOf(abc[i])];}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00068}00068\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ i++;}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00069}00069\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ return\ temp;}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00070}00070\ \ \ \ \ \ \ \ \ \ \ \ \ \}).ToArray());}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00071}00071\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ repl;}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00072}00072\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00073}00073\ }
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00074}\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a766f61716959aedb7abcfdae3f7765b0}{00074}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{char}\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a766f61716959aedb7abcfdae3f7765b0}{encode}}(\textcolor{keywordtype}{char}\ symbol,\ \textcolor{keywordtype}{int}[]\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}},\ \textcolor{keywordtype}{int}[]\ rotrs,\ \textcolor{keywordtype}{int}[]\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a2a356e12f7fe871b54b92ebc7fab6dfe}{ring}},\ \textcolor{keywordtype}{string}\ reflector,\ Dictionary<char,\ char>\ plugboard)}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00075}00075\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00076}00076\ \ \ \ \ \ \ \ \ \ \ \ \ increment(\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}},\ rotrs);}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00077}00077\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ enigma(symbol,\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}},\ rotrs,\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a2a356e12f7fe871b54b92ebc7fab6dfe}{ring}},\ reflector,\ plugboard);}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00078}00078\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00079}00079\ }
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00080}00080\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ increment(\textcolor{keywordtype}{int}[]\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}},\ \textcolor{keywordtype}{int}[]\ r)}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00081}00081\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00082}00082\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ temp1\ =\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[1];}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00083}00083\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[1]\ ==\ symbols[r[1]][0]\ ||\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[1]\ ==\ symbols[r[1]][1])}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00084}00084\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00085}00085\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[0]\ =\ (\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[0]\ +\ 1)\ \%\ 26;}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00086}00086\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[1]\ =\ (\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[1]\ +\ 1)\ \%\ 26;}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00087}00087\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00088}00088\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[2]\ ==\ symbols[r[2]][0]\ ||\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[2]\ ==\ symbols[r[2]][1])}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00089}00089\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00090}00090\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (temp1\ ==\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[1])}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00091}00091\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[1]\ =\ (\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[1]\ +\ 1)\ \%\ 26;}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00092}00092\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00093}00093\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[2]\ =\ (\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[2]\ +\ 1)\ \%\ 26;}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00094}00094\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00095}00095\ }
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00096}00096\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{void}\ decrement(\textcolor{keywordtype}{int}[]\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}},\ \textcolor{keywordtype}{int}[]\ r)}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00097}00097\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00098}00098\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ temp1\ =\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[1];}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00099}00099\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[1]\ ==\ (symbols[r[1]][0]\ +\ 1)\ \%\ 26\ ||\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[1]\ ==\ (symbols[r[1]][1]\ +\ 1)\ \%\ 26)}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00100}00100\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00101}00101\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[0]\ -\/\ 1\ <\ 0)}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00102}00102\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[0]\ =\ (\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[0]\ -\/\ 1\ +\ 26)\ \%\ 26;}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00103}00103\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00104}00104\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[0]\ =\ (\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[0]\ -\/\ 1)\ \%\ 26;}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00105}00105\ }
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00106}00106\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[1]\ -\/\ 1\ <\ 0)}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00107}00107\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[1]\ =\ (\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[1]\ -\/\ 1\ +\ 26)\ \%\ 26;}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00108}00108\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00109}00109\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[1]\ =\ (\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[1]\ -\/\ 1)\ \%\ 26;}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00110}00110\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00111}00111\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[2]\ ==\ (symbols[r[2]][0]\ +\ 1)\ \%\ 26\ ||\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[2]\ ==\ (symbols[r[2]][1]\ +\ 1)\ \%\ 26)}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00112}00112\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00113}00113\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (temp1\ ==\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[1])}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00114}00114\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00115}00115\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[1]\ -\/\ 1\ <\ 0)}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00116}00116\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[1]\ =\ (\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[1]\ -\/\ 1\ +\ 26)\ \%\ 26;}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00117}00117\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00118}00118\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[1]\ =\ (\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[1]\ -\/\ 1)\ \%\ 26;}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00119}00119\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00120}00120\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00121}00121\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[2]\ -\/\ 1\ <\ 0)}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00122}00122\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[2]\ =\ (\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[2]\ -\/\ 1\ +\ 26)\ \%\ 26;}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00123}00123\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00124}00124\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[2]\ =\ (\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[2]\ -\/\ 1)\ \%\ 26;}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00125}00125\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00126}00126\ }
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00127}00127\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{char}\ enigma(\textcolor{keywordtype}{char}\ symbol,\ \textcolor{keywordtype}{int}[]\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}},\ \textcolor{keywordtype}{int}[]\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a85ee3103139f257ae413a5017d793adc}{\_rotors}},\ \textcolor{keywordtype}{int}[]\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a2a356e12f7fe871b54b92ebc7fab6dfe}{ring}},\ \textcolor{keywordtype}{string}\ reflector,\ Dictionary<char,\ char>\ replc)}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00128}00128\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00129}00129\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (replc.ContainsKey(symbol))}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00130}00130\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ symbol\ =\ replc[symbol];}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00131}00131\ }
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00132}00132\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{bool}\ m4\ =\ \textcolor{keyword}{false};}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00133}00133\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ rotor4\ =\ 0,\ ring4\ =\ 0,\ key4\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00134}00134\ }
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00135}00135\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a85ee3103139f257ae413a5017d793adc}{\_rotors}}.Length\ >\ 3)}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00136}00136\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00137}00137\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ m4\ =\ \textcolor{keyword}{true};}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00138}00138\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ key4\ =\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[3];}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00139}00139\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}\ =\ \textcolor{keyword}{new}[]\ \{\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[0],\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[1],\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[2]\ \};}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00140}00140\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ rotor4\ =\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a85ee3103139f257ae413a5017d793adc}{\_rotors}}[3];}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00141}00141\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a85ee3103139f257ae413a5017d793adc}{\_rotors}}\ =\ \textcolor{keyword}{new}[]\ \{\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a85ee3103139f257ae413a5017d793adc}{\_rotors}}[0],\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a85ee3103139f257ae413a5017d793adc}{\_rotors}}[1],\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a85ee3103139f257ae413a5017d793adc}{\_rotors}}[2]\ \};}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00142}00142\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ ring4\ =\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a2a356e12f7fe871b54b92ebc7fab6dfe}{ring}}[3];}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00143}00143\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a2a356e12f7fe871b54b92ebc7fab6dfe}{ring}}\ =\ \textcolor{keyword}{new}[]\ \{\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a2a356e12f7fe871b54b92ebc7fab6dfe}{ring}}[0],\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a2a356e12f7fe871b54b92ebc7fab6dfe}{ring}}[1],\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a2a356e12f7fe871b54b92ebc7fab6dfe}{ring}}[2]\ \};}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00144}00144\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00145}00145\ }
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00146}00146\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ i\ =\ \_rotors.Length\ -\/\ 1;}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00147}00147\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (i\ >=\ 0)}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00148}00148\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00149}00149\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ symbol\ =\ rotor(symbol,\ rotors[\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a85ee3103139f257ae413a5017d793adc}{\_rotors}}[i]],\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[i]\ -\/\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a2a356e12f7fe871b54b92ebc7fab6dfe}{ring}}[i]);}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00150}00150\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ i-\/-\/;}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00151}00151\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00152}00152\ }
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00153}00153\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (m4)\ symbol\ =\ rotor(symbol,\ rotors[rotor4],\ key4\ -\/\ ring4);}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00154}00154\ \ \ \ \ \ \ \ \ \ \ \ \ symbol\ =\ sub(symbol,\ reflector.ToCharArray());}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00155}00155\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (m4)\ symbol\ =\ rotor(symbol,\ reverse(rotors[rotor4]),\ key4\ -\/\ ring4);}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00156}00156\ }
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00157}00157\ \ \ \ \ \ \ \ \ \ \ \ \ i\ =\ 0;}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00158}00158\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{while}\ (i\ <\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a85ee3103139f257ae413a5017d793adc}{\_rotors}}.Length)}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00159}00159\ \ \ \ \ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00160}00160\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ symbol\ =\ rotor(symbol,\ reverse(rotors[\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a85ee3103139f257ae413a5017d793adc}{\_rotors}}[i]]),\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[i]\ -\/\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a2a356e12f7fe871b54b92ebc7fab6dfe}{ring}}[i]);}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00161}00161\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ i++;}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00162}00162\ \ \ \ \ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00163}00163\ }
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00164}00164\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (replc.ContainsKey(symbol))}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00165}00165\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ symbol\ =\ replc[symbol];}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00166}00166\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ symbol;}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00167}00167\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00168}00168\ }
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00169}00169\ \ \ \ \ \ \ \ \ \textcolor{comment}{/*static\ char\ rotor(char\ symbol,\ string\ rotor,\ int\ offset)}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00170}00170\ \textcolor{comment}{\ \ \ \ \ \ \ \ \{}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00171}00171\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ int\ i\ =\ code(symbol)\ +\ offset;}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00172}00172\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ char\ sym\ =\ rotor[i\ +\ 26\ \%\ 26];}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00173}00173\ \textcolor{comment}{\ \ \ \ \ \ \ \ \ \ \ \ return\ abc[code(sym)\ -\/\ offset];}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00174}00174\ \textcolor{comment}{\ \ \ \ \ \ \ \ \}*/}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00175}00175\ }
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00176}00176\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{char}\ rotor(\textcolor{keywordtype}{char}\ symbol,\ \textcolor{keywordtype}{string}\ rotor,\ \textcolor{keywordtype}{int}\ offset)}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00177}00177\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00178}00178\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordtype}{int}\ symbolCode\ =\ (\mbox{\hyperlink{class_enigma2_1_1_base_enigma_aa0a99d30ae4cffa75089d3b82bf4f361}{code}}(symbol)\ +\ 26\ +\ offset)\ \%\ 26;}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00179}00179\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ (\textcolor{keywordtype}{char})((\mbox{\hyperlink{class_enigma2_1_1_base_enigma_aa0a99d30ae4cffa75089d3b82bf4f361}{code}}(rotor[symbolCode])\ +\ 26\ -\/\ offset)\ \%\ 26\ +\ 65);}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00180}00180\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00181}00181\ }
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00182}00182\ \ \ \ \ \ \ \ \ \textcolor{keyword}{static}\ \textcolor{keywordtype}{char}\ sub(\textcolor{keywordtype}{char}\ sym,\ \textcolor{keywordtype}{char}[]\ data)}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00183}00183\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00184}00184\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ data[\mbox{\hyperlink{class_enigma2_1_1_base_enigma_aa0a99d30ae4cffa75089d3b82bf4f361}{code}}(sym)];}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00185}00185\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00186}00186\ }
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00187}\mbox{\hyperlink{class_enigma2_1_1_base_enigma_aa0a99d30ae4cffa75089d3b82bf4f361}{00187}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keyword}{static}\ \textcolor{keywordtype}{int}\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_aa0a99d30ae4cffa75089d3b82bf4f361}{code}}(\textcolor{keywordtype}{char}\ ch)}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00188}00188\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00189}00189\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ ((\textcolor{keywordtype}{int})ch.ToString().ToUpper().ToCharArray()[0])\ -\/\ 65;}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00190}00190\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00191}00191\ }
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00192}00192\ \ \ \ \ \ \ \ \ \textcolor{keyword}{internal}\ \textcolor{keywordtype}{char}\ Encode(\textcolor{keywordtype}{char}\ symbol,\ \textcolor{keywordtype}{string}\ reflector)}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00193}00193\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00194}00194\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{return}\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a766f61716959aedb7abcfdae3f7765b0}{encode}}(symbol,\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}},\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a85ee3103139f257ae413a5017d793adc}{\_rotors}},\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a2a356e12f7fe871b54b92ebc7fab6dfe}{ring}},\ reflector,\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_ac33a8464aa9b4e5b7ae0e67d8d0b0536}{Replace}});}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00195}00195\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00196}00196\ }
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00197}\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a9433299e70b88416ff8291897a7ca9f1}{00197}}\ \ \ \ \ \ \ \ \ \textcolor{keyword}{public}\ \textcolor{keywordtype}{void}\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a9433299e70b88416ff8291897a7ca9f1}{Decrement}}()}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00198}00198\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00199}00199\ \ \ \ \ \ \ \ \ \ \ \ \ decrement(\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}},\ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a85ee3103139f257ae413a5017d793adc}{\_rotors}});}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00200}00200\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00201}00201\ }
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00202}00202\ \ \ \ \ \ \ \ \ \textcolor{keyword}{internal}\ \textcolor{keywordtype}{void}\ Back()}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00203}00203\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00204}00204\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[2]\ -\/\ 1\ <\ 0)}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00205}00205\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[2]\ =\ (\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[2]\ -\/\ 1\ +\ 26)\ \%\ 26;}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00206}00206\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00207}00207\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[2]\ =\ (\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[2]\ -\/\ 1)\ \%\ 26;}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00208}00208\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00209}00209\ }
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00210}00210\ \ \ \ \ \ \ \ \ \textcolor{keyword}{internal}\ \textcolor{keywordtype}{void}\ Move()}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00211}00211\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00212}00212\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[2]\ =\ (\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[2]\ +\ 1)\ \%\ 26;}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00213}00213\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00214}00214\ }
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00215}00215\ \ \ \ \ \ \ \ \ \textcolor{keyword}{internal}\ \textcolor{keywordtype}{void}\ MoveAt(\textcolor{keywordtype}{int}\ p)}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00216}00216\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00217}00217\ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[p]\ =\ (\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[p]\ +\ 1)\ \%\ 26;}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00218}00218\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00219}00219\ }
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00220}00220\ \ \ \ \ \ \ \ \ \textcolor{keyword}{internal}\ \textcolor{keywordtype}{void}\ BackAt(\textcolor{keywordtype}{int}\ p)}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00221}00221\ \ \ \ \ \ \ \ \ \{}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00222}00222\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{if}\ (\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[p]\ -\/\ 1\ <\ 0)}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00223}00223\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[p]\ =\ (\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[p]\ -\/\ 1\ +\ 26)\ \%\ 26;}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00224}00224\ \ \ \ \ \ \ \ \ \ \ \ \ \textcolor{keywordflow}{else}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00225}00225\ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \ \mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[p]\ =\ (\mbox{\hyperlink{class_enigma2_1_1_base_enigma_a1cf18c40e3a08009f43d7b178856c9e0}{key}}[p]\ -\/\ 1)\ \%\ 26;}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00226}00226\ \ \ \ \ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00227}00227\ \ \ \ \ \}}
+\DoxyCodeLine{\Hypertarget{_base_enigma_8cs_source_l00228}00228\ \}}
+
+\end{DoxyCode}

@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_dir_c6310732a22f63c0c2fc5595561e68f1" xml:lang="ru">
+<title>Содержание директории Core</title>
+<indexterm><primary>Содержание директории Core</primary></indexterm>
+<simplesect>
+    <title>Файлы    </title>
+        <itemizedlist>
+            <listitem><para>файл <link linkend="__base_enigma_8cs">BaseEnigma.cs</link></para>
+</listitem>
+            <listitem><para>файл <link linkend="__e_label_8cs">ELabel.cs</link></para>
+</listitem>
+            <listitem><para>файл <link linkend="__plugboard_8cs">Plugboard.cs</link></para>
+</listitem>
+            <listitem><para>файл <link linkend="__settings_form_8cs">SettingsForm.cs</link></para>
+</listitem>
+            <listitem><para>файл <link linkend="__settings_form_8_designer_8cs">SettingsForm.Designer.cs</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

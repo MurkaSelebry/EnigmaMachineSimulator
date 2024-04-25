@@ -1,0 +1,761 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="ru">
+  <compounddef id="class_enigma2_1_1_settings_form" kind="class" language="C#" prot="public">
+    <compoundname>Enigma2::SettingsForm</compoundname>
+    <basecompoundref prot="public" virt="non-virtual">Form</basecompoundref>
+    <sectiondef kind="private-attrib">
+      <memberdef kind="variable" id="class_enigma2_1_1_settings_form_1adbc0015b4b337f273f66edff696666be" prot="private" static="no" mutable="no">
+        <type><ref refid="class_enigma2_1_1_game_main" kindref="compound">GameMain</ref></type>
+        <definition>GameMain Enigma2.SettingsForm.main</definition>
+        <argsstring></argsstring>
+        <name>main</name>
+        <qualifiedname>Enigma2.SettingsForm.main</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.cs" line="16" column="18" bodyfile="Core/SettingsForm.cs" bodystart="16" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_settings_form_1a293649e0679ce31c9b24acae3fb5ddce" prot="private" static="no" mutable="no">
+        <type>System.ComponentModel.IContainer</type>
+        <definition>System.ComponentModel.IContainer Enigma2.SettingsForm.components</definition>
+        <argsstring></argsstring>
+        <name>components</name>
+        <qualifiedname>Enigma2.SettingsForm.components</qualifiedname>
+        <initializer>= null</initializer>
+        <briefdescription>
+<para>Required designer variable. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.Designer.cs" line="8" column="48" bodyfile="Core/SettingsForm.Designer.cs" bodystart="8" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_settings_form_1a66c58229ab4712ca1847fd64abcb239d" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.DomainUpDown</type>
+        <definition>System.Windows.Forms.DomainUpDown Enigma2.SettingsForm.oneRing</definition>
+        <argsstring></argsstring>
+        <name>oneRing</name>
+        <qualifiedname>Enigma2.SettingsForm.oneRing</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.Designer.cs" line="464" column="48" bodyfile="Core/SettingsForm.Designer.cs" bodystart="464" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_settings_form_1a9ccab0faa559eb6075f3ee447fd8fa42" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.ComboBox</type>
+        <definition>System.Windows.Forms.ComboBox Enigma2.SettingsForm.comboBoxReflector</definition>
+        <argsstring></argsstring>
+        <name>comboBoxReflector</name>
+        <qualifiedname>Enigma2.SettingsForm.comboBoxReflector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.Designer.cs" line="465" column="44" bodyfile="Core/SettingsForm.Designer.cs" bodystart="465" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_settings_form_1a16f54bf8a05190832e7e81d0b81fb7da" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.CheckBox</type>
+        <definition>System.Windows.Forms.CheckBox Enigma2.SettingsForm.useCustomReflector</definition>
+        <argsstring></argsstring>
+        <name>useCustomReflector</name>
+        <qualifiedname>Enigma2.SettingsForm.useCustomReflector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.Designer.cs" line="466" column="44" bodyfile="Core/SettingsForm.Designer.cs" bodystart="466" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_settings_form_1ab72316302c477db54ffc888a57337b56" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Label</type>
+        <definition>System.Windows.Forms.Label Enigma2.SettingsForm.label1</definition>
+        <argsstring></argsstring>
+        <name>label1</name>
+        <qualifiedname>Enigma2.SettingsForm.label1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.Designer.cs" line="467" column="41" bodyfile="Core/SettingsForm.Designer.cs" bodystart="467" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_settings_form_1a967a9234a7549f1643725c89b3ad8ace" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.DomainUpDown</type>
+        <definition>System.Windows.Forms.DomainUpDown Enigma2.SettingsForm.twoRing</definition>
+        <argsstring></argsstring>
+        <name>twoRing</name>
+        <qualifiedname>Enigma2.SettingsForm.twoRing</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.Designer.cs" line="468" column="48" bodyfile="Core/SettingsForm.Designer.cs" bodystart="468" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_settings_form_1adf86c135ced15b2cba3e3685fdfa7e59" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.DomainUpDown</type>
+        <definition>System.Windows.Forms.DomainUpDown Enigma2.SettingsForm.threeRing</definition>
+        <argsstring></argsstring>
+        <name>threeRing</name>
+        <qualifiedname>Enigma2.SettingsForm.threeRing</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.Designer.cs" line="469" column="48" bodyfile="Core/SettingsForm.Designer.cs" bodystart="469" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_settings_form_1a337a7ad62c6f8eb7dadf220dc91dd1d3" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Label</type>
+        <definition>System.Windows.Forms.Label Enigma2.SettingsForm.label2</definition>
+        <argsstring></argsstring>
+        <name>label2</name>
+        <qualifiedname>Enigma2.SettingsForm.label2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.Designer.cs" line="470" column="41" bodyfile="Core/SettingsForm.Designer.cs" bodystart="470" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_settings_form_1abc6dbecf01dfce94a1c9ea7d16a83b7d" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.TextBox</type>
+        <definition>System.Windows.Forms.TextBox Enigma2.SettingsForm.textBoxReflector</definition>
+        <argsstring></argsstring>
+        <name>textBoxReflector</name>
+        <qualifiedname>Enigma2.SettingsForm.textBoxReflector</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.Designer.cs" line="471" column="43" bodyfile="Core/SettingsForm.Designer.cs" bodystart="471" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_settings_form_1a718823d19285125b7b32e62da71e62fc" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.TrackBar</type>
+        <definition>System.Windows.Forms.TrackBar Enigma2.SettingsForm.trackBarSound</definition>
+        <argsstring></argsstring>
+        <name>trackBarSound</name>
+        <qualifiedname>Enigma2.SettingsForm.trackBarSound</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.Designer.cs" line="472" column="44" bodyfile="Core/SettingsForm.Designer.cs" bodystart="472" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_settings_form_1ae325e5ea91883d5a3f5a19173ec120f5" prot="private" static="no" mutable="no">
+        <type><ref refid="class_enigma2_1_1_e_label" kindref="compound">ELabel</ref></type>
+        <definition>ELabel Enigma2.SettingsForm.label3</definition>
+        <argsstring></argsstring>
+        <name>label3</name>
+        <qualifiedname>Enigma2.SettingsForm.label3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.Designer.cs" line="473" column="24" bodyfile="Core/SettingsForm.Designer.cs" bodystart="473" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_settings_form_1ad071ffabb5b47e27f24a8a280f9c1d94" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Label</type>
+        <definition>System.Windows.Forms.Label Enigma2.SettingsForm.label4</definition>
+        <argsstring></argsstring>
+        <name>label4</name>
+        <qualifiedname>Enigma2.SettingsForm.label4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.Designer.cs" line="474" column="41" bodyfile="Core/SettingsForm.Designer.cs" bodystart="474" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_settings_form_1ad0235a3e1f79d9ac5576ee50c92b68e2" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.ComboBox</type>
+        <definition>System.Windows.Forms.ComboBox Enigma2.SettingsForm.rotor1</definition>
+        <argsstring></argsstring>
+        <name>rotor1</name>
+        <qualifiedname>Enigma2.SettingsForm.rotor1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.Designer.cs" line="475" column="44" bodyfile="Core/SettingsForm.Designer.cs" bodystart="475" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_settings_form_1a3a0a32beaf9171d564b1512c1821b4bc" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.ComboBox</type>
+        <definition>System.Windows.Forms.ComboBox Enigma2.SettingsForm.rotor2</definition>
+        <argsstring></argsstring>
+        <name>rotor2</name>
+        <qualifiedname>Enigma2.SettingsForm.rotor2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.Designer.cs" line="476" column="44" bodyfile="Core/SettingsForm.Designer.cs" bodystart="476" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_settings_form_1ae756dbd814c1efeea6328c377e31c372" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.ComboBox</type>
+        <definition>System.Windows.Forms.ComboBox Enigma2.SettingsForm.rotor3</definition>
+        <argsstring></argsstring>
+        <name>rotor3</name>
+        <qualifiedname>Enigma2.SettingsForm.rotor3</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.Designer.cs" line="477" column="44" bodyfile="Core/SettingsForm.Designer.cs" bodystart="477" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_settings_form_1ac0c8d8aedd53a07894577224b2b4349a" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.DomainUpDown</type>
+        <definition>System.Windows.Forms.DomainUpDown Enigma2.SettingsForm.fourRing</definition>
+        <argsstring></argsstring>
+        <name>fourRing</name>
+        <qualifiedname>Enigma2.SettingsForm.fourRing</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.Designer.cs" line="478" column="48" bodyfile="Core/SettingsForm.Designer.cs" bodystart="478" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_settings_form_1a9baf7f41e1dfeef23592b1a5c34269bd" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.ComboBox</type>
+        <definition>System.Windows.Forms.ComboBox Enigma2.SettingsForm.rotor4</definition>
+        <argsstring></argsstring>
+        <name>rotor4</name>
+        <qualifiedname>Enigma2.SettingsForm.rotor4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.Designer.cs" line="479" column="44" bodyfile="Core/SettingsForm.Designer.cs" bodystart="479" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_settings_form_1a01382a84e9ce60aad9a05aa5386154aa" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.CheckBox</type>
+        <definition>System.Windows.Forms.CheckBox Enigma2.SettingsForm.useM4</definition>
+        <argsstring></argsstring>
+        <name>useM4</name>
+        <qualifiedname>Enigma2.SettingsForm.useM4</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.Designer.cs" line="480" column="44" bodyfile="Core/SettingsForm.Designer.cs" bodystart="480" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_settings_form_1a7a2ac2dfe691d24e4ae0af6bc19a8124" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Enigma2.SettingsForm.buttonSave</definition>
+        <argsstring></argsstring>
+        <name>buttonSave</name>
+        <qualifiedname>Enigma2.SettingsForm.buttonSave</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.Designer.cs" line="481" column="42" bodyfile="Core/SettingsForm.Designer.cs" bodystart="481" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_settings_form_1a52b8de5a68ef50fbb6dc7ad9cad139a6" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Enigma2.SettingsForm.buttonOpen</definition>
+        <argsstring></argsstring>
+        <name>buttonOpen</name>
+        <qualifiedname>Enigma2.SettingsForm.buttonOpen</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.Designer.cs" line="482" column="42" bodyfile="Core/SettingsForm.Designer.cs" bodystart="482" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_settings_form_1ac16013ad20d0ace629bdda995c263df8" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.CheckBox</type>
+        <definition>System.Windows.Forms.CheckBox Enigma2.SettingsForm.checkBoxCopy</definition>
+        <argsstring></argsstring>
+        <name>checkBoxCopy</name>
+        <qualifiedname>Enigma2.SettingsForm.checkBoxCopy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.Designer.cs" line="483" column="44" bodyfile="Core/SettingsForm.Designer.cs" bodystart="483" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_settings_form_1a3c986e1a16e5ca11fa0b7757ae5dec13" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.TextBox</type>
+        <definition>System.Windows.Forms.TextBox Enigma2.SettingsForm.textBoxGroups</definition>
+        <argsstring></argsstring>
+        <name>textBoxGroups</name>
+        <qualifiedname>Enigma2.SettingsForm.textBoxGroups</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.Designer.cs" line="484" column="43" bodyfile="Core/SettingsForm.Designer.cs" bodystart="484" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_settings_form_1a246163bff2407331b3ab49415b72d059" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Enigma2.SettingsForm.button1</definition>
+        <argsstring></argsstring>
+        <name>button1</name>
+        <qualifiedname>Enigma2.SettingsForm.button1</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.Designer.cs" line="485" column="42" bodyfile="Core/SettingsForm.Designer.cs" bodystart="485" bodyend="-1"/>
+      </memberdef>
+      <memberdef kind="variable" id="class_enigma2_1_1_settings_form_1a6f9785800289b69f67749a636f1dc498" prot="private" static="no" mutable="no">
+        <type>System.Windows.Forms.Button</type>
+        <definition>System.Windows.Forms.Button Enigma2.SettingsForm.button2</definition>
+        <argsstring></argsstring>
+        <name>button2</name>
+        <qualifiedname>Enigma2.SettingsForm.button2</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.Designer.cs" line="486" column="42" bodyfile="Core/SettingsForm.Designer.cs" bodystart="486" bodyend="-1"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="public-func">
+      <memberdef kind="function" id="class_enigma2_1_1_settings_form_1a4438986a9061193688628136dd3270bf" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type></type>
+        <definition>Enigma2.SettingsForm.SettingsForm</definition>
+        <argsstring>(GameMain game)</argsstring>
+        <name>SettingsForm</name>
+        <qualifiedname>Enigma2.SettingsForm.SettingsForm</qualifiedname>
+        <param>
+          <type><ref refid="class_enigma2_1_1_game_main" kindref="compound">GameMain</ref></type>
+          <declname>game</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.cs" line="17" column="16" bodyfile="Core/SettingsForm.cs" bodystart="17" bodyend="54"/>
+      </memberdef>
+      <memberdef kind="function" id="class_enigma2_1_1_settings_form_1a308f388fc580f47f293daaf18e5062c6" prot="public" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Enigma2.SettingsForm.Copy</definition>
+        <argsstring>()</argsstring>
+        <name>Copy</name>
+        <qualifiedname>Enigma2.SettingsForm.Copy</qualifiedname>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.cs" line="63" column="21" bodyfile="Core/SettingsForm.cs" bodystart="63" bodyend="74"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="private-func">
+      <memberdef kind="function" id="class_enigma2_1_1_settings_form_1ad73150562d797f47c1ce1ea33cfa0f9f" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>int</type>
+        <definition>int Enigma2.SettingsForm.getRing</definition>
+        <argsstring>(DomainUpDown ring)</argsstring>
+        <name>getRing</name>
+        <qualifiedname>Enigma2.SettingsForm.getRing</qualifiedname>
+        <param>
+          <type>DomainUpDown</type>
+          <declname>ring</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.cs" line="56" column="13" bodyfile="Core/SettingsForm.cs" bodystart="56" bodyend="61"/>
+      </memberdef>
+      <memberdef kind="function" id="class_enigma2_1_1_settings_form_1acc3270a6e008cca4b0bbbb8c407e87c0" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Enigma2.SettingsForm.oneRing_SelectedItemChanged</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>oneRing_SelectedItemChanged</name>
+        <qualifiedname>Enigma2.SettingsForm.oneRing_SelectedItemChanged</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.cs" line="76" column="22" bodyfile="Core/SettingsForm.cs" bodystart="76" bodyend="79"/>
+      </memberdef>
+      <memberdef kind="function" id="class_enigma2_1_1_settings_form_1a69c2d8bd8d25eecab8ae496a8682d800" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Enigma2.SettingsForm.twoRing_SelectedItemChanged</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>twoRing_SelectedItemChanged</name>
+        <qualifiedname>Enigma2.SettingsForm.twoRing_SelectedItemChanged</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.cs" line="81" column="22" bodyfile="Core/SettingsForm.cs" bodystart="81" bodyend="84"/>
+      </memberdef>
+      <memberdef kind="function" id="class_enigma2_1_1_settings_form_1ae7266db1d59a88b8aa66cc90410b056e" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Enigma2.SettingsForm.threeRing_SelectedItemChanged</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>threeRing_SelectedItemChanged</name>
+        <qualifiedname>Enigma2.SettingsForm.threeRing_SelectedItemChanged</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.cs" line="86" column="22" bodyfile="Core/SettingsForm.cs" bodystart="86" bodyend="89"/>
+      </memberdef>
+      <memberdef kind="function" id="class_enigma2_1_1_settings_form_1adddbad378f170f9d656d45ac1e0eda32" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Enigma2.SettingsForm.setRing</definition>
+        <argsstring>(DomainUpDown dom)</argsstring>
+        <name>setRing</name>
+        <qualifiedname>Enigma2.SettingsForm.setRing</qualifiedname>
+        <param>
+          <type>DomainUpDown</type>
+          <declname>dom</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.cs" line="91" column="14" bodyfile="Core/SettingsForm.cs" bodystart="91" bodyend="97"/>
+      </memberdef>
+      <memberdef kind="function" id="class_enigma2_1_1_settings_form_1aa7d06dcd569452780c8aa757f6935db5" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Enigma2.SettingsForm.buttonSave_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>buttonSave_Click</name>
+        <qualifiedname>Enigma2.SettingsForm.buttonSave_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.cs" line="99" column="22" bodyfile="Core/SettingsForm.cs" bodystart="99" bodyend="148"/>
+      </memberdef>
+      <memberdef kind="function" id="class_enigma2_1_1_settings_form_1aef8c9a1291d2851d86f7fab94f401bb3" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Enigma2.SettingsForm.buttonOpen_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>buttonOpen_Click</name>
+        <qualifiedname>Enigma2.SettingsForm.buttonOpen_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.cs" line="150" column="22" bodyfile="Core/SettingsForm.cs" bodystart="150" bodyend="188"/>
+      </memberdef>
+      <memberdef kind="function" id="class_enigma2_1_1_settings_form_1ad5d257288c6e950e3c4c62ec28c7ea7c" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>byte[]</type>
+        <definition>byte[] Enigma2.SettingsForm.ObjectToByteArray</definition>
+        <argsstring>(Object obj)</argsstring>
+        <name>ObjectToByteArray</name>
+        <qualifiedname>Enigma2.SettingsForm.ObjectToByteArray</qualifiedname>
+        <param>
+          <type>Object</type>
+          <declname>obj</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.cs" line="190" column="22" bodyfile="Core/SettingsForm.cs" bodystart="190" bodyend="198"/>
+      </memberdef>
+      <memberdef kind="function" id="class_enigma2_1_1_settings_form_1ae0af87b21ef78346d4c80a93d847aae6" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>Object</type>
+        <definition>Object Enigma2.SettingsForm.ByteArrayToObject</definition>
+        <argsstring>(byte[] arrBytes)</argsstring>
+        <name>ByteArrayToObject</name>
+        <qualifiedname>Enigma2.SettingsForm.ByteArrayToObject</qualifiedname>
+        <param>
+          <type>byte[]</type>
+          <declname>arrBytes</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.cs" line="199" column="24" bodyfile="Core/SettingsForm.cs" bodystart="199" bodyend="207"/>
+      </memberdef>
+      <memberdef kind="function" id="class_enigma2_1_1_settings_form_1a56f708a04d68b0acef90cdb39c3774ba" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Enigma2.SettingsForm.button1_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>button1_Click</name>
+        <qualifiedname>Enigma2.SettingsForm.button1_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.cs" line="209" column="22" bodyfile="Core/SettingsForm.cs" bodystart="209" bodyend="212"/>
+      </memberdef>
+      <memberdef kind="function" id="class_enigma2_1_1_settings_form_1aeb3faba30cdcd132171c74eb7d22ed15" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Enigma2.SettingsForm.button2_Click</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>button2_Click</name>
+        <qualifiedname>Enigma2.SettingsForm.button2_Click</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.cs" line="214" column="22" bodyfile="Core/SettingsForm.cs" bodystart="214" bodyend="217"/>
+      </memberdef>
+      <memberdef kind="function" id="class_enigma2_1_1_settings_form_1a99553ae7b8764d971bfd7dc3b4615391" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Enigma2.SettingsForm.textBoxGroups_TextChanged</definition>
+        <argsstring>(object sender, EventArgs e)</argsstring>
+        <name>textBoxGroups_TextChanged</name>
+        <qualifiedname>Enigma2.SettingsForm.textBoxGroups_TextChanged</qualifiedname>
+        <param>
+          <type>object</type>
+          <declname>sender</declname>
+        </param>
+        <param>
+          <type>EventArgs</type>
+          <declname>e</declname>
+        </param>
+        <briefdescription>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.cs" line="219" column="22" bodyfile="Core/SettingsForm.cs" bodystart="219" bodyend="226"/>
+      </memberdef>
+      <memberdef kind="function" id="class_enigma2_1_1_settings_form_1afe901a517305088d9f728a2eed03a1cf" prot="private" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>void</type>
+        <definition>void Enigma2.SettingsForm.InitializeComponent</definition>
+        <argsstring>()</argsstring>
+        <name>InitializeComponent</name>
+        <qualifiedname>Enigma2.SettingsForm.InitializeComponent</qualifiedname>
+        <briefdescription>
+<para>Required method for Designer support - do not modify the contents of this method with the code editor. </para>
+        </briefdescription>
+        <detaileddescription>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.Designer.cs" line="29" column="22" bodyfile="Core/SettingsForm.Designer.cs" bodystart="29" bodyend="460"/>
+      </memberdef>
+    </sectiondef>
+    <sectiondef kind="protected-func">
+      <memberdef kind="function" id="class_enigma2_1_1_settings_form_1a87e2556f9f30e99fe287235b71cc9566" prot="protected" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
+        <type>override void</type>
+        <definition>override void Enigma2.SettingsForm.Dispose</definition>
+        <argsstring>(bool disposing)</argsstring>
+        <name>Dispose</name>
+        <qualifiedname>Enigma2.SettingsForm.Dispose</qualifiedname>
+        <param>
+          <type>bool</type>
+          <declname>disposing</declname>
+        </param>
+        <briefdescription>
+<para>Clean up any resources being used. </para>
+        </briefdescription>
+        <detaileddescription>
+<para><parameterlist kind="param"><parameteritem>
+<parameternamelist>
+<parametername>disposing</parametername>
+</parameternamelist>
+<parameterdescription>
+<para>true if managed resources should be disposed; otherwise, false.</para>
+</parameterdescription>
+</parameteritem>
+</parameterlist>
+</para>
+        </detaileddescription>
+        <inbodydescription>
+        </inbodydescription>
+        <location file="Core/SettingsForm.Designer.cs" line="14" column="33" bodyfile="Core/SettingsForm.Designer.cs" bodystart="14" bodyend="21"/>
+      </memberdef>
+    </sectiondef>
+    <briefdescription>
+    </briefdescription>
+    <detaileddescription>
+    </detaileddescription>
+    <inheritancegraph>
+      <node id="1">
+        <label>Enigma2.SettingsForm</label>
+        <link refid="class_enigma2_1_1_settings_form"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Form</label>
+      </node>
+    </inheritancegraph>
+    <collaborationgraph>
+      <node id="1">
+        <label>Enigma2.SettingsForm</label>
+        <link refid="class_enigma2_1_1_settings_form"/>
+        <childnode refid="2" relation="public-inheritance">
+        </childnode>
+      </node>
+      <node id="2">
+        <label>Form</label>
+      </node>
+    </collaborationgraph>
+    <location file="Core/SettingsForm.cs" line="14" column="19" bodyfile="Core/SettingsForm.cs" bodystart="15" bodyend="227"/>
+    <listofallmembers>
+      <member refid="class_enigma2_1_1_settings_form_1a246163bff2407331b3ab49415b72d059" prot="private" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>button1</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1a56f708a04d68b0acef90cdb39c3774ba" prot="private" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>button1_Click</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1a6f9785800289b69f67749a636f1dc498" prot="private" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>button2</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1aeb3faba30cdcd132171c74eb7d22ed15" prot="private" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>button2_Click</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1a52b8de5a68ef50fbb6dc7ad9cad139a6" prot="private" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>buttonOpen</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1aef8c9a1291d2851d86f7fab94f401bb3" prot="private" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>buttonOpen_Click</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1a7a2ac2dfe691d24e4ae0af6bc19a8124" prot="private" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>buttonSave</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1aa7d06dcd569452780c8aa757f6935db5" prot="private" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>buttonSave_Click</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1ae0af87b21ef78346d4c80a93d847aae6" prot="private" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>ByteArrayToObject</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1ac16013ad20d0ace629bdda995c263df8" prot="private" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>checkBoxCopy</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1a9ccab0faa559eb6075f3ee447fd8fa42" prot="private" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>comboBoxReflector</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1a293649e0679ce31c9b24acae3fb5ddce" prot="private" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>components</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1a308f388fc580f47f293daaf18e5062c6" prot="public" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>Copy</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1a87e2556f9f30e99fe287235b71cc9566" prot="protected" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>Dispose</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1ac0c8d8aedd53a07894577224b2b4349a" prot="private" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>fourRing</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1ad73150562d797f47c1ce1ea33cfa0f9f" prot="private" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>getRing</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1afe901a517305088d9f728a2eed03a1cf" prot="private" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>InitializeComponent</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1ab72316302c477db54ffc888a57337b56" prot="private" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>label1</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1a337a7ad62c6f8eb7dadf220dc91dd1d3" prot="private" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>label2</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1ae325e5ea91883d5a3f5a19173ec120f5" prot="private" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>label3</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1ad071ffabb5b47e27f24a8a280f9c1d94" prot="private" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>label4</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1adbc0015b4b337f273f66edff696666be" prot="private" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>main</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1ad5d257288c6e950e3c4c62ec28c7ea7c" prot="private" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>ObjectToByteArray</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1a66c58229ab4712ca1847fd64abcb239d" prot="private" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>oneRing</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1acc3270a6e008cca4b0bbbb8c407e87c0" prot="private" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>oneRing_SelectedItemChanged</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1ad0235a3e1f79d9ac5576ee50c92b68e2" prot="private" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>rotor1</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1a3a0a32beaf9171d564b1512c1821b4bc" prot="private" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>rotor2</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1ae756dbd814c1efeea6328c377e31c372" prot="private" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>rotor3</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1a9baf7f41e1dfeef23592b1a5c34269bd" prot="private" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>rotor4</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1adddbad378f170f9d656d45ac1e0eda32" prot="private" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>setRing</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1a4438986a9061193688628136dd3270bf" prot="public" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>SettingsForm</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1a3c986e1a16e5ca11fa0b7757ae5dec13" prot="private" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>textBoxGroups</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1a99553ae7b8764d971bfd7dc3b4615391" prot="private" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>textBoxGroups_TextChanged</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1abc6dbecf01dfce94a1c9ea7d16a83b7d" prot="private" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>textBoxReflector</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1adf86c135ced15b2cba3e3685fdfa7e59" prot="private" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>threeRing</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1ae7266db1d59a88b8aa66cc90410b056e" prot="private" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>threeRing_SelectedItemChanged</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1a718823d19285125b7b32e62da71e62fc" prot="private" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>trackBarSound</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1a967a9234a7549f1643725c89b3ad8ace" prot="private" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>twoRing</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1a69c2d8bd8d25eecab8ae496a8682d800" prot="private" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>twoRing_SelectedItemChanged</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1a16f54bf8a05190832e7e81d0b81fb7da" prot="private" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>useCustomReflector</name></member>
+      <member refid="class_enigma2_1_1_settings_form_1a01382a84e9ce60aad9a05aa5386154aa" prot="private" virt="non-virtual"><scope>Enigma2::SettingsForm</scope><name>useM4</name></member>
+    </listofallmembers>
+  </compounddef>
+</doxygen>

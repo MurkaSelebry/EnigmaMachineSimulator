@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_namespace_enigma2" xml:lang="ru">
+<title>Пространство имен Enigma2</title>
+<indexterm><primary>Enigma2</primary></indexterm>
+<simplesect>
+    <title>Классы    </title>
+        <itemizedlist>
+            <listitem><para>class <link linkend="_class_enigma2_1_1_base_enigma">BaseEnigma</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_enigma2_1_1_e_label">ELabel</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_enigma2_1_1_game_main">GameMain</link></para>
+
+<para>This is the main type for your game. </para>
+</listitem>
+            <listitem><para>class <link linkend="_class_enigma2_1_1_plugboard">Plugboard</link></para>
+</listitem>
+            <listitem><para>class <emphasis role="strong">Program</emphasis></para>
+</listitem>
+            <listitem><para>struct <link linkend="_struct_enigma2_1_1_settings">Settings</link></para>
+</listitem>
+            <listitem><para>class <link linkend="_class_enigma2_1_1_settings_form">SettingsForm</link></para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+</section>

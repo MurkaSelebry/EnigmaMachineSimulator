@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="_class_enigma2_1_1_settings_form" xml:lang="ru">
+<title>Класс Enigma2.SettingsForm</title>
+<indexterm><primary>Enigma2.SettingsForm</primary></indexterm>
+<para>Граф наследования:Enigma2.SettingsForm:    <informalfigure>
+        <mediaobject>
+            <imageobject>
+                <imagedata width="50%" align="center" valign="middle" scalefit="0" fileref="class_enigma2_1_1_settings_form.png"></imagedata>
+            </imageobject>
+        </mediaobject>
+    </informalfigure>
+</para>
+<simplesect>
+    <title>Открытые члены    </title>
+        <itemizedlist>
+            <listitem><para><link linkend="_class_enigma2_1_1_settings_form_1a4438986a9061193688628136dd3270bf">SettingsForm</link> (<link linkend="_class_enigma2_1_1_game_main">GameMain</link> game)</para>
+</listitem>
+            <listitem><para>void <link linkend="_class_enigma2_1_1_settings_form_1a308f388fc580f47f293daaf18e5062c6">Copy</link> ()</para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<simplesect>
+    <title>Защищенные члены    </title>
+        <itemizedlist>
+            <listitem><para>override void <link linkend="_class_enigma2_1_1_settings_form_1a87e2556f9f30e99fe287235b71cc9566">Dispose</link> (bool disposing)</para>
+
+<para>Clean up any resources being used. </para>
+</listitem>
+        </itemizedlist>
+</simplesect>
+<section>
+<title>Подробное описание</title>
+<para>
+См. определение в файле <link linkend="__settings_form_8cs_source">SettingsForm.cs</link> строка <link linkend="__settings_form_8cs_source_1l00014">14</link></para>
+</section>
+<section>
+<title>Конструктор(ы)</title>
+<anchor xml:id="_class_enigma2_1_1_settings_form_1a4438986a9061193688628136dd3270bf"/><section>
+    <title>SettingsForm()</title>
+<indexterm><primary>SettingsForm</primary><secondary>Enigma2.SettingsForm</secondary></indexterm>
+<indexterm><primary>Enigma2.SettingsForm</primary><secondary>SettingsForm</secondary></indexterm>
+<para><computeroutput>Enigma2.SettingsForm.SettingsForm (<link linkend="_class_enigma2_1_1_game_main">GameMain</link> game)</computeroutput></para><para>
+См. определение в файле <link linkend="__settings_form_8cs_source">SettingsForm.cs</link> строка <link linkend="__settings_form_8cs_source_1l00017">17</link></para>
+</section>
+</section>
+<section>
+<title>Методы</title>
+<anchor xml:id="_class_enigma2_1_1_settings_form_1a308f388fc580f47f293daaf18e5062c6"/><section>
+    <title>Copy()</title>
+<indexterm><primary>Copy</primary><secondary>Enigma2.SettingsForm</secondary></indexterm>
+<indexterm><primary>Enigma2.SettingsForm</primary><secondary>Copy</secondary></indexterm>
+<para><computeroutput>void Enigma2.SettingsForm.Copy ( )</computeroutput></para><para>
+См. определение в файле <link linkend="__settings_form_8cs_source">SettingsForm.cs</link> строка <link linkend="__settings_form_8cs_source_1l00063">63</link></para>
+</section>
+<anchor xml:id="_class_enigma2_1_1_settings_form_1a87e2556f9f30e99fe287235b71cc9566"/><section>
+    <title>Dispose()</title>
+<indexterm><primary>Dispose</primary><secondary>Enigma2.SettingsForm</secondary></indexterm>
+<indexterm><primary>Enigma2.SettingsForm</primary><secondary>Dispose</secondary></indexterm>
+<para><computeroutput>override void Enigma2.SettingsForm.Dispose (bool disposing)<computeroutput>[protected]</computeroutput></computeroutput></para><para>
+
+<para>Clean up any resources being used. </para>
+</para>
+
+<para>
+                <formalpara>
+                    <title>
+Аргументы</title>
+                    <para>
+                    <table frame="all">
+                        <tgroup cols="2" align="left" colsep="1" rowsep="1">
+                        <colspec colwidth="1*"/>
+                        <colspec colwidth="4*"/>
+                        <tbody>
+                            <row>
+<entry>disposing</entry><entry>
+<para>true if managed resources should be disposed; otherwise, false.</para>
+</entry>
+                            </row>
+                        </tbody>
+                        </tgroup>
+                    </table>
+                    </para>
+                </formalpara>
+                </para>
+<para>
+См. определение в файле <link linkend="__settings_form_8_designer_8cs_source">SettingsForm.Designer.cs</link> строка <link linkend="__settings_form_8_designer_8cs_source_1l00014">14</link></para>
+</section>
+<para>
+Объявления и описания членов классов находятся в файлах:</para>
+Core/<link linkend="__settings_form_8cs">SettingsForm.cs</link>Core/<link linkend="__settings_form_8_designer_8cs">SettingsForm.Designer.cs</link></section>
+</section>

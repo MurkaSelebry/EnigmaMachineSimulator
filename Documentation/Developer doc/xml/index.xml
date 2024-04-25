@@ -1,0 +1,256 @@
+<?xml version='1.0' encoding='UTF-8' standalone='no'?>
+<doxygenindex xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="index.xsd" version="1.10.0" xml:lang="ru">
+  <compound refid="class_enigma2_1_1_base_enigma" kind="class"><name>Enigma2::BaseEnigma</name>
+    <member refid="class_enigma2_1_1_base_enigma_1a8cbad00c691df89c19175dfc983c2166" kind="variable"><name>rotors</name></member>
+    <member refid="class_enigma2_1_1_base_enigma_1a7f5258b1427b1fb749124e032090a691" kind="variable"><name>symbols</name></member>
+    <member refid="class_enigma2_1_1_base_enigma_1accbadc7a06ad62c43b10e05b9dd565bc" kind="variable"><name>abc</name></member>
+    <member refid="class_enigma2_1_1_base_enigma_1a32f2d5f5b656ccdcf146b59a8e7abd60" kind="variable"><name>reflectorB</name></member>
+    <member refid="class_enigma2_1_1_base_enigma_1a7e09866f2a216fa715ca5df235a6894d" kind="variable"><name>reflectorBThin</name></member>
+    <member refid="class_enigma2_1_1_base_enigma_1aa4738e4356128eb989c6c27696552e5e" kind="variable"><name>reflectorC</name></member>
+    <member refid="class_enigma2_1_1_base_enigma_1a0433cb09450405f2bf50cfe298784e30" kind="variable"><name>reflectorCThin</name></member>
+    <member refid="class_enigma2_1_1_base_enigma_1ac33a8464aa9b4e5b7ae0e67d8d0b0536" kind="variable"><name>Replace</name></member>
+    <member refid="class_enigma2_1_1_base_enigma_1a1cf18c40e3a08009f43d7b178856c9e0" kind="variable"><name>key</name></member>
+    <member refid="class_enigma2_1_1_base_enigma_1a85ee3103139f257ae413a5017d793adc" kind="variable"><name>_rotors</name></member>
+    <member refid="class_enigma2_1_1_base_enigma_1a2a356e12f7fe871b54b92ebc7fab6dfe" kind="variable"><name>ring</name></member>
+    <member refid="class_enigma2_1_1_base_enigma_1ad5100d5c767f1b84b9ddade6e6a6b0b6" kind="function"><name>toKey</name></member>
+    <member refid="class_enigma2_1_1_base_enigma_1aa4110ccdf05866d43035758efb3f07dd" kind="function"><name>toKey</name></member>
+    <member refid="class_enigma2_1_1_base_enigma_1a766f61716959aedb7abcfdae3f7765b0" kind="function"><name>encode</name></member>
+    <member refid="class_enigma2_1_1_base_enigma_1aa0a99d30ae4cffa75089d3b82bf4f361" kind="function"><name>code</name></member>
+    <member refid="class_enigma2_1_1_base_enigma_1ad0791cbdbcc43e5ae9dae8586b7d1161" kind="function"><name>reverse</name></member>
+    <member refid="class_enigma2_1_1_base_enigma_1a9e1aa47b54a905ab31586556b43f7e35" kind="function"><name>increment</name></member>
+    <member refid="class_enigma2_1_1_base_enigma_1aadae3d7f0db5d5376b9ae09c7292b5c2" kind="function"><name>decrement</name></member>
+    <member refid="class_enigma2_1_1_base_enigma_1af504fbd01283d8a4003446a829225cee" kind="function"><name>enigma</name></member>
+    <member refid="class_enigma2_1_1_base_enigma_1a992e9089ed036e7b9e9eb1e479df90a8" kind="function"><name>rotor</name></member>
+    <member refid="class_enigma2_1_1_base_enigma_1a0051f99ced5c2f6ebd8a9ffd34e789d4" kind="function"><name>sub</name></member>
+    <member refid="class_enigma2_1_1_base_enigma_1a50a5866fffe328bcd19157e96c71fab0" kind="function"><name>Encode</name></member>
+    <member refid="class_enigma2_1_1_base_enigma_1a91fd2186fe23ee1b6fa448e0a36addb7" kind="function"><name>Back</name></member>
+    <member refid="class_enigma2_1_1_base_enigma_1a999938995f92cd815046e9388a2a3fb3" kind="function"><name>Move</name></member>
+    <member refid="class_enigma2_1_1_base_enigma_1a7975c819c3b993f5a21a8e21ae92c07b" kind="function"><name>MoveAt</name></member>
+    <member refid="class_enigma2_1_1_base_enigma_1a97bedc64669080fdf0610ec67ae94ceb" kind="function"><name>BackAt</name></member>
+    <member refid="class_enigma2_1_1_base_enigma_1a9433299e70b88416ff8291897a7ca9f1" kind="function"><name>Decrement</name></member>
+  </compound>
+  <compound refid="class_enigma2_1_1_e_label" kind="class"><name>Enigma2::ELabel</name>
+    <member refid="class_enigma2_1_1_e_label_1aad8eebe6ca990f4dc0d1d99507011fba" kind="property"><name>RotateAngle</name></member>
+    <member refid="class_enigma2_1_1_e_label_1a1bdcc7b023a7a15bf8b711d9b8b6eb0b" kind="property"><name>NewText</name></member>
+    <member refid="class_enigma2_1_1_e_label_1adbeff2c16504ae3fa5d63dbc7579f97c" kind="function"><name>OnPaint</name></member>
+  </compound>
+  <compound refid="class_enigma2_1_1_game_main" kind="class"><name>Enigma2::GameMain</name>
+    <member refid="class_enigma2_1_1_game_main_1af087422c056cb6fe4d99b0f67b7a0b89" kind="variable"><name>graphics</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a63fc7bf6f722e567db0b7c4797b210b7" kind="variable"><name>spriteBatch</name></member>
+    <member refid="class_enigma2_1_1_game_main_1af8615ee9e8b4dd4b56d1d725c546b4dd" kind="variable"><name>colorBack</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a526c9c91eb5051b56efede4ef8d87a97" kind="variable"><name>colorGray</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a5cb475574df4a4e5c96811dd1890fd8f" kind="variable"><name>textureBg</name></member>
+    <member refid="class_enigma2_1_1_game_main_1adda12f050e09cd2cf6e9aaa71d2c21c4" kind="variable"><name>textureSymbol</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a8b53732007a2073c2e8c4c7cf66f594c" kind="variable"><name>textureLed</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a4c0ba3d6b5e8c5fd83a2a7bdf60df95d" kind="variable"><name>textureRotor</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a1f3b1d456e625b74c0a65f1d87884411" kind="variable"><name>textureInfo</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a38b53d6af87685d82c002234eae42ae2" kind="variable"><name>textureOut</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a0033593569395646586f29a87b2fe4ec" kind="variable"><name>textureBolt</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a4e50b03db3b663055237799846805926" kind="variable"><name>textureLock</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a62c4d01c583c45c9a39a7d7c9394a5b4" kind="variable"><name>textureBack</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a2e5d503d93b304265f8439579e888e4e" kind="variable"><name>textureText</name></member>
+    <member refid="class_enigma2_1_1_game_main_1ae5af409a04c69ae6a526b9eb50cc0b7c" kind="variable"><name>texturePlug</name></member>
+    <member refid="class_enigma2_1_1_game_main_1acf035ed1a5bc6a511fb4593201b6bd1b" kind="variable"><name>textureActivePlug</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a6fcb2eb68dda65afbcbb8ccac4fafdc6" kind="variable"><name>sliders</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a64d8f47595827251180a786213f4be0b" kind="variable"><name>sliderPositions</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a95dd5e9879f0823c219ee5ebcb6dd664" kind="variable"><name>soundUp</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a7d72b8a0e3e959f4f589b4d435d84e83" kind="variable"><name>soundDown</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a5b3588d3cfdfd859f510a90d03bdde45" kind="variable"><name>soundTick</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a0258d025b79dd5882cd5ed4ec313782a" kind="variable"><name>volume</name></member>
+    <member refid="class_enigma2_1_1_game_main_1ae58f52222f541a7d3b8e90bdd780d12b" kind="variable"><name>showPlugboard</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a9ec24ae80d7a19568e14e9e859a2ffd7" kind="variable"><name>useM4</name></member>
+    <member refid="class_enigma2_1_1_game_main_1ace3dcd76c4a9725eff7d6dc91422275d" kind="variable"><name>isWait</name></member>
+    <member refid="class_enigma2_1_1_game_main_1abca1674d0b8e35e9bfed6fdba4b81c4a" kind="variable"><name>isRemove</name></member>
+    <member refid="class_enigma2_1_1_game_main_1ad2fb70ceb49d7caf43bc970ae8deff42" kind="variable"><name>charset</name></member>
+    <member refid="class_enigma2_1_1_game_main_1ae9430556958bedc3855d2f1f07b18557" kind="variable"><name>startX</name></member>
+    <member refid="class_enigma2_1_1_game_main_1ae3944d550654d3839171fe9036fb4b16" kind="variable"><name>startY</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a37e1babfd19282a1deb412bbf8d0437f" kind="variable"><name>x</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a6c8e06e6f7972a8ae8f9917cdb1224f6" kind="variable"><name>y</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a05c4d7182128d2bfcf120f0bd6ca2b12" kind="variable"><name>isSettings</name></member>
+    <member refid="class_enigma2_1_1_game_main_1af99900e636a7eaa4af86aac5d24cad0f" kind="variable"><name>isNumber</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a6e5d7ac2e110b81e64b0f35abc08b73e" kind="variable"><name>waitSymbol</name></member>
+    <member refid="class_enigma2_1_1_game_main_1afa0ce984ad25e42165e2e36f83a3b98b" kind="variable"><name>isSend</name></member>
+    <member refid="class_enigma2_1_1_game_main_1ae472a78c78eba532a0f0284e3a5587a3" kind="variable"><name>sended</name></member>
+    <member refid="class_enigma2_1_1_game_main_1aa2cf1dec7ba4d558d360838d00f2370a" kind="variable"><name>charCurrent</name></member>
+    <member refid="class_enigma2_1_1_game_main_1ae18cb8e59b6fb89fd4d3f5383eee6461" kind="variable"><name>charSend</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a9ba37a6c5028a07b7dfc43a8327faf47" kind="variable"><name>enigma</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a854fcefa9190257fb5d148c0f3838eb5" kind="variable"><name>formSettings</name></member>
+    <member refid="class_enigma2_1_1_game_main_1ac6dd6a405c5f137687069b7dbaf8b13d" kind="variable"><name>customReflector</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a1514e258edf3a2f59d48dd38e767b19b" kind="variable"><name>reflector</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a2d85539fefe29e0adf3822af7f521869" kind="variable"><name>replace</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a3e6351bd5cb71f0eda92b6c2e674f6c4" kind="variable"><name>message</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a04290fc94a94b41eb8980584bac32555" kind="variable"><name>mouseOne</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a3e8371d4ea48b000633930dc733df38d" kind="variable"><name>mouseTwo</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a9aab07803544f8f5f3b2cd112dec334b" kind="variable"><name>keybOne</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a571c793df25a5b255e0bd08adc2107b4" kind="variable"><name>keybTwo</name></member>
+    <member refid="class_enigma2_1_1_game_main_1ada6aa9c46995956f41f52ac12efee7b2" kind="variable"><name>fontBase</name></member>
+    <member refid="class_enigma2_1_1_game_main_1ab58254bc957224320973432bc7d87f93" kind="variable"><name>fontMini</name></member>
+    <member refid="class_enigma2_1_1_game_main_1abc807c2302a298e4eb38f966cc7438ad" kind="variable"><name>fontSpec</name></member>
+    <member refid="class_enigma2_1_1_game_main_1af0cf4346d460eaeacfeb9a5eee2526b5" kind="variable"><name>fontSpecMini</name></member>
+    <member refid="class_enigma2_1_1_game_main_1ac574cd8311aa6d102c4ba303ec52548e" kind="variable"><name>WIDTH</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a0314b11c50dbf602539db739ad2b719d" kind="variable"><name>HEIGHT</name></member>
+    <member refid="class_enigma2_1_1_game_main_1afa5f10cdf0a4fbf4234f44aac9348b37" kind="function"><name>GameMain</name></member>
+    <member refid="class_enigma2_1_1_game_main_1ae3360c0053ff567bebcc5787de4e543b" kind="function"><name>SetSettings</name></member>
+    <member refid="class_enigma2_1_1_game_main_1aaa8bb801e494ee7329a835566c4a4488" kind="function"><name>CloseSettings</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a600b3a23fd7354229b853a5952f49fc3" kind="function"><name>LoadContent</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a728ad7694c31f2719dbbaea560531ee6" kind="function"><name>Update</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a5e4d6ae472eb5b8d28a502778c71e1cd" kind="function"><name>Draw</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a6ef6a461797b1db8d35618b289bd6275" kind="function"><name>drawText</name></member>
+    <member refid="class_enigma2_1_1_game_main_1aed8d1ada514c86f38470667cb5b277f2" kind="function"><name>drawPlugboardButtonShow</name></member>
+    <member refid="class_enigma2_1_1_game_main_1abfe95aea1554962cffd4de37454b8f66" kind="function"><name>drawPlugboardButtonHide</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a9d6b8af286cc0c1e8ff08a5f80c22432" kind="function"><name>drawSettings</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a11180d9e2f26414bd7d5e0a63171a56a" kind="function"><name>drawRotor</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a650cc4b0186ca8f417dd3c614391bd3a" kind="function"><name>drawOutput</name></member>
+    <member refid="class_enigma2_1_1_game_main_1ab0a8d148e22f8c49bb866ac859c2aded" kind="function"><name>drawInput</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a309a3ba8e505c3fbd1525c64e74f245e" kind="function"><name>drawPlugs</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a99f68581debc4fd84e071ac8929a5de0" kind="function"><name>drawPlug</name></member>
+    <member refid="class_enigma2_1_1_game_main_1a96582c478cb0a5438f3effbec73e720a" kind="function"><name>drawLed</name></member>
+    <member refid="class_enigma2_1_1_game_main_1aa1af19dc66a77519b34cc9c6a9132e77" kind="function"><name>drawButton</name></member>
+  </compound>
+  <compound refid="class_enigma2_1_1_plugboard" kind="class"><name>Enigma2::Plugboard</name>
+    <member refid="class_enigma2_1_1_plugboard_1a68d3f573244321b18154bfd4d65ddc08" kind="variable"><name>graphics</name></member>
+    <member refid="class_enigma2_1_1_plugboard_1aad3d0dba9a72d333b63579e6cf39bfe4" kind="variable"><name>spriteBatch</name></member>
+    <member refid="class_enigma2_1_1_plugboard_1a6816b76806a0d11fb22d64e0f9fbba99" kind="variable"><name>replace</name></member>
+    <member refid="class_enigma2_1_1_plugboard_1aa768fa24f1b313c4220c6a6f248b44f5" kind="variable"><name>mouseOne</name></member>
+    <member refid="class_enigma2_1_1_plugboard_1a690746428feaeb67bbfa7c4f05ce9fe6" kind="variable"><name>mouseTwo</name></member>
+    <member refid="class_enigma2_1_1_plugboard_1a784c3ef297119896fba1581d650ac2e3" kind="function"><name>Plugboard</name></member>
+    <member refid="class_enigma2_1_1_plugboard_1ab57b2ffe042d61c762b33f273065c6c7" kind="function"><name>LoadContent</name></member>
+    <member refid="class_enigma2_1_1_plugboard_1a2d59981a73b2a2437d21826b144c0e68" kind="function"><name>Update</name></member>
+    <member refid="class_enigma2_1_1_plugboard_1a9e5959b32b3453c879e396f9fe15c2d5" kind="function"><name>Draw</name></member>
+  </compound>
+  <compound refid="class_enigma2_1_1_program" kind="class"><name>Enigma2::Program</name>
+    <member refid="class_enigma2_1_1_program_1a763f02b9bd015598b1698cee43e3e645" kind="function"><name>Main</name></member>
+  </compound>
+  <compound refid="struct_enigma2_1_1_settings" kind="struct"><name>Enigma2::Settings</name>
+    <member refid="struct_enigma2_1_1_settings_1a8b8a95b2467d15c67191da02dab68e2c" kind="variable"><name>key</name></member>
+    <member refid="struct_enigma2_1_1_settings_1aa78f34d378b9eb5018a32be94af039f7" kind="variable"><name>ring</name></member>
+    <member refid="struct_enigma2_1_1_settings_1a08a762a0eee5050bfd481b13ada65925" kind="variable"><name>rotors</name></member>
+    <member refid="struct_enigma2_1_1_settings_1a350b8e0f4ff88d5a9e497c647f9848ba" kind="variable"><name>customReflector</name></member>
+    <member refid="struct_enigma2_1_1_settings_1af7e0fbc1e56f28d7e7d501a0034d4c15" kind="variable"><name>reflector</name></member>
+    <member refid="struct_enigma2_1_1_settings_1a93f957db78e54194f51eef0c503d18b5" kind="variable"><name>sound</name></member>
+    <member refid="struct_enigma2_1_1_settings_1a4d9705e96f593a5286caa2210ca38f4c" kind="variable"><name>useM4</name></member>
+    <member refid="struct_enigma2_1_1_settings_1ab9687826f05dea58696a7df6894d5097" kind="variable"><name>replace</name></member>
+    <member refid="struct_enigma2_1_1_settings_1ac7e1647b7cb15cbcd8173dfac7b8063e" kind="variable"><name>reflIndex</name></member>
+  </compound>
+  <compound refid="class_enigma2_1_1_settings_form" kind="class"><name>Enigma2::SettingsForm</name>
+    <member refid="class_enigma2_1_1_settings_form_1adbc0015b4b337f273f66edff696666be" kind="variable"><name>main</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1a293649e0679ce31c9b24acae3fb5ddce" kind="variable"><name>components</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1a66c58229ab4712ca1847fd64abcb239d" kind="variable"><name>oneRing</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1a9ccab0faa559eb6075f3ee447fd8fa42" kind="variable"><name>comboBoxReflector</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1a16f54bf8a05190832e7e81d0b81fb7da" kind="variable"><name>useCustomReflector</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1ab72316302c477db54ffc888a57337b56" kind="variable"><name>label1</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1a967a9234a7549f1643725c89b3ad8ace" kind="variable"><name>twoRing</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1adf86c135ced15b2cba3e3685fdfa7e59" kind="variable"><name>threeRing</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1a337a7ad62c6f8eb7dadf220dc91dd1d3" kind="variable"><name>label2</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1abc6dbecf01dfce94a1c9ea7d16a83b7d" kind="variable"><name>textBoxReflector</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1a718823d19285125b7b32e62da71e62fc" kind="variable"><name>trackBarSound</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1ae325e5ea91883d5a3f5a19173ec120f5" kind="variable"><name>label3</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1ad071ffabb5b47e27f24a8a280f9c1d94" kind="variable"><name>label4</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1ad0235a3e1f79d9ac5576ee50c92b68e2" kind="variable"><name>rotor1</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1a3a0a32beaf9171d564b1512c1821b4bc" kind="variable"><name>rotor2</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1ae756dbd814c1efeea6328c377e31c372" kind="variable"><name>rotor3</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1ac0c8d8aedd53a07894577224b2b4349a" kind="variable"><name>fourRing</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1a9baf7f41e1dfeef23592b1a5c34269bd" kind="variable"><name>rotor4</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1a01382a84e9ce60aad9a05aa5386154aa" kind="variable"><name>useM4</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1a7a2ac2dfe691d24e4ae0af6bc19a8124" kind="variable"><name>buttonSave</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1a52b8de5a68ef50fbb6dc7ad9cad139a6" kind="variable"><name>buttonOpen</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1ac16013ad20d0ace629bdda995c263df8" kind="variable"><name>checkBoxCopy</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1a3c986e1a16e5ca11fa0b7757ae5dec13" kind="variable"><name>textBoxGroups</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1a246163bff2407331b3ab49415b72d059" kind="variable"><name>button1</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1a6f9785800289b69f67749a636f1dc498" kind="variable"><name>button2</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1a4438986a9061193688628136dd3270bf" kind="function"><name>SettingsForm</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1a308f388fc580f47f293daaf18e5062c6" kind="function"><name>Copy</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1ad73150562d797f47c1ce1ea33cfa0f9f" kind="function"><name>getRing</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1acc3270a6e008cca4b0bbbb8c407e87c0" kind="function"><name>oneRing_SelectedItemChanged</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1a69c2d8bd8d25eecab8ae496a8682d800" kind="function"><name>twoRing_SelectedItemChanged</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1ae7266db1d59a88b8aa66cc90410b056e" kind="function"><name>threeRing_SelectedItemChanged</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1adddbad378f170f9d656d45ac1e0eda32" kind="function"><name>setRing</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1aa7d06dcd569452780c8aa757f6935db5" kind="function"><name>buttonSave_Click</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1aef8c9a1291d2851d86f7fab94f401bb3" kind="function"><name>buttonOpen_Click</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1ad5d257288c6e950e3c4c62ec28c7ea7c" kind="function"><name>ObjectToByteArray</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1ae0af87b21ef78346d4c80a93d847aae6" kind="function"><name>ByteArrayToObject</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1a56f708a04d68b0acef90cdb39c3774ba" kind="function"><name>button1_Click</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1aeb3faba30cdcd132171c74eb7d22ed15" kind="function"><name>button2_Click</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1a99553ae7b8764d971bfd7dc3b4615391" kind="function"><name>textBoxGroups_TextChanged</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1afe901a517305088d9f728a2eed03a1cf" kind="function"><name>InitializeComponent</name></member>
+    <member refid="class_enigma2_1_1_settings_form_1a87e2556f9f30e99fe287235b71cc9566" kind="function"><name>Dispose</name></member>
+  </compound>
+  <compound refid="namespace_enigma2" kind="namespace"><name>Enigma2</name>
+  </compound>
+  <compound refid="namespace_microsoft" kind="namespace"><name>Microsoft</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_xna" kind="namespace"><name>Microsoft::Xna</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_xna_1_1_framework" kind="namespace"><name>Microsoft::Xna::Framework</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_xna_1_1_framework_1_1_audio" kind="namespace"><name>Microsoft::Xna::Framework::Audio</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_xna_1_1_framework_1_1_content" kind="namespace"><name>Microsoft::Xna::Framework::Content</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_xna_1_1_framework_1_1_graphics" kind="namespace"><name>Microsoft::Xna::Framework::Graphics</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_xna_1_1_framework_1_1_input" kind="namespace"><name>Microsoft::Xna::Framework::Input</name>
+  </compound>
+  <compound refid="namespace_microsoft_1_1_xna_1_1_framework_1_1_media" kind="namespace"><name>Microsoft::Xna::Framework::Media</name>
+  </compound>
+  <compound refid="namespace_system" kind="namespace"><name>System</name>
+  </compound>
+  <compound refid="namespace_system_1_1_collections_1_1_generic" kind="namespace"><name>System::Collections::Generic</name>
+  </compound>
+  <compound refid="namespace_system_1_1_component_model" kind="namespace"><name>System::ComponentModel</name>
+  </compound>
+  <compound refid="namespace_system_1_1_data" kind="namespace"><name>System::Data</name>
+  </compound>
+  <compound refid="namespace_system_1_1_diagnostics" kind="namespace"><name>System::Diagnostics</name>
+  </compound>
+  <compound refid="namespace_system_1_1_drawing" kind="namespace"><name>System::Drawing</name>
+  </compound>
+  <compound refid="namespace_system_1_1_i_o" kind="namespace"><name>System::IO</name>
+  </compound>
+  <compound refid="namespace_system_1_1_linq" kind="namespace"><name>System::Linq</name>
+  </compound>
+  <compound refid="namespace_system_1_1_reflection" kind="namespace"><name>System::Reflection</name>
+  </compound>
+  <compound refid="namespace_system_1_1_runtime_1_1_serialization_1_1_formatters_1_1_binary" kind="namespace"><name>System::Runtime::Serialization::Formatters::Binary</name>
+  </compound>
+  <compound refid="namespace_system_1_1_text" kind="namespace"><name>System::Text</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows" kind="namespace"><name>System::Windows</name>
+  </compound>
+  <compound refid="namespace_system_1_1_windows_1_1_forms" kind="namespace"><name>System::Windows::Forms</name>
+  </compound>
+  <compound refid="_base_enigma_8cs" kind="file"><name>BaseEnigma.cs</name>
+  </compound>
+  <compound refid="_e_label_8cs" kind="file"><name>ELabel.cs</name>
+  </compound>
+  <compound refid="_plugboard_8cs" kind="file"><name>Plugboard.cs</name>
+    <member refid="_plugboard_8cs_1a8b703cd2b78e6accf5dad1c6e324ca37" kind="typedef"><name>Forms</name></member>
+  </compound>
+  <compound refid="_settings_form_8cs" kind="file"><name>SettingsForm.cs</name>
+  </compound>
+  <compound refid="_settings_form_8_designer_8cs" kind="file"><name>SettingsForm.Designer.cs</name>
+  </compound>
+  <compound refid="_game_main_8cs" kind="file"><name>GameMain.cs</name>
+    <member refid="_game_main_8cs_1ac374857d3a6da9627f0a654093c04538" kind="typedef"><name>Forms</name></member>
+  </compound>
+  <compound refid="_8_n_e_t_core_app_00_version_0av5_80_8_assembly_attributes_8cs" kind="file"><name>.NETCoreApp,Version=v5.0.AssemblyAttributes.cs</name>
+  </compound>
+  <compound refid="_enigma2_8_assembly_info_8cs" kind="file"><name>Enigma2.AssemblyInfo.cs</name>
+  </compound>
+  <compound refid="_program_8cs" kind="file"><name>Program.cs</name>
+  </compound>
+  <compound refid="_r_e_a_d_m_e_8md" kind="file"><name>README.md</name>
+  </compound>
+  <compound refid="md__r_e_a_d_m_e" kind="page"><name>md__r_e_a_d_m_e</name>
+  </compound>
+  <compound refid="dir_c6310732a22f63c0c2fc5595561e68f1" kind="dir"><name>Core</name>
+  </compound>
+  <compound refid="dir_d6170c5dc5383b92e748a775ecfcdec9" kind="dir"><name>obj/x64/Debug</name>
+  </compound>
+  <compound refid="dir_ff240213cc7d4060a6e61e81f10db9df" kind="dir"><name>obj/x64/Debug/net5.0-windows</name>
+  </compound>
+  <compound refid="dir_43724e81dd40e09f32417973865cdd64" kind="dir"><name>obj</name>
+  </compound>
+  <compound refid="dir_6819ddf8c9cf9eac49810803444c82dd" kind="dir"><name>obj/x64</name>
+  </compound>
+</doxygenindex>
