@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__settings_form_8_designer_8cs_source" xml:lang="ru">
 <title>SettingsForm.Designer.cs</title>
-<indexterm><primary>Core/SettingsForm.Designer.cs</primary></indexterm>
+<indexterm><primary>EnigmaMachineSimulator/Core/SettingsForm.Designer.cs</primary></indexterm>
 См. документацию.<programlisting linenumbering="unnumbered"><anchor xml:id="__settings_form_8_designer_8cs_source_1l00001"/>00001 <emphasis role="keyword">namespace&#32;</emphasis><link linkend="_namespace_enigma2">Enigma2</link>
 <anchor xml:id="__settings_form_8_designer_8cs_source_1l00002"/>00002 {
 <anchor xml:id="__settings_form_8_designer_8cs_source_1l00003"/>00003 &#32;&#32;&#32;&#32;<emphasis role="keyword">partial&#32;class&#32;</emphasis>SettingsForm

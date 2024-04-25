@@ -1,3 +1,71 @@
 \chapter{Обучающее приложение "{}Симулятор шифровальной машины Энигма"{}}
 \hypertarget{md__r_e_a_d_m_e}{}\label{md__r_e_a_d_m_e}\index{Обучающее приложение "{}Симулятор шифровальной машины Энигма"{}@{Обучающее приложение ""Симулятор шифровальной машины Энигма""}}
 \hypertarget{md__r_e_a_d_m_e_autotoc_md0}{}\doxysection{\texorpdfstring{Проектная работа по предмету "{}Системная и программная инженерия"{}}{Проектная работа по предмету "{}Системная и программная инженерия"{}}}\label{md__r_e_a_d_m_e_autotoc_md0}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md1}{}\doxysection{\texorpdfstring{Enigma Machine Simulator}{Enigma Machine Simulator}}\label{md__r_e_a_d_m_e_autotoc_md1}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md2}{}\doxysubsection{\texorpdfstring{Введение}{Введение}}\label{md__r_e_a_d_m_e_autotoc_md2}
+Enigma Machine Simulator -\/ это проект, предназначенный для моделирования работы оригинальной Энигмы, одной из самых известных машин шифрования, использовавшихся во время Второй мировой войны. Этот проект позволяет пользователям погрузиться в историю криптографии и понять, как работала эта уникальная машина.\hypertarget{md__r_e_a_d_m_e_autotoc_md3}{}\doxysubsection{\texorpdfstring{Особенности}{Особенности}}\label{md__r_e_a_d_m_e_autotoc_md3}
+
+\begin{DoxyItemize}
+\item {\bfseries{Историческая точность}}\+: Симулятор стремится воссоздать все аспекты работы оригинальной Энигмы, включая механику вращения роторов и подключение проводов.
+\item {\bfseries{Интерактивность}}\+: Пользователи могут вводить текст, который затем шифруется или дешифруется с помощью машины.
+\item {\bfseries{Обучающий инструмент}}\+: Помогает понять принципы работы Энигмы и криптографии в целом.
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md4}{}\doxysubsection{\texorpdfstring{Установка}{Установка}}\label{md__r_e_a_d_m_e_autotoc_md4}
+Для установки и запуска Enigma Machine Simulator вам потребуется\+:
+
+
+\begin{DoxyItemize}
+\item .NET Core 3.\+1 или выше
+\item Git
+\end{DoxyItemize}
+\begin{DoxyEnumerate}
+\item Клонируйте репозиторий\+:
+\end{DoxyEnumerate}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{bash\ git\ clone\ https://github.com/MurkaSelebry/EnigmaMachineSimulator.git}
+
+\end{DoxyCode}
+
+
+
+\begin{DoxyEnumerate}
+\item Перейдите в директорию проекта\+:
+\end{DoxyEnumerate}
+
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{bash\ cd\ EnigmaMachineSimulator}
+
+\end{DoxyCode}
+
+\begin{DoxyEnumerate}
+\item Запустите симулятор\+: 
+\begin{DoxyCode}{0}
+\DoxyCodeLine{bash\ dotnet\ run}
+
+\end{DoxyCode}
+
+\end{DoxyEnumerate}\hypertarget{md__r_e_a_d_m_e_autotoc_md5}{}\doxysubsection{\texorpdfstring{Использование}{Использование}}\label{md__r_e_a_d_m_e_autotoc_md5}
+После запуска симулятора вы увидите интерфейс, который позволяет вводить текст для шифрования или дешифрования. Выберите режим работы (шифрование или дешифрование) и настройте параметры машины, такие как позиции роторов и подключение проводов.\hypertarget{md__r_e_a_d_m_e_autotoc_md6}{}\doxysubsection{\texorpdfstring{Примеры использования}{Примеры использования}}\label{md__r_e_a_d_m_e_autotoc_md6}
+\hypertarget{md__r_e_a_d_m_e_autotoc_md7}{}\doxysubsubsection{\texorpdfstring{Шифрование сообщения}{Шифрование сообщения}}\label{md__r_e_a_d_m_e_autotoc_md7}
+
+\begin{DoxyEnumerate}
+\item Введите текст для шифрования в поле ввода.
+\item Настройте параметры машины, включая позиции роторов и подключение проводов.
+\item Нажмите кнопку "{}Шифровать"{}.
+\item Полученный шифр будет отображен в поле вывода.
+\end{DoxyEnumerate}\hypertarget{md__r_e_a_d_m_e_autotoc_md8}{}\doxysubsubsection{\texorpdfstring{Дешифрование сообщения}{Дешифрование сообщения}}\label{md__r_e_a_d_m_e_autotoc_md8}
+
+\begin{DoxyEnumerate}
+\item Введите шифр для дешифрования в поле ввода.
+\item Настройте параметры машины, которые были использованы для шифрования.
+\item Нажмите кнопку "{}Дешифровать"{}.
+\item Полученный текст будет отображен в поле вывода.
+\end{DoxyEnumerate}\hypertarget{md__r_e_a_d_m_e_autotoc_md9}{}\doxysubsection{\texorpdfstring{Дополнительная информация}{Дополнительная информация}}\label{md__r_e_a_d_m_e_autotoc_md9}
+
+\begin{DoxyItemize}
+\item {\bfseries{Документация}}\+: Дополнительная информация о работе симулятора и его возможностях доступна в документации проекта.
+\item {\bfseries{Обратная связь}}\+: Если у вас возникли вопросы или предложения по улучшению симулятора, пожалуйста, свяжитесь с нами через раздел "{}\+Issues"{} на Git\+Hub.
+\end{DoxyItemize}\hypertarget{md__r_e_a_d_m_e_autotoc_md10}{}\doxysubsection{\texorpdfstring{Лицензия}{Лицензия}}\label{md__r_e_a_d_m_e_autotoc_md10}
+Этот проект распространяется под лицензией MIT. Подробности см. в файле LICENSE. 

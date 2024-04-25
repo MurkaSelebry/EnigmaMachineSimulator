@@ -6,6 +6,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Core/BaseEnigma.cs" line="2" column="33"/>
+    <location file="EnigmaMachineSimulator/Core/BaseEnigma.cs" line="2" column="33"/>
   </compounddef>
 </doxygen>

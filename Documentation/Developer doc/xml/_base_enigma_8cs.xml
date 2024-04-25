@@ -242,6 +242,6 @@
 <codeline lineno="227"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="228"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="Core/BaseEnigma.cs"/>
+    <location file="EnigmaMachineSimulator/Core/BaseEnigma.cs"/>
   </compounddef>
 </doxygen>

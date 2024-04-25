@@ -11,6 +11,69 @@
 <codeline><highlight class="normal">========</highlight></codeline>
 <codeline><highlight class="normal">Проектная<sp/>работа<sp/>по<sp/>предмету<sp/>&quot;Системная<sp/>и<sp/>программная<sp/>инженерия&quot;</highlight></codeline>
 <codeline><highlight class="normal">-------</highlight></codeline>
+<codeline><highlight class="normal">#<sp/>Enigma<sp/>Machine<sp/>Simulator</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Введение</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Enigma<sp/>Machine<sp/>Simulator<sp/>-<sp/>это<sp/>проект,<sp/>предназначенный<sp/>для<sp/>моделирования<sp/>работы<sp/>оригинальной<sp/>Энигмы,<sp/>одной<sp/>из<sp/>самых<sp/>известных<sp/>машин<sp/>шифрования,<sp/>использовавшихся<sp/>во<sp/>время<sp/>Второй<sp/>мировой<sp/>войны.<sp/>Этот<sp/>проект<sp/>позволяет<sp/>пользователям<sp/>погрузиться<sp/>в<sp/>историю<sp/>криптографии<sp/>и<sp/>понять,<sp/>как<sp/>работала<sp/>эта<sp/>уникальная<sp/>машина.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Особенности</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>**Историческая<sp/>точность**:<sp/>Симулятор<sp/>стремится<sp/>воссоздать<sp/>все<sp/>аспекты<sp/>работы<sp/>оригинальной<sp/>Энигмы,<sp/>включая<sp/>механику<sp/>вращения<sp/>роторов<sp/>и<sp/>подключение<sp/>проводов.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**Интерактивность**:<sp/>Пользователи<sp/>могут<sp/>вводить<sp/>текст,<sp/>который<sp/>затем<sp/>шифруется<sp/>или<sp/>дешифруется<sp/>с<sp/>помощью<sp/>машины.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**Обучающий<sp/>инструмент**:<sp/>Помогает<sp/>понять<sp/>принципы<sp/>работы<sp/>Энигмы<sp/>и<sp/>криптографии<sp/>в<sp/>целом.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Установка</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Для<sp/>установки<sp/>и<sp/>запуска<sp/>Enigma<sp/>Machine<sp/>Simulator<sp/>вам<sp/>потребуется:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>.NET<sp/>Core<sp/>3.1<sp/>или<sp/>выше</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>Git</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Клонируйте<sp/>репозиторий:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```sh</highlight></codeline>
+<codeline><highlight class="normal">bash<sp/>git<sp/>clone<sp/>https://github.com/MurkaSelebry/EnigmaMachineSimulator.git</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">2.<sp/>Перейдите<sp/>в<sp/>директорию<sp/>проекта:</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">```sh</highlight></codeline>
+<codeline><highlight class="normal">bash<sp/>cd<sp/>EnigmaMachineSimulator</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Запустите<sp/>симулятор:</highlight></codeline>
+<codeline><highlight class="normal">```sh</highlight></codeline>
+<codeline><highlight class="normal">bash<sp/>dotnet<sp/>run</highlight></codeline>
+<codeline><highlight class="normal">```</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Использование</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">После<sp/>запуска<sp/>симулятора<sp/>вы<sp/>увидите<sp/>интерфейс,<sp/>который<sp/>позволяет<sp/>вводить<sp/>текст<sp/>для<sp/>шифрования<sp/>или<sp/>дешифрования.<sp/>Выберите<sp/>режим<sp/>работы<sp/>(шифрование<sp/>или<sp/>дешифрование)<sp/>и<sp/>настройте<sp/>параметры<sp/>машины,<sp/>такие<sp/>как<sp/>позиции<sp/>роторов<sp/>и<sp/>подключение<sp/>проводов.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Примеры<sp/>использования</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Шифрование<sp/>сообщения</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Введите<sp/>текст<sp/>для<sp/>шифрования<sp/>в<sp/>поле<sp/>ввода.</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Настройте<sp/>параметры<sp/>машины,<sp/>включая<sp/>позиции<sp/>роторов<sp/>и<sp/>подключение<sp/>проводов.</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Нажмите<sp/>кнопку<sp/>&quot;Шифровать&quot;.</highlight></codeline>
+<codeline><highlight class="normal">4.<sp/>Полученный<sp/>шифр<sp/>будет<sp/>отображен<sp/>в<sp/>поле<sp/>вывода.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">###<sp/>Дешифрование<sp/>сообщения</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">1.<sp/>Введите<sp/>шифр<sp/>для<sp/>дешифрования<sp/>в<sp/>поле<sp/>ввода.</highlight></codeline>
+<codeline><highlight class="normal">2.<sp/>Настройте<sp/>параметры<sp/>машины,<sp/>которые<sp/>были<sp/>использованы<sp/>для<sp/>шифрования.</highlight></codeline>
+<codeline><highlight class="normal">3.<sp/>Нажмите<sp/>кнопку<sp/>&quot;Дешифровать&quot;.</highlight></codeline>
+<codeline><highlight class="normal">4.<sp/>Полученный<sp/>текст<sp/>будет<sp/>отображен<sp/>в<sp/>поле<sp/>вывода.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Дополнительная<sp/>информация</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">-<sp/>**Документация**:<sp/>Дополнительная<sp/>информация<sp/>о<sp/>работе<sp/>симулятора<sp/>и<sp/>его<sp/>возможностях<sp/>доступна<sp/>в<sp/>документации<sp/>проекта.</highlight></codeline>
+<codeline><highlight class="normal">-<sp/>**Обратная<sp/>связь**:<sp/>Если<sp/>у<sp/>вас<sp/>возникли<sp/>вопросы<sp/>или<sp/>предложения<sp/>по<sp/>улучшению<sp/>симулятора,<sp/>пожалуйста,<sp/>свяжитесь<sp/>с<sp/>нами<sp/>через<sp/>раздел<sp/>&quot;Issues&quot;<sp/>на<sp/>GitHub.</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">##<sp/>Лицензия</highlight></codeline>
+<codeline></codeline>
+<codeline><highlight class="normal">Этот<sp/>проект<sp/>распространяется<sp/>под<sp/>лицензией<sp/>MIT.<sp/>Подробности<sp/>см.<sp/>в<sp/>файле<sp/>LICENSE.</highlight></codeline>
     </programlisting>
     <location file="README.md"/>
   </compounddef>

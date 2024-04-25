@@ -13,6 +13,6 @@
 <codeline lineno="3"><highlight class="normal"></highlight><highlight class="keyword">using<sp/></highlight><highlight class="normal">System.Reflection;</highlight></codeline>
 <codeline lineno="4"><highlight class="normal">[assembly:<sp/>global::System.Runtime.Versioning.TargetFrameworkAttribute(</highlight><highlight class="stringliteral">&quot;.NETCoreApp,Version=v5.0&quot;</highlight><highlight class="normal">,<sp/>FrameworkDisplayName<sp/>=<sp/></highlight><highlight class="stringliteral">&quot;&quot;</highlight><highlight class="normal">)]</highlight></codeline>
     </programlisting>
-    <location file="obj/x64/Debug/net5.0-windows/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs"/>
+    <location file="EnigmaMachineSimulator/obj/x64/Debug/net5.0-windows/.NETCoreApp,Version=v5.0.AssemblyAttributes.cs"/>
   </compounddef>
 </doxygen>

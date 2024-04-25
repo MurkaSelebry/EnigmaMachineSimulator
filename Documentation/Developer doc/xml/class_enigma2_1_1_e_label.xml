@@ -16,7 +16,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/ELabel.cs" line="11" column="20" bodyfile="Core/ELabel.cs" bodystart="11" bodyend="11"/>
+        <location file="EnigmaMachineSimulator/Core/ELabel.cs" line="11" column="20" bodyfile="EnigmaMachineSimulator/Core/ELabel.cs" bodystart="11" bodyend="11"/>
       </memberdef>
       <memberdef kind="property" id="class_enigma2_1_1_e_label_1a1bdcc7b023a7a15bf8b711d9b8b6eb0b" prot="public" static="no" readable="no" writable="no" gettable="yes" privategettable="no" protectedgettable="no" settable="yes" privatesettable="no" protectedsettable="no">
         <type>string</type>
@@ -30,7 +30,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/ELabel.cs" line="12" column="23" bodyfile="Core/ELabel.cs" bodystart="12" bodyend="12"/>
+        <location file="EnigmaMachineSimulator/Core/ELabel.cs" line="12" column="23" bodyfile="EnigmaMachineSimulator/Core/ELabel.cs" bodystart="12" bodyend="12"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="protected-func">
@@ -50,7 +50,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/ELabel.cs" line="13" column="33" bodyfile="Core/ELabel.cs" bodystart="13" bodyend="20"/>
+        <location file="EnigmaMachineSimulator/Core/ELabel.cs" line="13" column="33" bodyfile="EnigmaMachineSimulator/Core/ELabel.cs" bodystart="13" bodyend="20"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -79,7 +79,7 @@
         <label>System::Windows::Forms::Label</label>
       </node>
     </collaborationgraph>
-    <location file="Core/ELabel.cs" line="9" column="5" bodyfile="Core/ELabel.cs" bodystart="10" bodyend="21"/>
+    <location file="EnigmaMachineSimulator/Core/ELabel.cs" line="9" column="5" bodyfile="EnigmaMachineSimulator/Core/ELabel.cs" bodystart="10" bodyend="21"/>
     <listofallmembers>
       <member refid="class_enigma2_1_1_e_label_1a1bdcc7b023a7a15bf8b711d9b8b6eb0b" prot="public" virt="non-virtual"><scope>Enigma2::ELabel</scope><name>NewText</name></member>
       <member refid="class_enigma2_1_1_e_label_1adbeff2c16504ae3fa5d63dbc7579f97c" prot="protected" virt="non-virtual"><scope>Enigma2::ELabel</scope><name>OnPaint</name></member>

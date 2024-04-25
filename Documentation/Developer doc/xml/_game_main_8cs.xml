@@ -17,7 +17,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="GameMain.cs" line="10" column="1" bodyfile="GameMain.cs" bodystart="10" bodyend="-1"/>
+        <location file="EnigmaMachineSimulator/GameMain.cs" line="10" column="1" bodyfile="EnigmaMachineSimulator/GameMain.cs" bodystart="10" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -538,6 +538,6 @@
 <codeline lineno="514"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="515"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="GameMain.cs"/>
+    <location file="EnigmaMachineSimulator/GameMain.cs"/>
   </compounddef>
 </doxygen>

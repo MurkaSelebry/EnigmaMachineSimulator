@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__game_main_8cs" xml:lang="ru">
-<title>Файл GameMain.cs</title>
-<indexterm><primary>GameMain.cs</primary></indexterm>
+<title>Файл EnigmaMachineSimulator/GameMain.cs</title>
+<indexterm><primary>EnigmaMachineSimulator/GameMain.cs</primary></indexterm>
 <simplesect>
     <title>Классы    </title>
         <itemizedlist>

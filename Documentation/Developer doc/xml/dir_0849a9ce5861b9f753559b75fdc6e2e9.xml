@@ -1,12 +1,12 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="ru">
-  <compounddef id="dir_43724e81dd40e09f32417973865cdd64" kind="dir">
-    <compoundname>obj</compoundname>
-    <innerdir refid="dir_6819ddf8c9cf9eac49810803444c82dd">obj/x64</innerdir>
+  <compounddef id="dir_0849a9ce5861b9f753559b75fdc6e2e9" kind="dir">
+    <compoundname>EnigmaMachineSimulator/obj/x64</compoundname>
+    <innerdir refid="dir_80d539dd2b5e4ad077ef6520f8bae0c4">EnigmaMachineSimulator/obj/x64/Debug</innerdir>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="obj/"/>
+    <location file="EnigmaMachineSimulator/obj/x64/"/>
   </compounddef>
 </doxygen>

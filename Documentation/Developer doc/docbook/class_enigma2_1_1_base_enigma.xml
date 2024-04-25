@@ -151,5 +151,5 @@
 </section>
 <para>
 Объявления и описания членов класса находятся в файле:</para>
-Core/<link linkend="__base_enigma_8cs">BaseEnigma.cs</link></section>
+EnigmaMachineSimulator/Core/<link linkend="__base_enigma_8cs">BaseEnigma.cs</link></section>
 </section>

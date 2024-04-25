@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__enigma2_8_assembly_info_8cs_source" xml:lang="ru">
 <title>Enigma2.AssemblyInfo.cs</title>
-<indexterm><primary>obj/x64/Debug/net5.0-windows/Enigma2.AssemblyInfo.cs</primary></indexterm>
+<indexterm><primary>EnigmaMachineSimulator/obj/x64/Debug/net5.0-windows/Enigma2.AssemblyInfo.cs</primary></indexterm>
 См. документацию.<programlisting linenumbering="unnumbered"><anchor xml:id="__enigma2_8_assembly_info_8cs_source_1l00001"/>00001 <emphasis role="comment">//------------------------------------------------------------------------------</emphasis>
 <anchor xml:id="__enigma2_8_assembly_info_8cs_source_1l00002"/>00002 <emphasis role="comment">//&#32;&lt;auto-generated&gt;</emphasis>
 <anchor xml:id="__enigma2_8_assembly_info_8cs_source_1l00003"/>00003 <emphasis role="comment">//&#32;&#32;&#32;&#32;&#32;Этот&#32;код&#32;создан&#32;программой.</emphasis>

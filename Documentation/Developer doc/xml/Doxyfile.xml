@@ -4,7 +4,7 @@
   <option  id='PROJECT_NAME' default='no' type='string'><value><![CDATA["Enigma Machine Sumulator"]]></value></option>
   <option  id='PROJECT_NUMBER' default='yes' type='string'><value><![CDATA[]]></value></option>
   <option  id='PROJECT_BRIEF' default='yes' type='string'><value><![CDATA[]]></value></option>
-  <option  id='PROJECT_LOGO' default='no' type='string'><value><![CDATA[logo.ico]]></value></option>
+  <option  id='PROJECT_LOGO' default='no' type='string'><value><![CDATA[C:/Users/murad/Documents/6sem/sipi/app/EnigmaMachineSimulator/logo.ico]]></value></option>
   <option  id='PROJECT_ICON' default='no' type='string'><value><![CDATA[logo.ico]]></value></option>
   <option  id='OUTPUT_DIRECTORY' default='no' type='string'><value><![CDATA[../Documentation]]></value></option>
   <option  id='CREATE_SUBDIRS' default='yes' type='bool'><value>NO</value></option>

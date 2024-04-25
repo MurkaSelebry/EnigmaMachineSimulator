@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <doxygen xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="compound.xsd" version="1.10.0" xml:lang="ru">
-  <compounddef id="dir_c6310732a22f63c0c2fc5595561e68f1" kind="dir">
-    <compoundname>Core</compoundname>
+  <compounddef id="dir_cb1a52a11c28f6a70b5f54d0760afe67" kind="dir">
+    <compoundname>EnigmaMachineSimulator/Core</compoundname>
     <innerfile refid="_base_enigma_8cs">BaseEnigma.cs</innerfile>
     <innerfile refid="_e_label_8cs">ELabel.cs</innerfile>
     <innerfile refid="_plugboard_8cs">Plugboard.cs</innerfile>
@@ -11,6 +11,6 @@
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Core/"/>
+    <location file="EnigmaMachineSimulator/Core/"/>
   </compounddef>
 </doxygen>

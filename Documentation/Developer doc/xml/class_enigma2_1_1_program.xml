@@ -15,14 +15,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Program.cs" line="8" column="13" bodyfile="Program.cs" bodystart="8" bodyend="16"/>
+        <location file="EnigmaMachineSimulator/Program.cs" line="8" column="13" bodyfile="EnigmaMachineSimulator/Program.cs" bodystart="8" bodyend="16"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Program.cs" line="5" column="15" bodyfile="Program.cs" bodystart="6" bodyend="17"/>
+    <location file="EnigmaMachineSimulator/Program.cs" line="5" column="15" bodyfile="EnigmaMachineSimulator/Program.cs" bodystart="6" bodyend="17"/>
     <listofallmembers>
       <member refid="class_enigma2_1_1_program_1a763f02b9bd015598b1698cee43e3e645" prot="private" virt="non-virtual"><scope>Enigma2::Program</scope><name>Main</name></member>
     </listofallmembers>

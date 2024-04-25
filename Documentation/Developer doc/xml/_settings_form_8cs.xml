@@ -260,6 +260,6 @@
 <codeline lineno="243"><highlight class="normal"></highlight></codeline>
 <codeline lineno="244"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="Core/SettingsForm.cs"/>
+    <location file="EnigmaMachineSimulator/Core/SettingsForm.cs"/>
   </compounddef>
 </doxygen>

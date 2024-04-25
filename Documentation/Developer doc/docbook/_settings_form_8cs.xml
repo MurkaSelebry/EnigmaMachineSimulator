@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='UTF-8' standalone='no'?>
 <section xmlns="http://docbook.org/ns/docbook" version="5.0" xmlns:xlink="http://www.w3.org/1999/xlink" xml:id="__settings_form_8cs" xml:lang="ru">
-<title>Файл Core/SettingsForm.cs</title>
-<indexterm><primary>Core/SettingsForm.cs</primary></indexterm>
+<title>Файл EnigmaMachineSimulator/Core/SettingsForm.cs</title>
+<indexterm><primary>EnigmaMachineSimulator/Core/SettingsForm.cs</primary></indexterm>
 <simplesect>
     <title>Классы    </title>
         <itemizedlist>

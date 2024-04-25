@@ -243,14 +243,16 @@
   </compound>
   <compound refid="md__r_e_a_d_m_e" kind="page"><name>md__r_e_a_d_m_e</name>
   </compound>
-  <compound refid="dir_c6310732a22f63c0c2fc5595561e68f1" kind="dir"><name>Core</name>
+  <compound refid="dir_cb1a52a11c28f6a70b5f54d0760afe67" kind="dir"><name>EnigmaMachineSimulator/Core</name>
   </compound>
-  <compound refid="dir_d6170c5dc5383b92e748a775ecfcdec9" kind="dir"><name>obj/x64/Debug</name>
+  <compound refid="dir_80d539dd2b5e4ad077ef6520f8bae0c4" kind="dir"><name>EnigmaMachineSimulator/obj/x64/Debug</name>
   </compound>
-  <compound refid="dir_ff240213cc7d4060a6e61e81f10db9df" kind="dir"><name>obj/x64/Debug/net5.0-windows</name>
+  <compound refid="dir_30839db8d40a523b6393e5580dd24096" kind="dir"><name>EnigmaMachineSimulator</name>
   </compound>
-  <compound refid="dir_43724e81dd40e09f32417973865cdd64" kind="dir"><name>obj</name>
+  <compound refid="dir_4b4a3770a72336c82796df7af5f04d49" kind="dir"><name>EnigmaMachineSimulator/obj/x64/Debug/net5.0-windows</name>
   </compound>
-  <compound refid="dir_6819ddf8c9cf9eac49810803444c82dd" kind="dir"><name>obj/x64</name>
+  <compound refid="dir_c20778f95f88dbf7666dcd10397e14be" kind="dir"><name>EnigmaMachineSimulator/obj</name>
+  </compound>
+  <compound refid="dir_0849a9ce5861b9f753559b75fdc6e2e9" kind="dir"><name>EnigmaMachineSimulator/obj/x64</name>
   </compound>
 </doxygenindex>

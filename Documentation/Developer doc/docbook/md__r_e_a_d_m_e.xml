@@ -5,4 +5,113 @@
 <section xml:id="_md__r_e_a_d_m_e_1autotoc_md0">
 <title><title>Проектная работа по предмету &quot;Системная и программная инженерия&quot;</title></title>
 </section>
+<section xml:id="_md__r_e_a_d_m_e_1autotoc_md1">
+<title><title>Enigma Machine Simulator</title></title>
+<section xml:id="_md__r_e_a_d_m_e_1autotoc_md2">
+<title><title>Введение</title></title>
+
+<para>Enigma Machine Simulator - это проект, предназначенный для моделирования работы оригинальной Энигмы, одной из самых известных машин шифрования, использовавшихся во время Второй мировой войны. Этот проект позволяет пользователям погрузиться в историю криптографии и понять, как работала эта уникальная машина.</para>
+</section>
+<section xml:id="_md__r_e_a_d_m_e_1autotoc_md3">
+<title><title>Особенности</title></title>
+
+<para><itemizedlist>
+<listitem>
+<para><emphasis role="bold">Историческая точность</emphasis>: Симулятор стремится воссоздать все аспекты работы оригинальной Энигмы, включая механику вращения роторов и подключение проводов.</para>
+</listitem><listitem>
+<para><emphasis role="bold">Интерактивность</emphasis>: Пользователи могут вводить текст, который затем шифруется или дешифруется с помощью машины.</para>
+</listitem><listitem>
+<para><emphasis role="bold">Обучающий инструмент</emphasis>: Помогает понять принципы работы Энигмы и криптографии в целом.</para>
+</listitem></itemizedlist>
+</para>
+</section>
+<section xml:id="_md__r_e_a_d_m_e_1autotoc_md4">
+<title><title>Установка</title></title>
+
+<para>Для установки и запуска Enigma Machine Simulator вам потребуется:</para>
+
+<para><itemizedlist>
+<listitem>
+<para>.NET Core 3.1 или выше</para>
+</listitem><listitem>
+<para>Git</para>
+</listitem></itemizedlist>
+<orderedlist>
+<listitem>
+<para>Клонируйте репозиторий:</para>
+</listitem></orderedlist>
+</para>
+
+<para><literallayout><computeroutput>bash&#32;git&#32;clone&#32;https://github.com/MurkaSelebry/EnigmaMachineSimulator.git
+</computeroutput></literallayout></para>
+
+<para><orderedlist>
+<listitem>
+<para>Перейдите в директорию проекта:</para>
+</listitem></orderedlist>
+</para>
+
+<para><literallayout><computeroutput>bash&#32;cd&#32;EnigmaMachineSimulator
+</computeroutput></literallayout><orderedlist>
+<listitem>
+<para>Запустите симулятор: <literallayout><computeroutput>bash&#32;dotnet&#32;run
+</computeroutput></literallayout></para>
+</listitem></orderedlist>
+</para>
+</section>
+<section xml:id="_md__r_e_a_d_m_e_1autotoc_md5">
+<title><title>Использование</title></title>
+
+<para>После запуска симулятора вы увидите интерфейс, который позволяет вводить текст для шифрования или дешифрования. Выберите режим работы (шифрование или дешифрование) и настройте параметры машины, такие как позиции роторов и подключение проводов.</para>
+</section>
+<section xml:id="_md__r_e_a_d_m_e_1autotoc_md6">
+<title><title>Примеры использования</title></title>
+<section xml:id="_md__r_e_a_d_m_e_1autotoc_md7">
+<title><title>Шифрование сообщения</title></title>
+
+<para><orderedlist>
+<listitem>
+<para>Введите текст для шифрования в поле ввода.</para>
+</listitem><listitem>
+<para>Настройте параметры машины, включая позиции роторов и подключение проводов.</para>
+</listitem><listitem>
+<para>Нажмите кнопку &quot;Шифровать&quot;.</para>
+</listitem><listitem>
+<para>Полученный шифр будет отображен в поле вывода.</para>
+</listitem></orderedlist>
+</para>
+</section>
+<section xml:id="_md__r_e_a_d_m_e_1autotoc_md8">
+<title><title>Дешифрование сообщения</title></title>
+
+<para><orderedlist>
+<listitem>
+<para>Введите шифр для дешифрования в поле ввода.</para>
+</listitem><listitem>
+<para>Настройте параметры машины, которые были использованы для шифрования.</para>
+</listitem><listitem>
+<para>Нажмите кнопку &quot;Дешифровать&quot;.</para>
+</listitem><listitem>
+<para>Полученный текст будет отображен в поле вывода.</para>
+</listitem></orderedlist>
+</para>
+</section>
+</section>
+<section xml:id="_md__r_e_a_d_m_e_1autotoc_md9">
+<title><title>Дополнительная информация</title></title>
+
+<para><itemizedlist>
+<listitem>
+<para><emphasis role="bold">Документация</emphasis>: Дополнительная информация о работе симулятора и его возможностях доступна в документации проекта.</para>
+</listitem><listitem>
+<para><emphasis role="bold">Обратная связь</emphasis>: Если у вас возникли вопросы или предложения по улучшению симулятора, пожалуйста, свяжитесь с нами через раздел &quot;Issues&quot; на GitHub.</para>
+</listitem></itemizedlist>
+</para>
+</section>
+<section xml:id="_md__r_e_a_d_m_e_1autotoc_md10">
+<title><title>Лицензия</title></title>
+
+<para>Этот проект распространяется под лицензией MIT. Подробности см. в файле LICENSE. </para>
+</section>
+</section>
 </section>

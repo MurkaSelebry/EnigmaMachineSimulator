@@ -22,7 +22,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/Plugboard.cs" line="10" column="1" bodyfile="Core/Plugboard.cs" bodystart="10" bodyend="-1"/>
+        <location file="EnigmaMachineSimulator/Core/Plugboard.cs" line="10" column="1" bodyfile="EnigmaMachineSimulator/Core/Plugboard.cs" bodystart="10" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
@@ -76,6 +76,6 @@
 <codeline lineno="44"><highlight class="normal"><sp/><sp/><sp/><sp/>}</highlight></codeline>
 <codeline lineno="45"><highlight class="normal">}</highlight></codeline>
     </programlisting>
-    <location file="Core/Plugboard.cs"/>
+    <location file="EnigmaMachineSimulator/Core/Plugboard.cs"/>
   </compounddef>
 </doxygen>

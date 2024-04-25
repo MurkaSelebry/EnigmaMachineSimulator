@@ -19,7 +19,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/BaseEnigma.cs" line="10" column="23" bodyfile="Core/BaseEnigma.cs" bodystart="10" bodyend="13"/>
+        <location file="EnigmaMachineSimulator/Core/BaseEnigma.cs" line="10" column="23" bodyfile="EnigmaMachineSimulator/Core/BaseEnigma.cs" bodystart="10" bodyend="13"/>
       </memberdef>
       <memberdef kind="variable" id="class_enigma2_1_1_base_enigma_1a7f5258b1427b1fb749124e032090a691" prot="private" static="yes" mutable="no">
         <type>int[][]</type>
@@ -34,7 +34,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/BaseEnigma.cs" line="14" column="20" bodyfile="Core/BaseEnigma.cs" bodystart="14" bodyend="-1"/>
+        <location file="EnigmaMachineSimulator/Core/BaseEnigma.cs" line="14" column="20" bodyfile="EnigmaMachineSimulator/Core/BaseEnigma.cs" bodystart="14" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_enigma2_1_1_base_enigma_1accbadc7a06ad62c43b10e05b9dd565bc" prot="private" static="yes" mutable="no">
         <type>string</type>
@@ -49,7 +49,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/BaseEnigma.cs" line="16" column="23" bodyfile="Core/BaseEnigma.cs" bodystart="16" bodyend="-1"/>
+        <location file="EnigmaMachineSimulator/Core/BaseEnigma.cs" line="16" column="23" bodyfile="EnigmaMachineSimulator/Core/BaseEnigma.cs" bodystart="16" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-static-attrib">
@@ -66,7 +66,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/BaseEnigma.cs" line="17" column="30" bodyfile="Core/BaseEnigma.cs" bodystart="17" bodyend="-1"/>
+        <location file="EnigmaMachineSimulator/Core/BaseEnigma.cs" line="17" column="30" bodyfile="EnigmaMachineSimulator/Core/BaseEnigma.cs" bodystart="17" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_enigma2_1_1_base_enigma_1a7e09866f2a216fa715ca5df235a6894d" prot="public" static="yes" mutable="no">
         <type>string</type>
@@ -81,7 +81,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/BaseEnigma.cs" line="18" column="30" bodyfile="Core/BaseEnigma.cs" bodystart="18" bodyend="-1"/>
+        <location file="EnigmaMachineSimulator/Core/BaseEnigma.cs" line="18" column="30" bodyfile="EnigmaMachineSimulator/Core/BaseEnigma.cs" bodystart="18" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_enigma2_1_1_base_enigma_1aa4738e4356128eb989c6c27696552e5e" prot="public" static="yes" mutable="no">
         <type>string</type>
@@ -96,7 +96,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/BaseEnigma.cs" line="19" column="30" bodyfile="Core/BaseEnigma.cs" bodystart="19" bodyend="-1"/>
+        <location file="EnigmaMachineSimulator/Core/BaseEnigma.cs" line="19" column="30" bodyfile="EnigmaMachineSimulator/Core/BaseEnigma.cs" bodystart="19" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_enigma2_1_1_base_enigma_1a0433cb09450405f2bf50cfe298784e30" prot="public" static="yes" mutable="no">
         <type>string</type>
@@ -111,7 +111,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/BaseEnigma.cs" line="20" column="30" bodyfile="Core/BaseEnigma.cs" bodystart="20" bodyend="-1"/>
+        <location file="EnigmaMachineSimulator/Core/BaseEnigma.cs" line="20" column="30" bodyfile="EnigmaMachineSimulator/Core/BaseEnigma.cs" bodystart="20" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-attrib">
@@ -128,7 +128,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/BaseEnigma.cs" line="22" column="27" bodyfile="Core/BaseEnigma.cs" bodystart="22" bodyend="-1"/>
+        <location file="EnigmaMachineSimulator/Core/BaseEnigma.cs" line="22" column="27" bodyfile="EnigmaMachineSimulator/Core/BaseEnigma.cs" bodystart="22" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_enigma2_1_1_base_enigma_1a1cf18c40e3a08009f43d7b178856c9e0" prot="public" static="no" mutable="no">
         <type>int[]</type>
@@ -143,7 +143,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/BaseEnigma.cs" line="24" column="20" bodyfile="Core/BaseEnigma.cs" bodystart="24" bodyend="-1"/>
+        <location file="EnigmaMachineSimulator/Core/BaseEnigma.cs" line="24" column="20" bodyfile="EnigmaMachineSimulator/Core/BaseEnigma.cs" bodystart="24" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_enigma2_1_1_base_enigma_1a85ee3103139f257ae413a5017d793adc" prot="public" static="no" mutable="no">
         <type>int[]</type>
@@ -158,7 +158,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/BaseEnigma.cs" line="25" column="20" bodyfile="Core/BaseEnigma.cs" bodystart="25" bodyend="-1"/>
+        <location file="EnigmaMachineSimulator/Core/BaseEnigma.cs" line="25" column="20" bodyfile="EnigmaMachineSimulator/Core/BaseEnigma.cs" bodystart="25" bodyend="-1"/>
       </memberdef>
       <memberdef kind="variable" id="class_enigma2_1_1_base_enigma_1a2a356e12f7fe871b54b92ebc7fab6dfe" prot="public" static="no" mutable="no">
         <type>int[]</type>
@@ -173,7 +173,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/BaseEnigma.cs" line="26" column="20" bodyfile="Core/BaseEnigma.cs" bodystart="26" bodyend="-1"/>
+        <location file="EnigmaMachineSimulator/Core/BaseEnigma.cs" line="26" column="20" bodyfile="EnigmaMachineSimulator/Core/BaseEnigma.cs" bodystart="26" bodyend="-1"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-static-func">
@@ -193,7 +193,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/BaseEnigma.cs" line="53" column="27" bodyfile="Core/BaseEnigma.cs" bodystart="53" bodyend="56"/>
+        <location file="EnigmaMachineSimulator/Core/BaseEnigma.cs" line="53" column="27" bodyfile="EnigmaMachineSimulator/Core/BaseEnigma.cs" bodystart="53" bodyend="56"/>
       </memberdef>
       <memberdef kind="function" id="class_enigma2_1_1_base_enigma_1aa4110ccdf05866d43035758efb3f07dd" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int[]</type>
@@ -211,7 +211,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/BaseEnigma.cs" line="57" column="27" bodyfile="Core/BaseEnigma.cs" bodystart="57" bodyend="60"/>
+        <location file="EnigmaMachineSimulator/Core/BaseEnigma.cs" line="57" column="27" bodyfile="EnigmaMachineSimulator/Core/BaseEnigma.cs" bodystart="57" bodyend="60"/>
       </memberdef>
       <memberdef kind="function" id="class_enigma2_1_1_base_enigma_1a766f61716959aedb7abcfdae3f7765b0" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>char</type>
@@ -249,7 +249,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/BaseEnigma.cs" line="74" column="28" bodyfile="Core/BaseEnigma.cs" bodystart="74" bodyend="78"/>
+        <location file="EnigmaMachineSimulator/Core/BaseEnigma.cs" line="74" column="28" bodyfile="EnigmaMachineSimulator/Core/BaseEnigma.cs" bodystart="74" bodyend="78"/>
       </memberdef>
       <memberdef kind="function" id="class_enigma2_1_1_base_enigma_1aa0a99d30ae4cffa75089d3b82bf4f361" prot="public" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>int</type>
@@ -267,7 +267,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/BaseEnigma.cs" line="187" column="27" bodyfile="Core/BaseEnigma.cs" bodystart="187" bodyend="190"/>
+        <location file="EnigmaMachineSimulator/Core/BaseEnigma.cs" line="187" column="27" bodyfile="EnigmaMachineSimulator/Core/BaseEnigma.cs" bodystart="187" bodyend="190"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="private-static-func">
@@ -287,7 +287,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/BaseEnigma.cs" line="62" column="23" bodyfile="Core/BaseEnigma.cs" bodystart="62" bodyend="72"/>
+        <location file="EnigmaMachineSimulator/Core/BaseEnigma.cs" line="62" column="23" bodyfile="EnigmaMachineSimulator/Core/BaseEnigma.cs" bodystart="62" bodyend="72"/>
       </memberdef>
       <memberdef kind="function" id="class_enigma2_1_1_base_enigma_1a9e1aa47b54a905ab31586556b43f7e35" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -309,7 +309,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/BaseEnigma.cs" line="80" column="21" bodyfile="Core/BaseEnigma.cs" bodystart="80" bodyend="94"/>
+        <location file="EnigmaMachineSimulator/Core/BaseEnigma.cs" line="80" column="21" bodyfile="EnigmaMachineSimulator/Core/BaseEnigma.cs" bodystart="80" bodyend="94"/>
       </memberdef>
       <memberdef kind="function" id="class_enigma2_1_1_base_enigma_1aadae3d7f0db5d5376b9ae09c7292b5c2" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -331,7 +331,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/BaseEnigma.cs" line="96" column="21" bodyfile="Core/BaseEnigma.cs" bodystart="96" bodyend="125"/>
+        <location file="EnigmaMachineSimulator/Core/BaseEnigma.cs" line="96" column="21" bodyfile="EnigmaMachineSimulator/Core/BaseEnigma.cs" bodystart="96" bodyend="125"/>
       </memberdef>
       <memberdef kind="function" id="class_enigma2_1_1_base_enigma_1af504fbd01283d8a4003446a829225cee" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>char</type>
@@ -369,7 +369,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/BaseEnigma.cs" line="127" column="21" bodyfile="Core/BaseEnigma.cs" bodystart="127" bodyend="167"/>
+        <location file="EnigmaMachineSimulator/Core/BaseEnigma.cs" line="127" column="21" bodyfile="EnigmaMachineSimulator/Core/BaseEnigma.cs" bodystart="127" bodyend="167"/>
       </memberdef>
       <memberdef kind="function" id="class_enigma2_1_1_base_enigma_1a992e9089ed036e7b9e9eb1e479df90a8" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>char</type>
@@ -395,7 +395,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/BaseEnigma.cs" line="176" column="21" bodyfile="Core/BaseEnigma.cs" bodystart="176" bodyend="180"/>
+        <location file="EnigmaMachineSimulator/Core/BaseEnigma.cs" line="176" column="21" bodyfile="EnigmaMachineSimulator/Core/BaseEnigma.cs" bodystart="176" bodyend="180"/>
       </memberdef>
       <memberdef kind="function" id="class_enigma2_1_1_base_enigma_1a0051f99ced5c2f6ebd8a9ffd34e789d4" prot="private" static="yes" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>char</type>
@@ -417,7 +417,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/BaseEnigma.cs" line="182" column="21" bodyfile="Core/BaseEnigma.cs" bodystart="182" bodyend="185"/>
+        <location file="EnigmaMachineSimulator/Core/BaseEnigma.cs" line="182" column="21" bodyfile="EnigmaMachineSimulator/Core/BaseEnigma.cs" bodystart="182" bodyend="185"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="package-func">
@@ -441,7 +441,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/BaseEnigma.cs" line="192" column="23" bodyfile="Core/BaseEnigma.cs" bodystart="192" bodyend="195"/>
+        <location file="EnigmaMachineSimulator/Core/BaseEnigma.cs" line="192" column="23" bodyfile="EnigmaMachineSimulator/Core/BaseEnigma.cs" bodystart="192" bodyend="195"/>
       </memberdef>
       <memberdef kind="function" id="class_enigma2_1_1_base_enigma_1a91fd2186fe23ee1b6fa448e0a36addb7" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -455,7 +455,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/BaseEnigma.cs" line="202" column="23" bodyfile="Core/BaseEnigma.cs" bodystart="202" bodyend="208"/>
+        <location file="EnigmaMachineSimulator/Core/BaseEnigma.cs" line="202" column="23" bodyfile="EnigmaMachineSimulator/Core/BaseEnigma.cs" bodystart="202" bodyend="208"/>
       </memberdef>
       <memberdef kind="function" id="class_enigma2_1_1_base_enigma_1a999938995f92cd815046e9388a2a3fb3" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -469,7 +469,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/BaseEnigma.cs" line="210" column="23" bodyfile="Core/BaseEnigma.cs" bodystart="210" bodyend="213"/>
+        <location file="EnigmaMachineSimulator/Core/BaseEnigma.cs" line="210" column="23" bodyfile="EnigmaMachineSimulator/Core/BaseEnigma.cs" bodystart="210" bodyend="213"/>
       </memberdef>
       <memberdef kind="function" id="class_enigma2_1_1_base_enigma_1a7975c819c3b993f5a21a8e21ae92c07b" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -487,7 +487,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/BaseEnigma.cs" line="215" column="23" bodyfile="Core/BaseEnigma.cs" bodystart="215" bodyend="218"/>
+        <location file="EnigmaMachineSimulator/Core/BaseEnigma.cs" line="215" column="23" bodyfile="EnigmaMachineSimulator/Core/BaseEnigma.cs" bodystart="215" bodyend="218"/>
       </memberdef>
       <memberdef kind="function" id="class_enigma2_1_1_base_enigma_1a97bedc64669080fdf0610ec67ae94ceb" prot="package" static="no" const="no" explicit="no" inline="yes" virt="non-virtual">
         <type>void</type>
@@ -505,7 +505,7 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/BaseEnigma.cs" line="220" column="23" bodyfile="Core/BaseEnigma.cs" bodystart="220" bodyend="226"/>
+        <location file="EnigmaMachineSimulator/Core/BaseEnigma.cs" line="220" column="23" bodyfile="EnigmaMachineSimulator/Core/BaseEnigma.cs" bodystart="220" bodyend="226"/>
       </memberdef>
     </sectiondef>
     <sectiondef kind="public-func">
@@ -521,14 +521,14 @@
         </detaileddescription>
         <inbodydescription>
         </inbodydescription>
-        <location file="Core/BaseEnigma.cs" line="197" column="21" bodyfile="Core/BaseEnigma.cs" bodystart="197" bodyend="200"/>
+        <location file="EnigmaMachineSimulator/Core/BaseEnigma.cs" line="197" column="21" bodyfile="EnigmaMachineSimulator/Core/BaseEnigma.cs" bodystart="197" bodyend="200"/>
       </memberdef>
     </sectiondef>
     <briefdescription>
     </briefdescription>
     <detaileddescription>
     </detaileddescription>
-    <location file="Core/BaseEnigma.cs" line="8" column="11" bodyfile="Core/BaseEnigma.cs" bodystart="9" bodyend="227"/>
+    <location file="EnigmaMachineSimulator/Core/BaseEnigma.cs" line="8" column="11" bodyfile="EnigmaMachineSimulator/Core/BaseEnigma.cs" bodystart="9" bodyend="227"/>
     <listofallmembers>
       <member refid="class_enigma2_1_1_base_enigma_1a85ee3103139f257ae413a5017d793adc" prot="public" virt="non-virtual"><scope>Enigma2::BaseEnigma</scope><name>_rotors</name></member>
       <member refid="class_enigma2_1_1_base_enigma_1accbadc7a06ad62c43b10e05b9dd565bc" prot="private" virt="non-virtual"><scope>Enigma2::BaseEnigma</scope><name>abc</name></member>
